@@ -1,4 +1,4 @@
-name: Generate-doc
+name: generate-doc
 on:
   push:
     branches:
@@ -16,7 +16,7 @@ jobs:
           doxyfile-path: 'conf/dist/Doxyfile'
           working-directory: '.'
           enable-latex: true
-          additional-packages: texlive-pictures
+          additional-packages: texlive
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
