@@ -14,7 +14,7 @@ jobs:
         uses: mattnotmitt/doxygen-action@v1.3.1
         with:
           doxyfile-path: 'conf/dist/Doxyfile'
-          working-directory: 'src/'
+          working-directory: '.'
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
