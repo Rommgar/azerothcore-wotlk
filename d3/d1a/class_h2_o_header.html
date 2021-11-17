@@ -151,24 +151,24 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00499">499</a> of file <a class="el" href="../../d6/dad/_utils_8cpp_source.html">Utils.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;{</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <a class="code" href="../../d3/d1a/class_h2_o_header.html">H2OHeader</a> <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> = 0;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.OffsetInformation, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.LayerCount, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.OffsetRender, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;    <a class="code" href="../../d3/d1a/class_h2_o_header.html">H2OHeader</a> ret;</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d3/d1a/class_h2_o_header.html#af747d5196ee6205d01b2a0c3a76a3114">OffsetInformation</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d3/d1a/class_h2_o_header.html#a5f9d1285e2d65a8563db28ce4cec2690">LayerCount</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d3/d1a/class_h2_o_header.html#abc24461e8e4c49a124f5981e153b6cba">OffsetRender</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160; </div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> != 3)</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <a class="code" href="../../d3/d6b/printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a>(<span class="stringliteral">&quot;H2OHeader::Read: Failed to read some data expected 3, read %d\n&quot;</span>, <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a>);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    <span class="keywordflow">if</span> (count != 3)</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        printf(<span class="stringliteral">&quot;H2OHeader::Read: Failed to read some data expected 3, read %d\n&quot;</span>, count);</div>
 <div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160; </div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;}</div>
 <div class="ttc" id="a_define_8h_html_a22f78cc9780bf32aff91ae17c3101c8d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a></div><div class="ttdeci">std::uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00114">Define.h:114</a></div></div>
 <div class="ttc" id="aclass_h2_o_header_html"><div class="ttname"><a href="../../d3/d1a/class_h2_o_header.html">H2OHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00295">Utils.h:296</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01039">core.h:1039</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aa3739712ffc6e717626ef803d2782ad5"><div class="ttname"><a href="../../d3/d6b/printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a></div><div class="ttdeci">auto printf(const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6b/printf_8h_source.html#l00626">printf.h:626</a></div></div>
-<div class="ttc" id="aprof_8c_html_a339672ff94e6199019102f50d317c3d7"><div class="ttname"><a href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/prof_8c_source.html#l00281">prof.c:281</a></div></div>
+<div class="ttc" id="aclass_h2_o_header_html_a5f9d1285e2d65a8563db28ce4cec2690"><div class="ttname"><a href="../../d3/d1a/class_h2_o_header.html#a5f9d1285e2d65a8563db28ce4cec2690">H2OHeader::LayerCount</a></div><div class="ttdeci">uint32 LayerCount</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00300">Utils.h:300</a></div></div>
+<div class="ttc" id="aclass_h2_o_header_html_abc24461e8e4c49a124f5981e153b6cba"><div class="ttname"><a href="../../d3/d1a/class_h2_o_header.html#abc24461e8e4c49a124f5981e153b6cba">H2OHeader::OffsetRender</a></div><div class="ttdeci">uint32 OffsetRender</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00301">Utils.h:301</a></div></div>
+<div class="ttc" id="aclass_h2_o_header_html_af747d5196ee6205d01b2a0c3a76a3114"><div class="ttname"><a href="../../d3/d1a/class_h2_o_header.html#af747d5196ee6205d01b2a0c3a76a3114">H2OHeader::OffsetInformation</a></div><div class="ttdeci">uint32 OffsetInformation</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00299">Utils.h:299</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01039">count()</a>, <a class="el" href="../../d3/d6b/printf_8h_source.html#l00626">printf()</a>, and <a class="el" href="../../df/d31/prof_8c_source.html#l00281">ret</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00300">LayerCount</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00299">OffsetInformation</a>, and <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00301">OffsetRender</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>.</p>
 
@@ -189,7 +189,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00300">300</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00499">Read()</a>.</p>
 
 </div>
 </div>
@@ -207,7 +207,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00299">299</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00499">Read()</a>.</p>
 
 </div>
 </div>
@@ -225,7 +225,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00301">301</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/d25/_liquid_handler_8cpp_source.html#l00026">LiquidHandler::HandleNewLiquid()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00499">Read()</a>.</p>
 
 </div>
 </div>

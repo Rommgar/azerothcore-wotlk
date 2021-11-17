@@ -86,7 +86,7 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a070880d742fd84b44c4614a76952e589"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd0/class_acore_1_1_a_c_log_sink.html#a070880d742fd84b44c4614a76952e589">ACLogSink</a> (T callback)</td></tr>
 <tr class="separator:a070880d742fd84b44c4614a76952e589"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adad5e421ed10b296eae8b9c52f5e76f5"><td class="memItemLeft" align="right" valign="top">std::streamsize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd0/class_acore_1_1_a_c_log_sink.html#adad5e421ed10b296eae8b9c52f5e76f5">write</a> (char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *str, std::streamsize size)</td></tr>
+<tr class="memitem:adad5e421ed10b296eae8b9c52f5e76f5"><td class="memItemLeft" align="right" valign="top">std::streamsize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd0/class_acore_1_1_a_c_log_sink.html#adad5e421ed10b296eae8b9c52f5e76f5">write</a> (char const *str, std::streamsize size)</td></tr>
 <tr class="separator:adad5e421ed10b296eae8b9c52f5e76f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -185,7 +185,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">std::streamsize <a class="el" href="../../da/dd0/class_acore_1_1_a_c_log_sink.html">Acore::ACLogSink</a>&lt; T &gt;::write </td>
           <td>(</td>
-          <td class="paramtype">char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -210,13 +210,12 @@ template&lt;typename T &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../d2/d9d/_start_process_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d2/d9d/_start_process_8cpp_source.html">StartProcess.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::string consoleStr(str, size);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            std::string <a class="code" href="../../dd/de8/namespaceutf8.html">utf8</a>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../db/d35/_util_8cpp.html#a0da0f18a290f7efb94e632d8ffa819d1">consoleToUtf8</a>(consoleStr, <a class="code" href="../../dd/de8/namespaceutf8.html">utf8</a>))</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="../../da/dd0/class_acore_1_1_a_c_log_sink.html#a360b91b740efaa05309725f6678eb22a">callback_</a>(<a class="code" href="../../dd/de8/namespaceutf8.html">utf8</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            std::string utf8;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../db/d35/_util_8cpp.html#a0da0f18a290f7efb94e632d8ffa819d1">consoleToUtf8</a>(consoleStr, utf8))</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="../../da/dd0/class_acore_1_1_a_c_log_sink.html#a360b91b740efaa05309725f6678eb22a">callback_</a>(utf8);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">return</span> size;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
 <div class="ttc" id="a_util_8cpp_html_a0da0f18a290f7efb94e632d8ffa819d1"><div class="ttname"><a href="../../db/d35/_util_8cpp.html#a0da0f18a290f7efb94e632d8ffa819d1">consoleToUtf8</a></div><div class="ttdeci">bool consoleToUtf8(std::string_view conStr, std::string &amp;utf8str)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_util_8cpp_source.html#l00557">Util.cpp:557</a></div></div>
-<div class="ttc" id="anamespaceutf8_html"><div class="ttname"><a href="../../dd/de8/namespaceutf8.html">utf8</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d03/checked_8h_source.html#l00034">checked.h:35</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../db/d35/_util_8cpp_source.html#l00557">consoleToUtf8()</a>.</p>
 

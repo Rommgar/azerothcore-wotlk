@@ -76,12 +76,12 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aae7947d22270ba85b3ba455b1e3a018d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#aae7947d22270ba85b3ba455b1e3a018d">Record</a> (<a class="el" href="../../db/d41/class_d_b_c.html">DBC</a> *dbc)</td></tr>
 <tr class="separator:aae7947d22270ba85b3ba455b1e3a018d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ff579b8795639a32b449a990c417149"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#a1ff579b8795639a32b449a990c417149">operator[]</a> (int <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memitem:a1ff579b8795639a32b449a990c417149"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#a1ff579b8795639a32b449a990c417149">operator[]</a> (int index)</td></tr>
 <tr class="separator:a1ff579b8795639a32b449a990c417149"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9afbe77a2ffcbb9aa80c2bb2e67f329"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ab9afbe77a2ffcbb9aa80c2bb2e67f329"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#ab9afbe77a2ffcbb9aa80c2bb2e67f329">GetValue</a> (int <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memitem:ab9afbe77a2ffcbb9aa80c2bb2e67f329"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#ab9afbe77a2ffcbb9aa80c2bb2e67f329">GetValue</a> (int index)</td></tr>
 <tr class="separator:ab9afbe77a2ffcbb9aa80c2bb2e67f329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a413823034425d288ea51a2fcb2cb7a12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#a413823034425d288ea51a2fcb2cb7a12">GetString</a> (int <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>)</td></tr>
+<tr class="memitem:a413823034425d288ea51a2fcb2cb7a12"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db3/class_record.html#a413823034425d288ea51a2fcb2cb7a12">GetString</a> (int index)</td></tr>
 <tr class="separator:a413823034425d288ea51a2fcb2cb7a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -152,13 +152,12 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00064">64</a> of file <a class="el" href="../../d6/de9/_d_b_c_8h_source.html">DBC.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/db3/class_record.html#a1fd5c9a604b7c2c52dceb38fa2601f05">Source</a>-&gt;<a class="code" href="../../db/d41/class_d_b_c.html#a054a349e8f416792e21156ea56ad9b8b">GetStringByOffset</a>(<a class="code" href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Values</a>[<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>]);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/db3/class_record.html#a1fd5c9a604b7c2c52dceb38fa2601f05">Source</a>-&gt;<a class="code" href="../../db/d41/class_d_b_c.html#a054a349e8f416792e21156ea56ad9b8b">GetStringByOffset</a>(<a class="code" href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Values</a>[index]);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 <div class="ttc" id="aclass_d_b_c_html_a054a349e8f416792e21156ea56ad9b8b"><div class="ttname"><a href="../../db/d41/class_d_b_c.html#a054a349e8f416792e21156ea56ad9b8b">DBC::GetStringByOffset</a></div><div class="ttdeci">std::string GetStringByOffset(int offset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d84/_d_b_c_8cpp_source.html#l00061">DBC.cpp:61</a></div></div>
 <div class="ttc" id="aclass_record_html_a4ae42b51c4ea48edf19c232368032fe6"><div class="ttname"><a href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Record::Values</a></div><div class="ttdeci">std::vector&lt; int &gt; Values</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de9/_d_b_c_8h_source.html#l00051">DBC.h:51</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">arg_id_kind::index</a></div><div class="ttdeci">@ index</div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d84/_d_b_c_8cpp_source.html#l00061">DBC::GetStringByOffset()</a>, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>, <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00050">Source</a>, and <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00051">Values</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/d84/_d_b_c_8cpp_source.html#l00061">DBC::GetStringByOffset()</a>, <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00050">Source</a>, and <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00051">Values</a>.</p>
 
 </div>
 </div>
@@ -190,10 +189,10 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00059">59</a> of file <a class="el" href="../../d6/de9/_d_b_c_8h_source.html">DBC.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> *(T*)(&amp;<a class="code" href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Values</a>[<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>]);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> *(T*)(&amp;<a class="code" href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Values</a>[index]);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>, and <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00051">Values</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00051">Values</a>.</p>
 
 </div>
 </div>
@@ -223,10 +222,10 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00053">53</a> of file <a class="el" href="../../d6/de9/_d_b_c_8h_source.html">DBC.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Values</a>[<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>];</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/db3/class_record.html#a4ae42b51c4ea48edf19c232368032fe6">Values</a>[index];</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaa6a992d5529f459a44fee58c733255e86">index</a>, and <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00051">Values</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/de9/_d_b_c_8h_source.html#l00051">Values</a>.</p>
 
 </div>
 </div>

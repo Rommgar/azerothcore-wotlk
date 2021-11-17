@@ -78,16 +78,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af1b2d9b7517b57a5a0a598f58b470c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#af1b2d9b7517b57a5a0a598f58b470c33">operator()</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d0/dca/class_g3_d_1_1_ray.html">G3D::Ray</a> &amp;ray, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> TValue *entity, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> StopAtFirstHit, float &amp;distance)</td></tr>
+<tr class="memitem:af1b2d9b7517b57a5a0a598f58b470c33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#af1b2d9b7517b57a5a0a598f58b470c33">operator()</a> (const G3D::Ray &amp;ray, const TValue *entity, bool StopAtFirstHit, float &amp;distance)</td></tr>
 <tr class="separator:af1b2d9b7517b57a5a0a598f58b470c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:ab377424b7edd0274f61967619700f841"><td class="memItemLeft" align="right" valign="top">TValue *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#ab377424b7edd0274f61967619700f841">closestEntity</a></td></tr>
 <tr class="separator:ab377424b7edd0274f61967619700f841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00e778dd78dca96391d200e18dfc2c9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a></td></tr>
+<tr class="memitem:a00e778dd78dca96391d200e18dfc2c9d"><td class="memItemLeft" align="right" valign="top">G3D::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a></td></tr>
 <tr class="separator:a00e778dd78dca96391d200e18dfc2c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57f40f48c26829f7da9e48efd839d773"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a></td></tr>
+<tr class="memitem:a57f40f48c26829f7da9e48efd839d773"><td class="memItemLeft" align="right" valign="top">G3D::Vector3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a></td></tr>
 <tr class="separator:a57f40f48c26829f7da9e48efd839d773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -111,19 +111,19 @@ template&lt;class TValue &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html">VMAP::IntersectionCallBack</a>&lt; TValue &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d0/dca/class_g3_d_1_1_ray.html">G3D::Ray</a> &amp;&#160;</td>
+          <td class="paramtype">const G3D::Ray &amp;&#160;</td>
           <td class="paramname"><em>ray</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> TValue *&#160;</td>
+          <td class="paramtype">const TValue *&#160;</td>
           <td class="paramname"><em>entity</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>StopAtFirstHit</em>, </td>
         </tr>
         <tr>
@@ -147,13 +147,12 @@ template&lt;class TValue &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dfb/_v_map_tools_8h_source.html#l00041">41</a> of file <a class="el" href="../../d6/dfb/_v_map_tools_8h_source.html">VMapTools.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            entity-&gt;intersect(ray, <a class="code" href="../../df/de2/namespace_g3_d.html#ae446db55e6d09c13766b1f634a5a01a4">distance</a>, StopAtFirstHit, <a class="code" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a>, <a class="code" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            entity-&gt;intersect(ray, distance, StopAtFirstHit, <a class="code" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a00e778dd78dca96391d200e18dfc2c9d">hitLocation</a>, <a class="code" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a57f40f48c26829f7da9e48efd839d773">hitNormal</a>);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
 <div class="ttc" id="aclass_v_m_a_p_1_1_intersection_call_back_html_a00e778dd78dca96391d200e18dfc2c9d"><div class="ttname"><a href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a00e778dd78dca96391d200e18dfc2c9d">VMAP::IntersectionCallBack::hitLocation</a></div><div class="ttdeci">G3D::Vector3 hitLocation</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dfb/_v_map_tools_8h_source.html#l00038">VMapTools.h:38</a></div></div>
 <div class="ttc" id="aclass_v_m_a_p_1_1_intersection_call_back_html_a57f40f48c26829f7da9e48efd839d773"><div class="ttname"><a href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html#a57f40f48c26829f7da9e48efd839d773">VMAP::IntersectionCallBack::hitNormal</a></div><div class="ttdeci">G3D::Vector3 hitNormal</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dfb/_v_map_tools_8h_source.html#l00039">VMapTools.h:39</a></div></div>
-<div class="ttc" id="anamespace_g3_d_html_ae446db55e6d09c13766b1f634a5a01a4"><div class="ttname"><a href="../../df/de2/namespace_g3_d.html#ae446db55e6d09c13766b1f634a5a01a4">G3D::distance</a></div><div class="ttdeci">double distance(double x, double y)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dfa/g3dmath_8h_source.html#l00731">g3dmath.h:731</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dd/dfa/g3dmath_8h_source.html#l00731">G3D::distance()</a>, <a class="el" href="../../d6/dfb/_v_map_tools_8h_source.html#l00038">VMAP::IntersectionCallBack&lt; TValue &gt;::hitLocation</a>, and <a class="el" href="../../d6/dfb/_v_map_tools_8h_source.html#l00039">VMAP::IntersectionCallBack&lt; TValue &gt;::hitNormal</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dfb/_v_map_tools_8h_source.html#l00038">VMAP::IntersectionCallBack&lt; TValue &gt;::hitLocation</a>, and <a class="el" href="../../d6/dfb/_v_map_tools_8h_source.html#l00039">VMAP::IntersectionCallBack&lt; TValue &gt;::hitNormal</a>.</p>
 
 </div>
 </div>
@@ -185,7 +184,7 @@ template&lt;class TValue &gt; </div>
 template&lt;class TValue &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> <a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html">VMAP::IntersectionCallBack</a>&lt; TValue &gt;::hitLocation</td>
+          <td class="memname">G3D::Vector3 <a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html">VMAP::IntersectionCallBack</a>&lt; TValue &gt;::hitLocation</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -205,7 +204,7 @@ template&lt;class TValue &gt; </div>
 template&lt;class TValue &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> <a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html">VMAP::IntersectionCallBack</a>&lt; TValue &gt;::hitNormal</td>
+          <td class="memname">G3D::Vector3 <a class="el" href="../../dd/ddc/class_v_m_a_p_1_1_intersection_call_back.html">VMAP::IntersectionCallBack</a>&lt; TValue &gt;::hitNormal</td>
         </tr>
       </table>
 </div><div class="memdoc">

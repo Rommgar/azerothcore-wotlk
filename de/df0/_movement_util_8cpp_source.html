@@ -130,7 +130,7 @@ $(function() {
 <div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d1/dc5/namespace_movement.html#a87260372150c8322b45e75bfaa445f14">   60</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="../../d1/dc5/namespace_movement.html#a87260372150c8322b45e75bfaa445f14">computeFallElevation</a>(<span class="keywordtype">float</span> t_passed, <span class="keywordtype">bool</span> isSafeFall, <span class="keywordtype">float</span> start_velocity <span class="comment">/*= 0.0f*/</span>)</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">float</span> termVel;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordtype">float</span> result;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">if</span> (isSafeFall)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            termVel = <a class="code" href="../../d1/dc5/namespace_movement.html#a654673c77f53f27a80309b050d44d38d">terminalSafefallVelocity</a>;</div>
@@ -144,14 +144,14 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span> (t_passed &gt; terminal_time)</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = termVel * (t_passed - terminal_time) +</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            result = termVel * (t_passed - terminal_time) +</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                     start_velocity * terminal_time +</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     <a class="code" href="../../d1/dc5/namespace_movement.html#a15b376933a666c7f7c4600e62d7afe91">gravity</a> * terminal_time * terminal_time * 0.5f;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = t_passed * (start_velocity + t_passed * <a class="code" href="../../d1/dc5/namespace_movement.html#a15b376933a666c7f7c4600e62d7afe91">gravity</a> * 0.5f);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            result = t_passed * (start_velocity + t_passed * <a class="code" href="../../d1/dc5/namespace_movement.html#a15b376933a666c7f7c4600e62d7afe91">gravity</a> * 0.5f);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../de/df0/_movement_util_8cpp.html#a18d295a837ac71add5578860b55e5502">   87</a></span>&#160;<span class="preprocessor">#define STR(x) #x</span></div>
@@ -281,7 +281,6 @@ $(function() {
 <div class="ttc" id="anamespace_movement_html_a98cc74e5667e1057f334f02a28abcb01"><div class="ttname"><a href="../../d1/dc5/namespace_movement.html#a98cc74e5667e1057f334f02a28abcb01">Movement::terminalVelocity</a></div><div class="ttdeci">float terminalVelocity</div><div class="ttdoc">Velocity bounds that makes fall speed limited.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df0/_movement_util_8cpp_source.html#l00028">MovementUtil.cpp:28</a></div></div>
 <div class="ttc" id="anamespace_movement_html_aa6a1b38cb6e1507d88f0f45a4820990b"><div class="ttname"><a href="../../d1/dc5/namespace_movement.html#aa6a1b38cb6e1507d88f0f45a4820990b">Movement::g_SplineFlag_names</a></div><div class="ttdeci">char const  * g_SplineFlag_names[32]</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df0/_movement_util_8cpp_source.html#l00142">MovementUtil.cpp:142</a></div></div>
 <div class="ttc" id="anamespace_movement_html_aa927e4ada20ca56ce951239357407270"><div class="ttname"><a href="../../d1/dc5/namespace_movement.html#aa927e4ada20ca56ce951239357407270">Movement::terminal_fallTime</a></div><div class="ttdeci">const float terminal_fallTime</div><div class="ttdef"><b>Definition:</b> <a href="../../de/df0/_movement_util_8cpp_source.html#l00033">MovementUtil.cpp:33</a></div></div>
-<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/format-inl_8h_source.html#l00622">format-inl.h:622</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

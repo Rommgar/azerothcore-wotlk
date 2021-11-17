@@ -74,7 +74,7 @@ $(function() {
 <div class="title">CalendarMgr.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;Common.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../db/d1f/_common_8h_source.html">Common.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dd/dd4/_database_env_8h_source.html">DatabaseEnv.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/d66/_world_packet_8h_source.html">WorldPacket.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d83/_object_guid_8h_source.html">ObjectGuid.h</a>&quot;</code><br />
@@ -102,7 +102,7 @@ Typedefs</h2></td></tr>
 <tr class="separator:a6fe31a855a3ec48abb6eccd7296351ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea0466a27af69ea188d66b721b49a3d6"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_set&lt; <a class="el" href="../../db/d72/struct_calendar_event.html">CalendarEvent</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/_calendar_mgr_8h.html#aea0466a27af69ea188d66b721b49a3d6">CalendarEventStore</a></td></tr>
 <tr class="separator:aea0466a27af69ea188d66b721b49a3d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af35b9a127e069a3aed4acad11a7cc5a6"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="../../d9/df6/my__global_8h.html#a2f5563986d7f95e4fad5876c17d9cdda">uint64</a>, <a class="el" href="../../d2/de7/_calendar_mgr_8h.html#a6fe31a855a3ec48abb6eccd7296351ee">CalendarInviteStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/_calendar_mgr_8h.html#af35b9a127e069a3aed4acad11a7cc5a6">CalendarEventInviteStore</a></td></tr>
+<tr class="memitem:af35b9a127e069a3aed4acad11a7cc5a6"><td class="memItemLeft" align="right" valign="top">typedef std::unordered_map&lt; <a class="el" href="../../db/d35/_define_8h.html#ac4dd6ce78ce3b840c53bd4b3c63ed09b">uint64</a>, <a class="el" href="../../d2/de7/_calendar_mgr_8h.html#a6fe31a855a3ec48abb6eccd7296351ee">CalendarInviteStore</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de7/_calendar_mgr_8h.html#af35b9a127e069a3aed4acad11a7cc5a6">CalendarEventInviteStore</a></td></tr>
 <tr class="separator:af35b9a127e069a3aed4acad11a7cc5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -238,7 +238,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="../../d9/df6/my__global_8h.html#a2f5563986d7f95e4fad5876c17d9cdda">uint64</a> , <a class="el" href="../../d2/de7/_calendar_mgr_8h.html#a6fe31a855a3ec48abb6eccd7296351ee">CalendarInviteStore</a> &gt; <a class="el" href="../../d2/de7/_calendar_mgr_8h.html#af35b9a127e069a3aed4acad11a7cc5a6">CalendarEventInviteStore</a></td>
+          <td class="memname">typedef std::unordered_map&lt;<a class="el" href="../../db/d35/_define_8h.html#ac4dd6ce78ce3b840c53bd4b3c63ed09b">uint64</a> , <a class="el" href="../../d2/de7/_calendar_mgr_8h.html#a6fe31a855a3ec48abb6eccd7296351ee">CalendarInviteStore</a> &gt; <a class="el" href="../../d2/de7/_calendar_mgr_8h.html#af35b9a127e069a3aed4acad11a7cc5a6">CalendarEventInviteStore</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -540,14 +540,14 @@ Enumerations</h2></td></tr>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32abec07e16ff5421a7ae42dc4b182958a2">CALENDAR_MAX_GUILD_EVENTS</a>         = 100,</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32aa5c5d3a6c0bb88385109aa937a047e95">CALENDAR_MAX_INVITES</a>              = 100,</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <a class="code" href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32ae4904590b247a266816d8e71ad231b9f">CALENDAR_CREATE_EVENT_COOLDOWN</a>    = 5,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32a1abad081cf58bddddf2065698274bd48">CALENDAR_OLD_EVENTS_DELETION_TIME</a> = 1 * <a class="code" href="../../d1/d8b/src_2common_2common_8h.html#add49e81cdd2c0bb5eb745bed627d5022">MONTH</a>,</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32a1abad081cf58bddddf2065698274bd48">CALENDAR_OLD_EVENTS_DELETION_TIME</a> = 1 * <a class="code" href="../../db/d1f/_common_8h.html#add49e81cdd2c0bb5eb745bed627d5022">MONTH</a>,</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
 <div class="ttc" id="a_calendar_mgr_8h_html_adf6bf00c462990adc2b57c02f9db8c32a1abad081cf58bddddf2065698274bd48"><div class="ttname"><a href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32a1abad081cf58bddddf2065698274bd48">CALENDAR_OLD_EVENTS_DELETION_TIME</a></div><div class="ttdeci">@ CALENDAR_OLD_EVENTS_DELETION_TIME</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/_calendar_mgr_8h_source.html#l00132">CalendarMgr.h:132</a></div></div>
 <div class="ttc" id="a_calendar_mgr_8h_html_adf6bf00c462990adc2b57c02f9db8c32a49230604bd7fd600f1852ba9dd754076"><div class="ttname"><a href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32a49230604bd7fd600f1852ba9dd754076">CALENDAR_MAX_EVENTS</a></div><div class="ttdeci">@ CALENDAR_MAX_EVENTS</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/_calendar_mgr_8h_source.html#l00128">CalendarMgr.h:128</a></div></div>
 <div class="ttc" id="a_calendar_mgr_8h_html_adf6bf00c462990adc2b57c02f9db8c32aa5c5d3a6c0bb88385109aa937a047e95"><div class="ttname"><a href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32aa5c5d3a6c0bb88385109aa937a047e95">CALENDAR_MAX_INVITES</a></div><div class="ttdeci">@ CALENDAR_MAX_INVITES</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/_calendar_mgr_8h_source.html#l00130">CalendarMgr.h:130</a></div></div>
 <div class="ttc" id="a_calendar_mgr_8h_html_adf6bf00c462990adc2b57c02f9db8c32abec07e16ff5421a7ae42dc4b182958a2"><div class="ttname"><a href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32abec07e16ff5421a7ae42dc4b182958a2">CALENDAR_MAX_GUILD_EVENTS</a></div><div class="ttdeci">@ CALENDAR_MAX_GUILD_EVENTS</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/_calendar_mgr_8h_source.html#l00129">CalendarMgr.h:129</a></div></div>
 <div class="ttc" id="a_calendar_mgr_8h_html_adf6bf00c462990adc2b57c02f9db8c32ae4904590b247a266816d8e71ad231b9f"><div class="ttname"><a href="../../d2/de7/_calendar_mgr_8h.html#adf6bf00c462990adc2b57c02f9db8c32ae4904590b247a266816d8e71ad231b9f">CALENDAR_CREATE_EVENT_COOLDOWN</a></div><div class="ttdeci">@ CALENDAR_CREATE_EVENT_COOLDOWN</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/de7/_calendar_mgr_8h_source.html#l00131">CalendarMgr.h:131</a></div></div>
-<div class="ttc" id="asrc_2common_2common_8h_html_add49e81cdd2c0bb5eb745bed627d5022"><div class="ttname"><a href="../../d1/d8b/src_2common_2common_8h.html#add49e81cdd2c0bb5eb745bed627d5022">MONTH</a></div><div class="ttdeci">constexpr auto MONTH</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d8b/src_2common_2common_8h_source.html#l00060">Common.h:60</a></div></div>
+<div class="ttc" id="a_common_8h_html_add49e81cdd2c0bb5eb745bed627d5022"><div class="ttname"><a href="../../db/d1f/_common_8h.html#add49e81cdd2c0bb5eb745bed627d5022">MONTH</a></div><div class="ttdeci">constexpr auto MONTH</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1f/_common_8h_source.html#l00060">Common.h:60</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

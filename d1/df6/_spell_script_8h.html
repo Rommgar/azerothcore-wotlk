@@ -76,7 +76,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="../../df/d0b/_shared_defines_8h_source.html">SharedDefines.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/dfa/_spell_8h_source.html">Spell.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d7/d5a/_spell_aura_defines_8h_source.html">SpellAuraDefines.h</a>&quot;</code><br />
-<code>#include &quot;Util.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d90/_util_8h_source.html">Util.h</a>&quot;</code><br />
 <code>#include &lt;stack&gt;</code><br />
 </div>
 <p><a href="../../d1/df6/_spell_script_8h_source.html">Go to the source code of this file.</a></p>
@@ -148,9 +148,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ab6f3711ba6eb0532447359165e60172a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ab6f3711ba6eb0532447359165e60172a">SPELL_EFFECT_ANY</a>&#160;&#160;&#160;(<a class="el" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>)-1</td></tr>
+<tr class="memitem:ab6f3711ba6eb0532447359165e60172a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ab6f3711ba6eb0532447359165e60172a">SPELL_EFFECT_ANY</a>&#160;&#160;&#160;(<a class="el" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a>)-1</td></tr>
 <tr class="separator:ab6f3711ba6eb0532447359165e60172a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc2aca3aa7cbad44c23b542d6bc0162a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#adc2aca3aa7cbad44c23b542d6bc0162a">SPELL_AURA_ANY</a>&#160;&#160;&#160;(<a class="el" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>)-1</td></tr>
+<tr class="memitem:adc2aca3aa7cbad44c23b542d6bc0162a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#adc2aca3aa7cbad44c23b542d6bc0162a">SPELL_AURA_ANY</a>&#160;&#160;&#160;(<a class="el" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a>)-1</td></tr>
 <tr class="separator:adc2aca3aa7cbad44c23b542d6bc0162a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2cf0491996ccd3cb179b432d34e07cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#aa2cf0491996ccd3cb179b432d34e07cd">SPELL_SCRIPT_STATE_END</a>&#160;&#160;&#160;<a class="el" href="../../d1/df6/_spell_script_8h.html#a34a30288cb2dc9cf4c558b61eef526ffa3617846a2487234e3dcfd0db94991036">SPELL_SCRIPT_STATE_UNLOADING</a> + 1</td></tr>
 <tr class="separator:aa2cf0491996ccd3cb179b432d34e07cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,21 +170,21 @@ Macros</h2></td></tr>
 <tr class="separator:a6045b67b4ca9d1c16bfcd1b2376f5349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34719dcb751e4fcbcd8071ff6daa720a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a34719dcb751e4fcbcd8071ff6daa720a">PrepareSpellScript</a>(CLASSNAME)&#160;&#160;&#160;<a class="el" href="../../d1/df6/_spell_script_8h.html#a4d0f0c5676f83a543e55577ac5622ce0">SPELLSCRIPT_FUNCTION_TYPE_DEFINES</a>(CLASSNAME) <a class="el" href="../../d1/df6/_spell_script_8h.html#a6045b67b4ca9d1c16bfcd1b2376f5349">SPELLSCRIPT_FUNCTION_CAST_DEFINES</a>(CLASSNAME)</td></tr>
 <tr class="separator:a34719dcb751e4fcbcd8071ff6daa720a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0eb707cdfb0f2fafeafd6ab32274654"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#aa0eb707cdfb0f2fafeafd6ab32274654">SpellCastFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;CastHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:aa0eb707cdfb0f2fafeafd6ab32274654"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#aa0eb707cdfb0f2fafeafd6ab32274654">SpellCastFn</a>(F)&#160;&#160;&#160;CastHandlerFunction(&amp;F)</td></tr>
 <tr class="separator:aa0eb707cdfb0f2fafeafd6ab32274654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44cc78b7e05a8f3b83e430f5115a2183"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a44cc78b7e05a8f3b83e430f5115a2183">SpellCheckCastFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;CheckCastHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:a44cc78b7e05a8f3b83e430f5115a2183"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a44cc78b7e05a8f3b83e430f5115a2183">SpellCheckCastFn</a>(F)&#160;&#160;&#160;CheckCastHandlerFunction(&amp;F)</td></tr>
 <tr class="separator:a44cc78b7e05a8f3b83e430f5115a2183"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a551b0adb8eaf82985a7e55cef0695dcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a551b0adb8eaf82985a7e55cef0695dcb">SpellEffectFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a551b0adb8eaf82985a7e55cef0695dcb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a551b0adb8eaf82985a7e55cef0695dcb">SpellEffectFn</a>(F,  I,  N)&#160;&#160;&#160;EffectHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a551b0adb8eaf82985a7e55cef0695dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c689e0b0dba326dd700a7ad62303d26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a1c689e0b0dba326dd700a7ad62303d26">BeforeSpellHitFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;BeforeHitHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:a1c689e0b0dba326dd700a7ad62303d26"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a1c689e0b0dba326dd700a7ad62303d26">BeforeSpellHitFn</a>(F)&#160;&#160;&#160;BeforeHitHandlerFunction(&amp;F)</td></tr>
 <tr class="separator:a1c689e0b0dba326dd700a7ad62303d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad33ae6ff74ef32eb5ec79707ff0ab5b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ad33ae6ff74ef32eb5ec79707ff0ab5b1">SpellHitFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;HitHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:ad33ae6ff74ef32eb5ec79707ff0ab5b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ad33ae6ff74ef32eb5ec79707ff0ab5b1">SpellHitFn</a>(F)&#160;&#160;&#160;HitHandlerFunction(&amp;F)</td></tr>
 <tr class="separator:ad33ae6ff74ef32eb5ec79707ff0ab5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a623f49512c3d12eceb55ca05cd53c4f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a623f49512c3d12eceb55ca05cd53c4f2">SpellObjectAreaTargetSelectFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;ObjectAreaTargetSelectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a623f49512c3d12eceb55ca05cd53c4f2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a623f49512c3d12eceb55ca05cd53c4f2">SpellObjectAreaTargetSelectFn</a>(F,  I,  N)&#160;&#160;&#160;ObjectAreaTargetSelectHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a623f49512c3d12eceb55ca05cd53c4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e2662636123cae835d18e21b9c24db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a1e2662636123cae835d18e21b9c24db2">SpellObjectTargetSelectFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;ObjectTargetSelectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a1e2662636123cae835d18e21b9c24db2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a1e2662636123cae835d18e21b9c24db2">SpellObjectTargetSelectFn</a>(F,  I,  N)&#160;&#160;&#160;ObjectTargetSelectHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a1e2662636123cae835d18e21b9c24db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25d575ee7dc16898562e3906eb3ca1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#aa25d575ee7dc16898562e3906eb3ca1b">SpellDestinationTargetSelectFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;DestinationTargetSelectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:aa25d575ee7dc16898562e3906eb3ca1b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#aa25d575ee7dc16898562e3906eb3ca1b">SpellDestinationTargetSelectFn</a>(F,  I,  N)&#160;&#160;&#160;DestinationTargetSelectHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:aa25d575ee7dc16898562e3906eb3ca1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3101f4f4902188b1fc7c024f151b638b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a3101f4f4902188b1fc7c024f151b638b">AURASCRIPT_FUNCTION_TYPE_DEFINES</a>(CLASSNAME)</td></tr>
 <tr class="separator:a3101f4f4902188b1fc7c024f151b638b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,35 +192,35 @@ Macros</h2></td></tr>
 <tr class="separator:a45a9e92ccb7a7baba9e6f1839a334872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac30b78d7dfb666e2634098493fb1b117"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ac30b78d7dfb666e2634098493fb1b117">PrepareAuraScript</a>(CLASSNAME)&#160;&#160;&#160;<a class="el" href="../../d1/df6/_spell_script_8h.html#a3101f4f4902188b1fc7c024f151b638b">AURASCRIPT_FUNCTION_TYPE_DEFINES</a>(CLASSNAME) <a class="el" href="../../d1/df6/_spell_script_8h.html#a45a9e92ccb7a7baba9e6f1839a334872">AURASCRIPT_FUNCTION_CAST_DEFINES</a>(CLASSNAME)</td></tr>
 <tr class="separator:ac30b78d7dfb666e2634098493fb1b117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48944a76973e5072df96136a9e79826"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ae48944a76973e5072df96136a9e79826">AuraCheckAreaTargetFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;CheckAreaTargetFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:ae48944a76973e5072df96136a9e79826"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ae48944a76973e5072df96136a9e79826">AuraCheckAreaTargetFn</a>(F)&#160;&#160;&#160;CheckAreaTargetFunction(&amp;F)</td></tr>
 <tr class="separator:ae48944a76973e5072df96136a9e79826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2fd7627b33028274141d6e790134ccc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#af2fd7627b33028274141d6e790134ccc">AuraDispelFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;AuraDispelFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:af2fd7627b33028274141d6e790134ccc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#af2fd7627b33028274141d6e790134ccc">AuraDispelFn</a>(F)&#160;&#160;&#160;AuraDispelFunction(&amp;F)</td></tr>
 <tr class="separator:af2fd7627b33028274141d6e790134ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac47070c5a13a5436cc5d204a1445c993"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ac47070c5a13a5436cc5d204a1445c993">AuraEffectApplyFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N,  M)&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N, M)</td></tr>
+<tr class="memitem:ac47070c5a13a5436cc5d204a1445c993"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ac47070c5a13a5436cc5d204a1445c993">AuraEffectApplyFn</a>(F,  I,  N,  M)&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;F, I, N, M)</td></tr>
 <tr class="separator:ac47070c5a13a5436cc5d204a1445c993"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8f20adad60abdb901d6e7310afea31b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#af8f20adad60abdb901d6e7310afea31b">AuraEffectRemoveFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N,  M)&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N, M)</td></tr>
+<tr class="memitem:af8f20adad60abdb901d6e7310afea31b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#af8f20adad60abdb901d6e7310afea31b">AuraEffectRemoveFn</a>(F,  I,  N,  M)&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;F, I, N, M)</td></tr>
 <tr class="separator:af8f20adad60abdb901d6e7310afea31b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63dd33eaa91292bfb53b1d9f2b0eba29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a63dd33eaa91292bfb53b1d9f2b0eba29">AuraEffectPeriodicFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectPeriodicHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a63dd33eaa91292bfb53b1d9f2b0eba29"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a63dd33eaa91292bfb53b1d9f2b0eba29">AuraEffectPeriodicFn</a>(F,  I,  N)&#160;&#160;&#160;EffectPeriodicHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a63dd33eaa91292bfb53b1d9f2b0eba29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a715640892166108a23f30ed68346d395"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a715640892166108a23f30ed68346d395">AuraEffectUpdatePeriodicFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectUpdatePeriodicHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a715640892166108a23f30ed68346d395"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a715640892166108a23f30ed68346d395">AuraEffectUpdatePeriodicFn</a>(F,  I,  N)&#160;&#160;&#160;EffectUpdatePeriodicHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a715640892166108a23f30ed68346d395"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f7926ca012466d6b220655a1bb6e912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a5f7926ca012466d6b220655a1bb6e912">AuraEffectCalcAmountFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectCalcAmountHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a5f7926ca012466d6b220655a1bb6e912"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a5f7926ca012466d6b220655a1bb6e912">AuraEffectCalcAmountFn</a>(F,  I,  N)&#160;&#160;&#160;EffectCalcAmountHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a5f7926ca012466d6b220655a1bb6e912"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8d87844aaddbc3842b2cd99266fbd6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ab8d87844aaddbc3842b2cd99266fbd6f">AuraEffectCalcPeriodicFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectCalcPeriodicHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:ab8d87844aaddbc3842b2cd99266fbd6f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ab8d87844aaddbc3842b2cd99266fbd6f">AuraEffectCalcPeriodicFn</a>(F,  I,  N)&#160;&#160;&#160;EffectCalcPeriodicHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:ab8d87844aaddbc3842b2cd99266fbd6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0e218d3b7359beb034b0a6f929ced84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ae0e218d3b7359beb034b0a6f929ced84">AuraEffectCalcSpellModFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectCalcSpellModHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:ae0e218d3b7359beb034b0a6f929ced84"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ae0e218d3b7359beb034b0a6f929ced84">AuraEffectCalcSpellModFn</a>(F,  I,  N)&#160;&#160;&#160;EffectCalcSpellModHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:ae0e218d3b7359beb034b0a6f929ced84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a9285b03a1956f599d7ee5f955373a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ab4a9285b03a1956f599d7ee5f955373a">AuraEffectAbsorbFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)&#160;&#160;&#160;EffectAbsorbFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)</td></tr>
+<tr class="memitem:ab4a9285b03a1956f599d7ee5f955373a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ab4a9285b03a1956f599d7ee5f955373a">AuraEffectAbsorbFn</a>(F,  I)&#160;&#160;&#160;EffectAbsorbFunction(&amp;F, I)</td></tr>
 <tr class="separator:ab4a9285b03a1956f599d7ee5f955373a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29d8ce7ca907de8163969c300a1f2db0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a29d8ce7ca907de8163969c300a1f2db0">AuraEffectManaShieldFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)&#160;&#160;&#160;EffectManaShieldFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)</td></tr>
+<tr class="memitem:a29d8ce7ca907de8163969c300a1f2db0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a29d8ce7ca907de8163969c300a1f2db0">AuraEffectManaShieldFn</a>(F,  I)&#160;&#160;&#160;EffectManaShieldFunction(&amp;F, I)</td></tr>
 <tr class="separator:a29d8ce7ca907de8163969c300a1f2db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace2ab8300271d6f69779aed40a237b8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ace2ab8300271d6f69779aed40a237b8f">AuraEffectSplitFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)&#160;&#160;&#160;EffectSplitFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)</td></tr>
+<tr class="memitem:ace2ab8300271d6f69779aed40a237b8f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ace2ab8300271d6f69779aed40a237b8f">AuraEffectSplitFn</a>(F,  I)&#160;&#160;&#160;EffectSplitFunction(&amp;F, I)</td></tr>
 <tr class="separator:ace2ab8300271d6f69779aed40a237b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad25bcd0c3aa73ba267fa87ea50bc1780"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ad25bcd0c3aa73ba267fa87ea50bc1780">AuraCheckProcFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;CheckProcHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:ad25bcd0c3aa73ba267fa87ea50bc1780"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#ad25bcd0c3aa73ba267fa87ea50bc1780">AuraCheckProcFn</a>(F)&#160;&#160;&#160;CheckProcHandlerFunction(&amp;F)</td></tr>
 <tr class="separator:ad25bcd0c3aa73ba267fa87ea50bc1780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a51498d234bccc0ab35a047edc3417"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a05a51498d234bccc0ab35a047edc3417">AuraProcFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)&#160;&#160;&#160;AuraProcHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td></tr>
+<tr class="memitem:a05a51498d234bccc0ab35a047edc3417"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a05a51498d234bccc0ab35a047edc3417">AuraProcFn</a>(F)&#160;&#160;&#160;AuraProcHandlerFunction(&amp;F)</td></tr>
 <tr class="separator:a05a51498d234bccc0ab35a047edc3417"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477ed5ca0e8da0b293428f4596802c0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a477ed5ca0e8da0b293428f4596802c0b">AuraEffectProcFn</a>(<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  N)&#160;&#160;&#160;EffectProcHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td></tr>
+<tr class="memitem:a477ed5ca0e8da0b293428f4596802c0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df6/_spell_script_8h.html#a477ed5ca0e8da0b293428f4596802c0b">AuraEffectProcFn</a>(F,  I,  N)&#160;&#160;&#160;EffectProcHandlerFunction(&amp;F, I, N)</td></tr>
 <tr class="separator:a477ed5ca0e8da0b293428f4596802c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -296,8 +296,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraCheckAreaTargetFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;CheckAreaTargetFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;CheckAreaTargetFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -316,8 +316,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraCheckProcFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;CheckProcHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;CheckProcHandlerFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -336,8 +336,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraDispelFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;AuraDispelFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;AuraDispelFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -356,18 +356,18 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectAbsorbFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>&#160;</td>
+          <td class="paramname">I&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectAbsorbFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)</td>
+          <td></td><td>&#160;&#160;&#160;EffectAbsorbFunction(&amp;F, I)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -386,13 +386,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectApplyFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -409,7 +409,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N, M)</td>
+          <td></td><td>&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;F, I, N, M)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -428,13 +428,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectCalcAmountFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -445,7 +445,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectCalcAmountHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectCalcAmountHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -464,13 +464,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectCalcPeriodicFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -481,7 +481,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectCalcPeriodicHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectCalcPeriodicHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -500,13 +500,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectCalcSpellModFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -517,7 +517,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectCalcSpellModHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectCalcSpellModHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -536,18 +536,18 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectManaShieldFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>&#160;</td>
+          <td class="paramname">I&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectManaShieldFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)</td>
+          <td></td><td>&#160;&#160;&#160;EffectManaShieldFunction(&amp;F, I)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -566,13 +566,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectPeriodicFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -583,7 +583,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectPeriodicHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectPeriodicHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -602,13 +602,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectProcFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -619,7 +619,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectProcHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectProcHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -638,13 +638,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectRemoveFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -661,7 +661,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N, M)</td>
+          <td></td><td>&#160;&#160;&#160;EffectApplyHandlerFunction(&amp;F, I, N, M)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -680,18 +680,18 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectSplitFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>&#160;</td>
+          <td class="paramname">I&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectSplitFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>)</td>
+          <td></td><td>&#160;&#160;&#160;EffectSplitFunction(&amp;F, I)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -710,13 +710,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraEffectUpdatePeriodicFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -727,7 +727,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectUpdatePeriodicHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectUpdatePeriodicHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -746,8 +746,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define AuraProcFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;AuraProcHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;AuraProcHandlerFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -773,18 +773,20 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">class </span>CheckAreaTargetFunction : <span class="keyword">public</span> <a class="code" href="../../d2/d21/class_aura_script_1_1_check_area_target_handler.html">AuraScript::CheckAreaTargetHandler</a> { <span class="keyword">public</span>: CheckAreaTargetFunction(AuraCheckAreaTargetFnType _pHandlerScript) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::CheckAreaTargetHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraCheckAreaTargetFnType)_pHandlerScript) {} }; \</div>
 <div class="line">        class AuraDispelFunction : <span class="keyword">public</span> <a class="code" href="../../d2/d5e/class_aura_script_1_1_aura_dispel_handler.html">AuraScript::AuraDispelHandler</a> { <span class="keyword">public</span>: AuraDispelFunction(AuraDispelFnType _pHandlerScript) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraDispelHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraDispelFnType)_pHandlerScript) {} }; \</div>
-<div class="line">        class EffectPeriodicHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d3/df3/class_aura_script_1_1_effect_periodic_handler.html">AuraScript::EffectPeriodicHandler</a> { <span class="keyword">public</span>: EffectPeriodicHandlerFunction(AuraEffectPeriodicFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectPeriodicHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectPeriodicFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
-<div class="line">        class EffectUpdatePeriodicHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../da/d20/class_aura_script_1_1_effect_update_periodic_handler.html">AuraScript::EffectUpdatePeriodicHandler</a> { <span class="keyword">public</span>: EffectUpdatePeriodicHandlerFunction(AuraEffectUpdatePeriodicFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectUpdatePeriodicHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectUpdatePeriodicFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
-<div class="line">        class EffectCalcAmountHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../df/d04/class_aura_script_1_1_effect_calc_amount_handler.html">AuraScript::EffectCalcAmountHandler</a> { <span class="keyword">public</span>: EffectCalcAmountHandlerFunction(AuraEffectCalcAmountFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectCalcAmountHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectCalcAmountFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
-<div class="line">        class EffectCalcPeriodicHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d1/d62/class_aura_script_1_1_effect_calc_periodic_handler.html">AuraScript::EffectCalcPeriodicHandler</a> { <span class="keyword">public</span>: EffectCalcPeriodicHandlerFunction(AuraEffectCalcPeriodicFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectCalcPeriodicHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectCalcPeriodicFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
-<div class="line">        class EffectCalcSpellModHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d1/dfc/class_aura_script_1_1_effect_calc_spell_mod_handler.html">AuraScript::EffectCalcSpellModHandler</a> { <span class="keyword">public</span>: EffectCalcSpellModHandlerFunction(AuraEffectCalcSpellModFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectCalcSpellModHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectCalcSpellModFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
-<div class="line">        class EffectApplyHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../da/d2a/class_aura_script_1_1_effect_apply_handler.html">AuraScript::EffectApplyHandler</a> { <span class="keyword">public</span>: EffectApplyHandlerFunction(AuraEffectApplicationModeFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName, <a class="code" href="../../d7/d5a/_spell_aura_defines_8h.html#a82ebee9e3cf7eaf2ab892a6eb7796288">AuraEffectHandleModes</a> _mode) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectApplyHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectApplicationModeFnType)_pEffectHandlerScript, _effIndex, _effName, _mode) {} }; \</div>
-<div class="line">        class EffectAbsorbFunction : <span class="keyword">public</span> <a class="code" href="../../dc/d13/class_aura_script_1_1_effect_absorb_handler.html">AuraScript::EffectAbsorbHandler</a> { <span class="keyword">public</span>: EffectAbsorbFunction(AuraEffectAbsorbFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectAbsorbHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectAbsorbFnType)_pEffectHandlerScript, _effIndex) {} }; \</div>
-<div class="line">        class EffectManaShieldFunction : <span class="keyword">public</span> <a class="code" href="../../d0/d2b/class_aura_script_1_1_effect_mana_shield_handler.html">AuraScript::EffectManaShieldHandler</a> { <span class="keyword">public</span>: EffectManaShieldFunction(AuraEffectAbsorbFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectManaShieldHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectAbsorbFnType)_pEffectHandlerScript, _effIndex) {} }; \</div>
-<div class="line">        class EffectSplitFunction : <span class="keyword">public</span> <a class="code" href="../../d5/db4/class_aura_script_1_1_effect_split_handler.html">AuraScript::EffectSplitHandler</a> { <span class="keyword">public</span>: EffectSplitFunction(AuraEffectSplitFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectSplitHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectSplitFnType)_pEffectHandlerScript, _effIndex) {} }; \</div>
+<div class="line">        class EffectPeriodicHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d3/df3/class_aura_script_1_1_effect_periodic_handler.html">AuraScript::EffectPeriodicHandler</a> { <span class="keyword">public</span>: EffectPeriodicHandlerFunction(AuraEffectPeriodicFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectPeriodicHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectPeriodicFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
+<div class="line">        class EffectUpdatePeriodicHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../da/d20/class_aura_script_1_1_effect_update_periodic_handler.html">AuraScript::EffectUpdatePeriodicHandler</a> { <span class="keyword">public</span>: EffectUpdatePeriodicHandlerFunction(AuraEffectUpdatePeriodicFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectUpdatePeriodicHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectUpdatePeriodicFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
+<div class="line">        class EffectCalcAmountHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../df/d04/class_aura_script_1_1_effect_calc_amount_handler.html">AuraScript::EffectCalcAmountHandler</a> { <span class="keyword">public</span>: EffectCalcAmountHandlerFunction(AuraEffectCalcAmountFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectCalcAmountHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectCalcAmountFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
+<div class="line">        class EffectCalcPeriodicHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d1/d62/class_aura_script_1_1_effect_calc_periodic_handler.html">AuraScript::EffectCalcPeriodicHandler</a> { <span class="keyword">public</span>: EffectCalcPeriodicHandlerFunction(AuraEffectCalcPeriodicFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectCalcPeriodicHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectCalcPeriodicFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
+<div class="line">        class EffectCalcSpellModHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d1/dfc/class_aura_script_1_1_effect_calc_spell_mod_handler.html">AuraScript::EffectCalcSpellModHandler</a> { <span class="keyword">public</span>: EffectCalcSpellModHandlerFunction(AuraEffectCalcSpellModFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectCalcSpellModHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectCalcSpellModFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
+<div class="line">        class EffectApplyHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../da/d2a/class_aura_script_1_1_effect_apply_handler.html">AuraScript::EffectApplyHandler</a> { <span class="keyword">public</span>: EffectApplyHandlerFunction(AuraEffectApplicationModeFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName, <a class="code" href="../../d7/d5a/_spell_aura_defines_8h.html#a82ebee9e3cf7eaf2ab892a6eb7796288">AuraEffectHandleModes</a> _mode) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectApplyHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectApplicationModeFnType)_pEffectHandlerScript, _effIndex, _effName, _mode) {} }; \</div>
+<div class="line">        class EffectAbsorbFunction : <span class="keyword">public</span> <a class="code" href="../../dc/d13/class_aura_script_1_1_effect_absorb_handler.html">AuraScript::EffectAbsorbHandler</a> { <span class="keyword">public</span>: EffectAbsorbFunction(AuraEffectAbsorbFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectAbsorbHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectAbsorbFnType)_pEffectHandlerScript, _effIndex) {} }; \</div>
+<div class="line">        class EffectManaShieldFunction : <span class="keyword">public</span> <a class="code" href="../../d0/d2b/class_aura_script_1_1_effect_mana_shield_handler.html">AuraScript::EffectManaShieldHandler</a> { <span class="keyword">public</span>: EffectManaShieldFunction(AuraEffectAbsorbFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectManaShieldHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectAbsorbFnType)_pEffectHandlerScript, _effIndex) {} }; \</div>
+<div class="line">        class EffectSplitFunction : <span class="keyword">public</span> <a class="code" href="../../d5/db4/class_aura_script_1_1_effect_split_handler.html">AuraScript::EffectSplitHandler</a> { <span class="keyword">public</span>: EffectSplitFunction(AuraEffectSplitFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectSplitHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectSplitFnType)_pEffectHandlerScript, _effIndex) {} }; \</div>
 <div class="line">        class CheckProcHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d2/d25/class_aura_script_1_1_check_proc_handler.html">AuraScript::CheckProcHandler</a> { <span class="keyword">public</span>: CheckProcHandlerFunction(AuraCheckProcFnType handlerScript) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::CheckProcHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraCheckProcFnType)handlerScript) {} }; \</div>
 <div class="line">        class AuraProcHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../dd/d46/class_aura_script_1_1_aura_proc_handler.html">AuraScript::AuraProcHandler</a> { <span class="keyword">public</span>: AuraProcHandlerFunction(AuraProcFnType handlerScript) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraProcHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraProcFnType)handlerScript) {} }; \</div>
-<div class="line">        class EffectProcHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d0/d8f/class_aura_script_1_1_effect_proc_handler.html">AuraScript::EffectProcHandler</a> { <span class="keyword">public</span>: EffectProcHandlerFunction(AuraEffectProcFnType effectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectProcHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectProcFnType)effectHandlerScript, effIndex, effName) {} }; \</div>
+<div class="line">        class EffectProcHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d0/d8f/class_aura_script_1_1_effect_proc_handler.html">AuraScript::EffectProcHandler</a> { <span class="keyword">public</span>: EffectProcHandlerFunction(AuraEffectProcFnType effectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> effName) : <a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::EffectProcHandler((<a class="code" href="../../d4/d72/class_aura_script.html">AuraScript</a>::AuraEffectProcFnType)effectHandlerScript, effIndex, effName) {} }; \</div>
+<div class="ttc" id="a_define_8h_html_a15a8d014fadf85c99a2268d8cbd00767"><div class="ttname"><a href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a></div><div class="ttdeci">std::uint8_t uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00116">Define.h:116</a></div></div>
+<div class="ttc" id="a_define_8h_html_ad9c79638db63f1dfe2b085743b5cbf7b"><div class="ttname"><a href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a></div><div class="ttdeci">std::uint16_t uint16</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00115">Define.h:115</a></div></div>
 <div class="ttc" id="a_spell_aura_defines_8h_html_a82ebee9e3cf7eaf2ab892a6eb7796288"><div class="ttname"><a href="../../d7/d5a/_spell_aura_defines_8h.html#a82ebee9e3cf7eaf2ab892a6eb7796288">AuraEffectHandleModes</a></div><div class="ttdeci">AuraEffectHandleModes</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5a/_spell_aura_defines_8h_source.html#l00039">SpellAuraDefines.h:40</a></div></div>
 <div class="ttc" id="aclass_aura_script_1_1_aura_dispel_handler_html"><div class="ttname"><a href="../../d2/d5e/class_aura_script_1_1_aura_dispel_handler.html">AuraScript::AuraDispelHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00545">SpellScript.h:546</a></div></div>
 <div class="ttc" id="aclass_aura_script_1_1_aura_proc_handler_html"><div class="ttname"><a href="../../dd/d46/class_aura_script_1_1_aura_proc_handler.html">AuraScript::AuraProcHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00641">SpellScript.h:642</a></div></div>
@@ -801,8 +803,6 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="aclass_aura_script_1_1_effect_split_handler_html"><div class="ttname"><a href="../../d5/db4/class_aura_script_1_1_effect_split_handler.html">AuraScript::EffectSplitHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00625">SpellScript.h:626</a></div></div>
 <div class="ttc" id="aclass_aura_script_1_1_effect_update_periodic_handler_html"><div class="ttname"><a href="../../da/d20/class_aura_script_1_1_effect_update_periodic_handler.html">AuraScript::EffectUpdatePeriodicHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00568">SpellScript.h:569</a></div></div>
 <div class="ttc" id="aclass_aura_script_html"><div class="ttname"><a href="../../d4/d72/class_aura_script.html">AuraScript</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00515">SpellScript.h:516</a></div></div>
-<div class="ttc" id="amy__global_8h_html_a05f6b0ae8f6a6e135b0e290c25fe0e4e"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a></div><div class="ttdeci">unsigned short uint16</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00887">my_global.h:887</a></div></div>
-<div class="ttc" id="amy__global_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00881">my_global.h:881</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="../../d1/df6/_spell_script_8h_source.html#l00658">658</a> of file <a class="el" href="../../d1/df6/_spell_script_8h_source.html">SpellScript.h</a>.</p>
 
@@ -823,7 +823,7 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">typedef</span> <a class="code" href="../../db/def/_c99_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>(CLASSNAME::*AuraCheckAreaTargetFnType)(<a class="code" href="../../da/db7/class_unit.html">Unit</a>* target); \</div>
+<b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">typedef</span> bool(CLASSNAME::*AuraCheckAreaTargetFnType)(<a class="code" href="../../da/db7/class_unit.html">Unit</a>* target); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraDispelFnType)(<a class="code" href="../../dc/de3/class_dispel_info.html">DispelInfo</a>* dispelInfo); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraEffectApplicationModeFnType)(<a class="code" href="../../da/df1/class_aura_effect.html">AuraEffect</a> <span class="keyword">const</span>*, <a class="code" href="../../d7/d5a/_spell_aura_defines_8h.html#a82ebee9e3cf7eaf2ab892a6eb7796288">AuraEffectHandleModes</a>); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraEffectPeriodicFnType)(<a class="code" href="../../da/df1/class_aura_effect.html">AuraEffect</a> <span class="keyword">const</span>*); \</div>
@@ -833,10 +833,9 @@ Enumerations</h2></td></tr>
 <div class="line">        typedef void(CLASSNAME::*AuraEffectCalcSpellModFnType)(<a class="code" href="../../da/df1/class_aura_effect.html">AuraEffect</a> <span class="keyword">const</span>*, <a class="code" href="../../d3/d39/struct_spell_modifier.html">SpellModifier</a>* &amp;); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraEffectAbsorbFnType)(<a class="code" href="../../da/df1/class_aura_effect.html">AuraEffect</a>*, <a class="code" href="../../d6/d2a/class_damage_info.html">DamageInfo</a> &amp;, <a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> &amp;); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraEffectSplitFnType)(<a class="code" href="../../da/df1/class_aura_effect.html">AuraEffect</a>*, <a class="code" href="../../d6/d2a/class_damage_info.html">DamageInfo</a> &amp;, <a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> &amp;); \</div>
-<div class="line">        typedef <a class="code" href="../../db/def/_c99_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>(CLASSNAME::*AuraCheckProcFnType)(<a class="code" href="../../df/def/class_proc_event_info.html">ProcEventInfo</a>&amp;); \</div>
+<div class="line">        typedef bool(CLASSNAME::*AuraCheckProcFnType)(<a class="code" href="../../df/def/class_proc_event_info.html">ProcEventInfo</a>&amp;); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraProcFnType)(<a class="code" href="../../df/def/class_proc_event_info.html">ProcEventInfo</a>&amp;); \</div>
 <div class="line">        typedef void(CLASSNAME::*AuraEffectProcFnType)(<a class="code" href="../../da/df1/class_aura_effect.html">AuraEffect</a> <span class="keyword">const</span>*, <a class="code" href="../../df/def/class_proc_event_info.html">ProcEventInfo</a>&amp;); \</div>
-<div class="ttc" id="a_c99_2stdbool_8h_html_abb452686968e48b67397da5f97445f5b"><div class="ttname"><a href="../../db/def/_c99_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a></div><div class="ttdeci">#define bool</div><div class="ttdef"><b>Definition:</b> <a href="../../db/def/_c99_2stdbool_8h_source.html#l00014">stdbool.h:14</a></div></div>
 <div class="ttc" id="a_define_8h_html_a0bf9964a3ce962c07ad3d8b5432bbbcd"><div class="ttname"><a href="../../db/d35/_define_8h.html#a0bf9964a3ce962c07ad3d8b5432bbbcd">int32</a></div><div class="ttdeci">std::int32_t int32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00110">Define.h:110</a></div></div>
 <div class="ttc" id="a_define_8h_html_a22f78cc9780bf32aff91ae17c3101c8d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a></div><div class="ttdeci">std::uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00114">Define.h:114</a></div></div>
 <div class="ttc" id="aclass_aura_effect_html"><div class="ttname"><a href="../../da/df1/class_aura_effect.html">AuraEffect</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d82/_spell_aura_effects_8h_source.html#l00031">SpellAuraEffects.h:32</a></div></div>
@@ -860,8 +859,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define BeforeSpellHitFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;BeforeHitHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;BeforeHitHandlerFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -997,7 +996,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPELL_AURA_ANY&#160;&#160;&#160;(<a class="el" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>)-1</td>
+          <td class="memname">#define SPELL_AURA_ANY&#160;&#160;&#160;(<a class="el" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a>)-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1013,7 +1012,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SPELL_EFFECT_ANY&#160;&#160;&#160;(<a class="el" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a>)-1</td>
+          <td class="memname">#define SPELL_EFFECT_ANY&#160;&#160;&#160;(<a class="el" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a>)-1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1048,8 +1047,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellCastFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;CastHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;CastHandlerFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1068,8 +1067,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellCheckCastFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;CheckCastHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;CheckCastHandlerFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1088,13 +1087,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellDestinationTargetSelectFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1105,7 +1104,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;DestinationTargetSelectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;DestinationTargetSelectHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1124,13 +1123,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellEffectFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1141,7 +1140,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;EffectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;EffectHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1160,8 +1159,8 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellHitFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a></td><td>)</td>
-          <td>&#160;&#160;&#160;HitHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>)</td>
+          <td class="paramname">F</td><td>)</td>
+          <td>&#160;&#160;&#160;HitHandlerFunction(&amp;F)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1180,13 +1179,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellObjectAreaTargetSelectFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1197,7 +1196,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;ObjectAreaTargetSelectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;ObjectAreaTargetSelectHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1216,13 +1215,13 @@ Enumerations</h2></td></tr>
           <td class="memname">#define SpellObjectTargetSelectFn</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, </td>
+          <td class="paramname">F, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1233,7 +1232,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;ObjectTargetSelectHandlerFunction(&amp;<a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#a96d73bbd7af15cb1fc38c3f4a3bd82e9">F</a>, <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, N)</td>
+          <td></td><td>&#160;&#160;&#160;ObjectTargetSelectHandlerFunction(&amp;F, I, N)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1259,12 +1258,12 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">        <span class="keyword">class </span>CastHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../da/de0/class_spell_script_1_1_cast_handler.html">SpellScript::CastHandler</a> { <span class="keyword">public</span>: CastHandlerFunction(SpellCastFnType _pCastHandlerScript) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::CastHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellCastFnType)_pCastHandlerScript) {} }; \</div>
 <div class="line">        class CheckCastHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../df/d45/class_spell_script_1_1_check_cast_handler.html">SpellScript::CheckCastHandler</a> { <span class="keyword">public</span>: CheckCastHandlerFunction(SpellCheckCastFnType _checkCastHandlerScript) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::CheckCastHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellCheckCastFnType)_checkCastHandlerScript) {} }; \</div>
-<div class="line">        class EffectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d0/dbd/class_spell_script_1_1_effect_handler.html">SpellScript::EffectHandler</a> { <span class="keyword">public</span>: EffectHandlerFunction(SpellEffectFnType _pEffectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _effName) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::EffectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellEffectFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
+<div class="line">        class EffectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d0/dbd/class_spell_script_1_1_effect_handler.html">SpellScript::EffectHandler</a> { <span class="keyword">public</span>: EffectHandlerFunction(SpellEffectFnType _pEffectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _effName) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::EffectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellEffectFnType)_pEffectHandlerScript, _effIndex, _effName) {} }; \</div>
 <div class="line">        class BeforeHitHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../de/d06/class_spell_script_1_1_before_hit_handler.html">SpellScript::BeforeHitHandler</a> { <span class="keyword">public</span>: <span class="keyword">explicit</span> BeforeHitHandlerFunction(SpellBeforeHitFnType pBeforeHitHandlerScript) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::BeforeHitHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellBeforeHitFnType)pBeforeHitHandlerScript) {} }; \</div>
 <div class="line">        class HitHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d3/d12/class_spell_script_1_1_hit_handler.html">SpellScript::HitHandler</a> { <span class="keyword">public</span>: HitHandlerFunction(SpellHitFnType _pHitHandlerScript) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::HitHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellHitFnType)_pHitHandlerScript) {} }; \</div>
-<div class="line">        class ObjectAreaTargetSelectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d6/da3/class_spell_script_1_1_object_area_target_select_handler.html">SpellScript::ObjectAreaTargetSelectHandler</a> { <span class="keyword">public</span>: ObjectAreaTargetSelectHandlerFunction(SpellObjectAreaTargetSelectFnType _pObjectAreaTargetSelectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _targetType) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::ObjectAreaTargetSelectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellObjectAreaTargetSelectFnType)_pObjectAreaTargetSelectHandlerScript, _effIndex, _targetType) {} }; \</div>
-<div class="line">        class ObjectTargetSelectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d5/d69/class_spell_script_1_1_object_target_select_handler.html">SpellScript::ObjectTargetSelectHandler</a> { <span class="keyword">public</span>: ObjectTargetSelectHandlerFunction(SpellObjectTargetSelectFnType _pObjectTargetSelectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _targetType) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::ObjectTargetSelectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellObjectTargetSelectFnType)_pObjectTargetSelectHandlerScript, _effIndex, _targetType) { } }; \</div>
-<div class="line">        class DestinationTargetSelectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d4/d9f/class_spell_script_1_1_destination_target_select_handler.html">SpellScript::DestinationTargetSelectHandler</a> { <span class="keyword">public</span>: DestinationTargetSelectHandlerFunction(SpellDestinationTargetSelectFnType _DestinationTargetSelectHandlerScript, <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> _effIndex, <a class="code" href="../../d9/df6/my__global_8h.html#a05f6b0ae8f6a6e135b0e290c25fe0e4e">uint16</a> _targetType) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::DestinationTargetSelectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellDestinationTargetSelectFnType)_DestinationTargetSelectHandlerScript, _effIndex, _targetType) { } };</div>
+<div class="line">        class ObjectAreaTargetSelectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d6/da3/class_spell_script_1_1_object_area_target_select_handler.html">SpellScript::ObjectAreaTargetSelectHandler</a> { <span class="keyword">public</span>: ObjectAreaTargetSelectHandlerFunction(SpellObjectAreaTargetSelectFnType _pObjectAreaTargetSelectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _targetType) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::ObjectAreaTargetSelectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellObjectAreaTargetSelectFnType)_pObjectAreaTargetSelectHandlerScript, _effIndex, _targetType) {} }; \</div>
+<div class="line">        class ObjectTargetSelectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d5/d69/class_spell_script_1_1_object_target_select_handler.html">SpellScript::ObjectTargetSelectHandler</a> { <span class="keyword">public</span>: ObjectTargetSelectHandlerFunction(SpellObjectTargetSelectFnType _pObjectTargetSelectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _targetType) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::ObjectTargetSelectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellObjectTargetSelectFnType)_pObjectTargetSelectHandlerScript, _effIndex, _targetType) { } }; \</div>
+<div class="line">        class DestinationTargetSelectHandlerFunction : <span class="keyword">public</span> <a class="code" href="../../d4/d9f/class_spell_script_1_1_destination_target_select_handler.html">SpellScript::DestinationTargetSelectHandler</a> { <span class="keyword">public</span>: DestinationTargetSelectHandlerFunction(SpellDestinationTargetSelectFnType _DestinationTargetSelectHandlerScript, <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> _effIndex, <a class="code" href="../../db/d35/_define_8h.html#ad9c79638db63f1dfe2b085743b5cbf7b">uint16</a> _targetType) : <a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::DestinationTargetSelectHandler((<a class="code" href="../../dc/d62/class_spell_script.html">SpellScript</a>::SpellDestinationTargetSelectFnType)_DestinationTargetSelectHandlerScript, _effIndex, _targetType) { } };</div>
 <div class="ttc" id="aclass_spell_script_1_1_before_hit_handler_html"><div class="ttname"><a href="../../de/d06/class_spell_script_1_1_before_hit_handler.html">SpellScript::BeforeHitHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00227">SpellScript.h:228</a></div></div>
 <div class="ttc" id="aclass_spell_script_1_1_cast_handler_html"><div class="ttname"><a href="../../da/de0/class_spell_script_1_1_cast_handler.html">SpellScript::CastHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00198">SpellScript.h:199</a></div></div>
 <div class="ttc" id="aclass_spell_script_1_1_check_cast_handler_html"><div class="ttname"><a href="../../df/d45/class_spell_script_1_1_check_cast_handler.html">SpellScript::CheckCastHandler</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/df6/_spell_script_8h_source.html#l00207">SpellScript.h:208</a></div></div>

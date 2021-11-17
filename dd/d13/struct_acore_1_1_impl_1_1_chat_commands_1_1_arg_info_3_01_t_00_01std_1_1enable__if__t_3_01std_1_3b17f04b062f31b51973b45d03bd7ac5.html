@@ -77,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3868b3d4e55cdcd1c1591d8bd09bae5d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d13/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info_3_01_t_00_01std_1_1enable__if__t_3_01std_1_3b17f04b062f31b51973b45d03bd7ac5.html#a3868b3d4e55cdcd1c1591d8bd09bae5d">TryConsume</a> (T &amp;val, <a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *handler, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> args)</td></tr>
+<tr class="memitem:a3868b3d4e55cdcd1c1591d8bd09bae5d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d13/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info_3_01_t_00_01std_1_1enable__if__t_3_01std_1_3b17f04b062f31b51973b45d03bd7ac5.html#a3868b3d4e55cdcd1c1591d8bd09bae5d">TryConsume</a> (T &amp;val, <a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *handler, std::string_view args)</td></tr>
 <tr class="separator:a3868b3d4e55cdcd1c1591d8bd09bae5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -99,7 +99,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a> <a class="el" href="../../df/d15/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info.html">Acore::Impl::ChatCommands::ArgInfo</a>&lt; T, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_integral_v&lt; T &gt;||std::is_floating_point_v&lt; T &gt; &gt; &gt;::TryConsume </td>
+          <td class="memname">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a> <a class="el" href="../../df/d15/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info.html">Acore::Impl::ChatCommands::ArgInfo</a>&lt; T, std::enable_if_t&lt; std::is_integral_v&lt; T &gt;||std::is_floating_point_v&lt; T &gt; &gt; &gt;::TryConsume </td>
           <td>(</td>
           <td class="paramtype">T &amp;&#160;</td>
           <td class="paramname"><em>val</em>, </td>
@@ -107,13 +107,13 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -142,7 +142,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">if</span> constexpr (std::is_floating_point_v&lt;T&gt;)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="../../dd/d90/chrono_8h.html#ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88">std::isfinite</a>(val))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">if</span> (!std::isfinite(val))</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#a496bce28eb0bf0ac4b5e1c54c19193b7">FormatAcoreString</a>(handler, <a class="code" href="../../dc/d4b/_language_8h.html#af9ee42b1cf006ecb2d2e74fe71c0761aa4e3203200e0c0fa812c218470c93ea96">LANG_CMDPARSER_STRING_VALUE_INVALID</a>, <a class="code" href="../../db/d35/_define_8h.html#a426f0c72f52eca709249d5962bf31b6d">STRING_VIEW_FMT_ARG</a>(token), GetTypeName&lt;T&gt;().c_str());</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
@@ -151,11 +151,10 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="a_define_8h_html_a426f0c72f52eca709249d5962bf31b6d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a426f0c72f52eca709249d5962bf31b6d">STRING_VIEW_FMT_ARG</a></div><div class="ttdeci">#define STRING_VIEW_FMT_ARG(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00107">Define.h:107</a></div></div>
 <div class="ttc" id="a_language_8h_html_af9ee42b1cf006ecb2d2e74fe71c0761aa4e3203200e0c0fa812c218470c93ea96"><div class="ttname"><a href="../../dc/d4b/_language_8h.html#af9ee42b1cf006ecb2d2e74fe71c0761aa4e3203200e0c0fa812c218470c93ea96">LANG_CMDPARSER_STRING_VALUE_INVALID</a></div><div class="ttdeci">@ LANG_CMDPARSER_STRING_VALUE_INVALID</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4b/_language_8h_source.html#l01103">Language.h:1103</a></div></div>
 <div class="ttc" id="a_optional_8h_html_aaf8f4d77efd311ec7818ab421294ef82"><div class="ttname"><a href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a></div><div class="ttdeci">std::optional&lt; T &gt; Optional</div><div class="ttdoc">Optional helper class to wrap optional values within.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dcf/_optional_8h_source.html#l00024">Optional.h:24</a></div></div>
-<div class="ttc" id="achrono_8h_html_ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88"><div class="ttname"><a href="../../dd/d90/chrono_8h.html#ab3aa5f1b3f6fdfc96c0bd4b5f14bcb88">isfinite</a></div><div class="ttdeci">bool isfinite(T)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d90/chrono_8h_source.html#l00796">chrono.h:796</a></div></div>
 <div class="ttc" id="anamespace_acore_1_1_impl_1_1_chat_commands_html_a496bce28eb0bf0ac4b5e1c54c19193b7"><div class="ttname"><a href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#a496bce28eb0bf0ac4b5e1c54c19193b7">Acore::Impl::ChatCommands::FormatAcoreString</a></div><div class="ttdeci">std::string FormatAcoreString(ChatHandler const *handler, AcoreStrings which, Ts &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00126">ChatCommandHelpers.h:126</a></div></div>
 <div class="ttc" id="anamespace_acore_1_1_impl_1_1_chat_commands_html_aeca95018e8d551d917cf69e0764ccef7"><div class="ttname"><a href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#aeca95018e8d551d917cf69e0764ccef7">Acore::Impl::ChatCommands::tokenize</a></div><div class="ttdeci">TokenizeResult tokenize(std::string_view args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00055">ChatCommandHelpers.h:55</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00126">Acore::Impl::ChatCommands::FormatAcoreString()</a>, <a class="el" href="../../dd/d90/chrono_8h_source.html#l00796">isfinite()</a>, <a class="el" href="../../dc/d4b/_language_8h_source.html#l01103">LANG_CMDPARSER_STRING_VALUE_INVALID</a>, <a class="el" href="../../db/d35/_define_8h_source.html#l00107">STRING_VIEW_FMT_ARG</a>, and <a class="el" href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00055">Acore::Impl::ChatCommands::tokenize()</a>.</p>
+<p class="reference">References <a class="el" href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00126">Acore::Impl::ChatCommands::FormatAcoreString()</a>, <a class="el" href="../../dc/d4b/_language_8h_source.html#l01103">LANG_CMDPARSER_STRING_VALUE_INVALID</a>, <a class="el" href="../../db/d35/_define_8h_source.html#l00107">STRING_VIEW_FMT_ARG</a>, and <a class="el" href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00055">Acore::Impl::ChatCommands::tokenize()</a>.</p>
 
 </div>
 </div>

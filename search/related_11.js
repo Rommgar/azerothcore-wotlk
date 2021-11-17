@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['createtransport_157830',['CreateTransport',['../d2/d3b/class_motion_transport.html#af3d9a380ab1292e7bba61e4503938454',1,'MotionTransport']]],
-  ['table_3c_20key_2c_20value_2c_20hashfunc_2c_20equalsfunc_20_3e_157831',['Table&lt; Key, Value, HashFunc, EqualsFunc &gt;',['../d6/d1d/class_g3_d_1_1_table_1_1_iterator.html#a511627ae275a33b8d9dcffe9b5a4eb71',1,'G3D::Table::Iterator']]],
-  ['taskcontext_157832',['TaskContext',['../d7/dc4/class_task_scheduler.html#ab75a9caf07880e5ba2bb9f75068bbe7e',1,'TaskScheduler::TaskContext()'],['../d7/d58/class_task_scheduler_1_1_task.html#ab75a9caf07880e5ba2bb9f75068bbe7e',1,'TaskScheduler::Task::TaskContext()']]],
-  ['taskscheduler_157833',['TaskScheduler',['../d7/d58/class_task_scheduler_1_1_task.html#a9f0573c5408a663c3874787eeb7d599e',1,'TaskScheduler::Task::TaskScheduler()'],['../d2/dd9/class_task_context.html#a9f0573c5408a663c3874787eeb7d599e',1,'TaskContext::TaskScheduler()']]],
-  ['textinput_157834',['TextInput',['../d5/d8f/class_g3_d_1_1_token.html#a36c75cb71735992afa43569de76182e4',1,'G3D::Token']]],
-  ['thistype_157835',['ThisType',['../d8/d53/class_g3_d_1_1_point_hash_grid_1_1_cell_iterator.html#a946ebe6641265361eb4a25a7e95727d2',1,'G3D::PointHashGrid::CellIterator::ThisType()'],['../db/dd4/class_g3_d_1_1_point_hash_grid_1_1_sphere_iterator.html#a946ebe6641265361eb4a25a7e95727d2',1,'G3D::PointHashGrid::SphereIterator::ThisType()'],['../d3/d62/class_g3_d_1_1_point_hash_grid_1_1_box_iterator.html#a946ebe6641265361eb4a25a7e95727d2',1,'G3D::PointHashGrid::BoxIterator::ThisType()'],['../de/d79/class_g3_d_1_1_point_hash_grid_1_1_iterator.html#a946ebe6641265361eb4a25a7e95727d2',1,'G3D::PointHashGrid::Iterator::ThisType()']]],
-  ['threatmgr_157836',['ThreatMgr',['../de/d50/class_threat_container.html#a15a22acdc48991a2933e85328b30934b',1,'ThreatContainer']]],
-  ['transactioncallback_157837',['TransactionCallback',['../d0/dac/class_transaction_task.html#ac3345f3314b133d53268f53e222cdc74',1,'TransactionTask']]],
-  ['transactiontask_157838',['TransactionTask',['../dd/db9/class_transaction_base.html#a377add6d6b5e34e774d2497d58f4a180',1,'TransactionBase']]],
-  ['treetype_157839',['TreeType',['../d6/d9f/class_g3_d_1_1_k_d_tree_1_1_box_intersection_iterator.html#ab2881f69e165bc6660ba49f70b933b04',1,'G3D::KDTree::BoxIntersectionIterator::TreeType()'],['../dc/def/class_g3_d_1_1_k_d_tree_1_1_iterator.html#ab2881f69e165bc6660ba49f70b933b04',1,'G3D::KDTree::Iterator::TreeType()'],['../d3/d04/class_g3_d_1_1_point_k_d_tree_1_1_box_intersection_iterator.html#ab2881f69e165bc6660ba49f70b933b04',1,'G3D::PointKDTree::BoxIntersectionIterator::TreeType()'],['../df/d78/class_g3_d_1_1_point_k_d_tree_1_1_iterator.html#ab2881f69e165bc6660ba49f70b933b04',1,'G3D::PointKDTree::Iterator::TreeType()']]]
+  ['_5fapplyaura_126581',['_ApplyAura',['../d8/da3/class_aura_application.html#a0ee9d6fcaabda925fdbf12feed2d6fbe',1,'AuraApplication']]],
+  ['_5fapplyauraeffect_126582',['_ApplyAuraEffect',['../d8/da3/class_aura_application.html#a7bccd89e3e56acad8ccb5ff6fe004bc8',1,'AuraApplication']]],
+  ['_5fcreateauraapplication_126583',['_CreateAuraApplication',['../d8/da3/class_aura_application.html#a6c707075cc08f648ecdfdd516130c871',1,'AuraApplication']]],
+  ['_5ftrystackingorrefreshingexistingaura_126584',['_TryStackingOrRefreshingExistingAura',['../da/df1/class_aura_effect.html#a06e65369f89484f7de1d3ad814fb4103',1,'AuraEffect::_TryStackingOrRefreshingExistingAura()'],['../d2/dde/class_aura.html#a06e65369f89484f7de1d3ad814fb4103',1,'Aura::_TryStackingOrRefreshingExistingAura()']]],
+  ['_5funapplyaura_126585',['_UnapplyAura',['../d8/da3/class_aura_application.html#a4eef528c953f9f6c5e08e0a3cbd6c0c5',1,'AuraApplication']]],
+  ['createvehiclekit_126586',['CreateVehicleKit',['../dd/df6/class_vehicle.html#a9086db467f2f71f20bc02ed2330a8c37',1,'Vehicle']]],
+  ['removeaura_126587',['RemoveAura',['../d8/da3/class_aura_application.html#a521cdbdf816702f2a928d8b1d775d209',1,'AuraApplication']]],
+  ['removevehiclekit_126588',['RemoveVehicleKit',['../dd/df6/class_vehicle.html#a64f84e614dc48de43b62bb1f77fe2bb3',1,'Vehicle']]],
+  ['setcurrentcastedspell_126589',['SetCurrentCastedSpell',['../d8/d0d/class_spell.html#a61c5e93627b85645d6a3b0a5af13d58a',1,'Spell']]]
 ];

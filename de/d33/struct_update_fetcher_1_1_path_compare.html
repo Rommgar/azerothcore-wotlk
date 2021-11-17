@@ -75,7 +75,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7e4711e6ff92c3aca3a86fd911981786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/struct_update_fetcher_1_1_path_compare.html#a7e4711e6ff92c3aca3a86fd911981786">operator()</a> (<a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../d9/dbf/_recast_mesh_8cpp.html#a0ba03d6a44337bfbcef8f0c9dad4289f">left</a>, <a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;right) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a7e4711e6ff92c3aca3a86fd911981786"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/struct_update_fetcher_1_1_path_compare.html#a7e4711e6ff92c3aca3a86fd911981786">operator()</a> (<a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> const &amp;left, <a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> const &amp;right) const</td></tr>
 <tr class="separator:a7e4711e6ff92c3aca3a86fd911981786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -89,15 +89,15 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> UpdateFetcher::PathCompare::operator() </td>
+          <td class="memname">bool UpdateFetcher::PathCompare::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> const &amp;&#160;</td>
           <td class="paramname"><em>left</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d9c/class_update_fetcher.html#adb2996b906800fb0cdb5cf7ae14353d0">LocaleFileEntry</a> const &amp;&#160;</td>
           <td class="paramname"><em>right</em>&#160;</td>
         </tr>
         <tr>
@@ -110,13 +110,9 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/d40/_update_fetcher_8cpp_source.html#l00497">497</a> of file <a class="el" href="../../d1/d40/_update_fetcher_8cpp_source.html">UpdateFetcher.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;{</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a>.first.filename().string() &lt; <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a>.first.filename().string();</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;    <span class="keywordflow">return</span> left.first.filename().string() &lt; right.first.filename().string();</div>
 <div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;}</div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd"><div class="ttname"><a href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">align::left</a></div><div class="ttdeci">@ left</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">core.h:1859</a></div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79"><div class="ttname"><a href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">align::right</a></div><div class="ttdeci">@ right</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">core.h:1859</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::left</a>, and <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::right</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>

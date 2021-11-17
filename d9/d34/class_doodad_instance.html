@@ -163,31 +163,36 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">384</a> of file <a class="el" href="../../d6/dad/_utils_8cpp_source.html">Utils.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;{</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <a class="code" href="../../d9/d34/class_doodad_instance.html">DoodadInstance</a> <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> = 0;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <a class="code" href="../../d9/d34/class_doodad_instance.html">DoodadInstance</a> ret;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.FileOffset, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.Position = <a class="code" href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a>(stream);</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.QuatW, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.QuatX, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.QuatY, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.QuatZ, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.Scale, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.LightColor, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#a2b295b1c5fcd12c56f8e28274485afc2">FileOffset</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#a2dd6e74f2bd48fde064136930d92610b">Position</a> = <a class="code" href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a>(stream);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#ad0fa2adc5a8f8fa4a3def47d8d4243b0">QuatW</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#ad647c45b6e0038b9c58c495c986a96fa">QuatX</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#a01b1755d5103955d43f6abb4a8013917">QuatY</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#a96920bfd350491469feaab4f88e94187">QuatZ</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#afad113a95fa088b70d0dd4f405732516">Scale</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), 1, stream);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d9/d34/class_doodad_instance.html#af060333c315c8918ec70547105bae911">LightColor</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
 <div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160; </div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> != 7)</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        <a class="code" href="../../d3/d6b/printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a>(<span class="stringliteral">&quot;DoodadInstance::Read: Failed to read some data expected 7, read %d\n&quot;</span>, <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a>);</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span> (count != 7)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        printf(<span class="stringliteral">&quot;DoodadInstance::Read: Failed to read some data expected 7, read %d\n&quot;</span>, count);</div>
 <div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;}</div>
 <div class="ttc" id="a_define_8h_html_a22f78cc9780bf32aff91ae17c3101c8d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a></div><div class="ttdeci">std::uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00114">Define.h:114</a></div></div>
 <div class="ttc" id="aclass_doodad_instance_html"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html">DoodadInstance</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00211">Utils.h:212</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01039">core.h:1039</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aa3739712ffc6e717626ef803d2782ad5"><div class="ttname"><a href="../../d3/d6b/printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a></div><div class="ttdeci">auto printf(const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6b/printf_8h_source.html#l00626">printf.h:626</a></div></div>
-<div class="ttc" id="aprof_8c_html_a339672ff94e6199019102f50d317c3d7"><div class="ttname"><a href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/prof_8c_source.html#l00281">prof.c:281</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_a01b1755d5103955d43f6abb4a8013917"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#a01b1755d5103955d43f6abb4a8013917">DoodadInstance::QuatY</a></div><div class="ttdeci">float QuatY</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00220">Utils.h:220</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_a2b295b1c5fcd12c56f8e28274485afc2"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#a2b295b1c5fcd12c56f8e28274485afc2">DoodadInstance::FileOffset</a></div><div class="ttdeci">uint32 FileOffset</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00215">Utils.h:215</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_a2dd6e74f2bd48fde064136930d92610b"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#a2dd6e74f2bd48fde064136930d92610b">DoodadInstance::Position</a></div><div class="ttdeci">Vector3 Position</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00217">Utils.h:217</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_a96920bfd350491469feaab4f88e94187"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#a96920bfd350491469feaab4f88e94187">DoodadInstance::QuatZ</a></div><div class="ttdeci">float QuatZ</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00221">Utils.h:221</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_ad0fa2adc5a8f8fa4a3def47d8d4243b0"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#ad0fa2adc5a8f8fa4a3def47d8d4243b0">DoodadInstance::QuatW</a></div><div class="ttdeci">float QuatW</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00218">Utils.h:218</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_ad647c45b6e0038b9c58c495c986a96fa"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#ad647c45b6e0038b9c58c495c986a96fa">DoodadInstance::QuatX</a></div><div class="ttdeci">float QuatX</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00219">Utils.h:219</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_af060333c315c8918ec70547105bae911"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#af060333c315c8918ec70547105bae911">DoodadInstance::LightColor</a></div><div class="ttdeci">uint32 LightColor</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00223">Utils.h:223</a></div></div>
+<div class="ttc" id="aclass_doodad_instance_html_afad113a95fa088b70d0dd4f405732516"><div class="ttname"><a href="../../d9/d34/class_doodad_instance.html#afad113a95fa088b70d0dd4f405732516">DoodadInstance::Scale</a></div><div class="ttdeci">float Scale</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00222">Utils.h:222</a></div></div>
 <div class="ttc" id="astruct_vector3_html_a174f40d0c961939e030d7d61cdcac331"><div class="ttname"><a href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a></div><div class="ttdeci">static Vector3 Read(FILE *file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dad/_utils_8cpp_source.html#l00156">Utils.cpp:156</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01039">count()</a>, <a class="el" href="../../d3/d6b/printf_8h_source.html#l00626">printf()</a>, <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00156">Vector3::Read()</a>, and <a class="el" href="../../df/d31/prof_8c_source.html#l00281">ret</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00215">FileOffset</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00223">LightColor</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00217">Position</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00218">QuatW</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00219">QuatX</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00220">QuatY</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00221">QuatZ</a>, <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00156">Vector3::Read()</a>, and <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00222">Scale</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00064">WorldModelRoot::ReadDoodadInstances()</a>.</p>
 
@@ -226,7 +231,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00215">215</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00064">WorldModelRoot::ReadDoodadInstances()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00064">WorldModelRoot::ReadDoodadInstances()</a>.</p>
 
 </div>
 </div>
@@ -244,6 +249,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00223">223</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>.</p>
+
 </div>
 </div>
 <a id="a2dd6e74f2bd48fde064136930d92610b"></a>
@@ -260,7 +267,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00217">217</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
 
 </div>
 </div>
@@ -278,7 +285,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00218">218</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
 
 </div>
 </div>
@@ -296,7 +303,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00219">219</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
 
 </div>
 </div>
@@ -314,7 +321,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00220">220</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
 
 </div>
 </div>
@@ -332,7 +339,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00221">221</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
 
 </div>
 </div>
@@ -350,7 +357,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00222">222</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00384">Read()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00125">Utils::TransformWmoDoodad()</a>.</p>
 
 </div>
 </div>

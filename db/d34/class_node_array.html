@@ -117,11 +117,10 @@ template&lt;class Node &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html#l00015">15</a> of file <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html">RegularGrid.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{ <a class="code" href="../../d6/dda/m__string_8h.html#af1756e67d46227b3333bc21a1fadd361">memset</a>(&amp;<a class="code" href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">_nodes</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">_nodes</a>)); }</div>
+<div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{ memset(&amp;<a class="code" href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">_nodes</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">_nodes</a>)); }</div>
 <div class="ttc" id="aclass_node_array_html_a581a71d15d245efc585297c218313134"><div class="ttname"><a href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">NodeArray::_nodes</a></div><div class="ttdeci">Node * _nodes[9]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d0c/_regular_grid_8h_source.html#l00029">RegularGrid.h:29</a></div></div>
-<div class="ttc" id="am__string_8h_html_af1756e67d46227b3333bc21a1fadd361"><div class="ttname"><a href="../../d6/dda/m__string_8h.html#af1756e67d46227b3333bc21a1fadd361">memset</a></div><div class="ttdeci">#define memset(A, C, B)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dda/m__string_8h_source.html#l00051">m_string.h:51</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html#l00029">NodeArray&lt; Node &gt;::_nodes</a>, and <a class="el" href="../../d6/dda/m__string_8h_source.html#l00051">memset</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html#l00029">NodeArray&lt; Node &gt;::_nodes</a>.</p>
 
 </div>
 </div>
@@ -154,7 +153,7 @@ template&lt;class Node &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html#l00016">16</a> of file <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html">RegularGrid.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> i = 0; i &lt; 9; ++i)</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> i = 0; i &lt; 9; ++i)</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">_nodes</a>[i] == 0)</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <a class="code" href="../../db/d34/class_node_array.html#a581a71d15d245efc585297c218313134">_nodes</a>[i] = n;</div>
@@ -165,7 +164,7 @@ template&lt;class Node &gt; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
-<div class="ttc" id="amy__global_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00881">my_global.h:881</a></div></div>
+<div class="ttc" id="a_define_8h_html_a15a8d014fadf85c99a2268d8cbd00767"><div class="ttname"><a href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a></div><div class="ttdeci">std::uint8_t uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00116">Define.h:116</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/d0c/_regular_grid_8h_source.html#l00029">NodeArray&lt; Node &gt;::_nodes</a>.</p>
 

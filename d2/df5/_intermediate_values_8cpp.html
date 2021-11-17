@@ -83,7 +83,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a4ebf72895c1d62f0bc7d45804db4bc91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df5/_intermediate_values_8cpp.html#a4ebf72895c1d62f0bc7d45804db4bc91">DEBUG_WRITE</a>(fileExtension,  <a class="el" href="../../df/dea/structdata.html">data</a>)</td></tr>
+<tr class="memitem:a4ebf72895c1d62f0bc7d45804db4bc91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df5/_intermediate_values_8cpp.html#a4ebf72895c1d62f0bc7d45804db4bc91">DEBUG_WRITE</a>(fileExtension,  data)</td></tr>
 <tr class="separator:a4ebf72895c1d62f0bc7d45804db4bc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -103,7 +103,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../df/dea/structdata.html">data</a>&#160;</td>
+          <td class="paramname">data&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -114,21 +114,19 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> { \</div>
 <div class="line">    sprintf(fileName, (name + fileExtension).c_str(), mapID, tileY, tileX); \</div>
-<div class="line">    FILE* <a class="code" href="../../d4/d71/namespacempq.html#a4d9e28a606ab362cda8f825daad0fb49">file</a> = fopen(fileName, <span class="stringliteral">&quot;wb&quot;</span>); \</div>
-<div class="line">    if (!<a class="code" href="../../d4/d71/namespacempq.html#a4d9e28a606ab362cda8f825daad0fb49">file</a>) \</div>
+<div class="line">    FILE* file = fopen(fileName, <span class="stringliteral">&quot;wb&quot;</span>); \</div>
+<div class="line">    if (!file) \</div>
 <div class="line">        { \</div>
-<div class="line">        char <a class="code" href="../../d6/de0/deps_2readline_2_c_make_lists_8txt.html#a70cef5e28ddf897c7cd25e4525d0fdcb">message</a>[1024]; \</div>
-<div class="line">        sprintf(<a class="code" href="../../d6/de0/deps_2readline_2_c_make_lists_8txt.html#a70cef5e28ddf897c7cd25e4525d0fdcb">message</a>, <span class="stringliteral">&quot;%sFailed to open %s for writing!\n&quot;</span>,  tileString, fileName); \</div>
-<div class="line">        perror(<a class="code" href="../../d6/de0/deps_2readline_2_c_make_lists_8txt.html#a70cef5e28ddf897c7cd25e4525d0fdcb">message</a>); \</div>
+<div class="line">        char <a class="code" href="../../d2/d5a/server_2scripts_2_c_make_lists_8txt.html#ad3b8870c698387ea278298099d19efe1">message</a>[1024]; \</div>
+<div class="line">        sprintf(<a class="code" href="../../d2/d5a/server_2scripts_2_c_make_lists_8txt.html#ad3b8870c698387ea278298099d19efe1">message</a>, <span class="stringliteral">&quot;%sFailed to open %s for writing!\n&quot;</span>,  tileString, fileName); \</div>
+<div class="line">        perror(<a class="code" href="../../d2/d5a/server_2scripts_2_c_make_lists_8txt.html#ad3b8870c698387ea278298099d19efe1">message</a>); \</div>
 <div class="line">        } \</div>
 <div class="line">            else \</div>
-<div class="line">            debugWrite(<a class="code" href="../../d4/d71/namespacempq.html#a4d9e28a606ab362cda8f825daad0fb49">file</a>, <a class="code" href="../../df/dea/structdata.html">data</a>); \</div>
-<div class="line">            if (<a class="code" href="../../d4/d71/namespacempq.html#a4d9e28a606ab362cda8f825daad0fb49">file</a>) fclose(<a class="code" href="../../d4/d71/namespacempq.html#a4d9e28a606ab362cda8f825daad0fb49">file</a>); \</div>
+<div class="line">            debugWrite(file, data); \</div>
+<div class="line">            if (file) fclose(file); \</div>
 <div class="line">            printf(<span class="stringliteral">&quot;%sWriting debug output...                       \r&quot;</span>, tileString); \</div>
 <div class="line">    } <span class="keywordflow">while</span> (<span class="keyword">false</span>)</div>
-<div class="ttc" id="adeps_2readline_2_c_make_lists_8txt_html_a70cef5e28ddf897c7cd25e4525d0fdcb"><div class="ttname"><a href="../../d6/de0/deps_2readline_2_c_make_lists_8txt.html#a70cef5e28ddf897c7cd25e4525d0fdcb">message</a></div><div class="ttdeci">message(STATUS &quot;Include dir is: ${READLINE_INCLUDE_DIR}&quot;) if(NOT READLINE_INCLUDE_DIR OR NOT READLINE_LIBRARY) message(FATAL_ERROR &quot;** Readline library not found!\n** Your distro may provide a binary for Readline e.g. for ubuntuapt-get install libreadline5-dev&quot;) endif() add_library(readline SHARED IMPORTED GLOBAL) set_target_properties(readline PROPERTIES IMPORTED_LOCATION &quot;$</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/de0/deps_2readline_2_c_make_lists_8txt_source.html#l00022">CMakeLists.txt:22</a></div></div>
-<div class="ttc" id="anamespacempq_html_a4d9e28a606ab362cda8f825daad0fb49"><div class="ttname"><a href="../../d4/d71/namespacempq.html#a4d9e28a606ab362cda8f825daad0fb49">mpq.file</a></div><div class="ttdeci">file</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3e/mpq_8py_source.html#l00283">mpq.py:283</a></div></div>
-<div class="ttc" id="astructdata_html"><div class="ttname"><a href="../../df/dea/structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddf/fmt_2include_2fmt_2format_8h_source.html#l00897">format.h:897</a></div></div>
+<div class="ttc" id="aserver_2scripts_2_c_make_lists_8txt_html_ad3b8870c698387ea278298099d19efe1"><div class="ttname"><a href="../../d2/d5a/server_2scripts_2_c_make_lists_8txt.html#ad3b8870c698387ea278298099d19efe1">message</a></div><div class="ttdeci">message(&quot;&quot;) GetScriptModuleList(SCRIPT_MODULE_LIST) GetModuleSourceList(MODULES_MODULE_LIST) GetInstallOffset(INSTALL_OFFSET) if(SCRIPTS MATCHES &quot;dynamic&quot;) set(SCRIPTS_DEFAULT_LINKAGE &quot;dynamic&quot;) elseif(SCRIPTS MATCHES &quot;static&quot;) set(SCRIPTS_DEFAULT_LINKAGE &quot;static&quot;) else() set(SCRIPTS_DEFAULT_LINKAGE &quot;disabled&quot;) endif() if(MODULES MATCHES &quot;dynamic&quot;) set(MODULES_DEFAULT_LINKAGE &quot;dynamic&quot;) elseif(MODULES MATCHES &quot;static&quot;) set(MODULES_DEFAULT_LINKAGE &quot;static&quot;) else() set(MODULES_DEFAULT_LINKAGE &quot;disabled&quot;) endif() if(SCRIPTS MATCHES &quot;minimal&quot;) set(SCRIPTS_USE_WHITELIST ON) list(APPEND SCRIPTS_WHITELIST Commands Spells) endif() set(&quot;AC_SCRIPTS_INCLUDES&quot; &quot;&quot;) set(&quot;AC_MODULE_LIST&quot; &quot;&quot;) set(&quot;AC_SCRIPTS_LIST&quot; &quot;&quot;) foreach(include $</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d5a/server_2scripts_2_c_make_lists_8txt_source.html#l00015">CMakeLists.txt:15</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

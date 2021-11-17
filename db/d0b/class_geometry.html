@@ -76,15 +76,15 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c301c163c63d21ed08c17b0f4e131d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a4c301c163c63d21ed08c17b0f4e131d3">Geometry</a> ()</td></tr>
 <tr class="separator:a4c301c163c63d21ed08c17b0f4e131d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee2016ebafd356e5112edfa9c07e3fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#aee2016ebafd356e5112edfa9c07e3fc4">CalculateBoundingBox</a> (float *&amp;<a class="el" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>, float *&amp;<a class="el" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>)</td></tr>
+<tr class="memitem:aee2016ebafd356e5112edfa9c07e3fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#aee2016ebafd356e5112edfa9c07e3fc4">CalculateBoundingBox</a> (float *&amp;min, float *&amp;max)</td></tr>
 <tr class="separator:aee2016ebafd356e5112edfa9c07e3fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77faa7b3903aaefbdf8ea3e2a96b7bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a77faa7b3903aaefbdf8ea3e2a96b7bf5">CalculateMinMaxHeight</a> (float &amp;<a class="el" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>, float &amp;<a class="el" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>)</td></tr>
+<tr class="memitem:a77faa7b3903aaefbdf8ea3e2a96b7bf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a77faa7b3903aaefbdf8ea3e2a96b7bf5">CalculateMinMaxHeight</a> (float &amp;min, float &amp;max)</td></tr>
 <tr class="separator:a77faa7b3903aaefbdf8ea3e2a96b7bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3484c4a987366f9a786fa80069e33199"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a3484c4a987366f9a786fa80069e33199">AddData</a> (std::vector&lt; <a class="el" href="../../d0/de3/struct_vector3.html">Vector3</a> &gt; &amp;verts, std::vector&lt; <a class="el" href="../../d5/d4f/struct_triangle.html">Triangle</a>&lt; <a class="el" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> &gt;&gt; &amp;tris)</td></tr>
 <tr class="separator:a3484c4a987366f9a786fa80069e33199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7661d8191dbf1a78030c8d4c889918d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a7661d8191dbf1a78030c8d4c889918d5">AddAdt</a> (<a class="el" href="../../df/d48/class_a_d_t.html">ADT</a> *adt)</td></tr>
 <tr class="separator:a7661d8191dbf1a78030c8d4c889918d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ba65dcce1c9b6c8cf5baf9a6115cfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a32ba65dcce1c9b6c8cf5baf9a6115cfa">GetRawData</a> (float *&amp;verts, int *&amp;tris, <a class="el" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *&amp;areas)</td></tr>
+<tr class="memitem:a32ba65dcce1c9b6c8cf5baf9a6115cfa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a32ba65dcce1c9b6c8cf5baf9a6115cfa">GetRawData</a> (float *&amp;verts, int *&amp;tris, <a class="el" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> *&amp;areas)</td></tr>
 <tr class="separator:a32ba65dcce1c9b6c8cf5baf9a6115cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -93,7 +93,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3f1e21143e2a108630987a7a0946874a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d6f669f5ff8ff4c0fda7145f8d3439"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d5/d4f/struct_triangle.html">Triangle</a>&lt; <a class="el" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#a89d6f669f5ff8ff4c0fda7145f8d3439">Triangles</a></td></tr>
 <tr class="separator:a89d6f669f5ff8ff4c0fda7145f8d3439"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc569a2f5bfd0d842be170593c445f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#abc569a2f5bfd0d842be170593c445f15">Transform</a></td></tr>
+<tr class="memitem:abc569a2f5bfd0d842be170593c445f15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/class_geometry.html#abc569a2f5bfd0d842be170593c445f15">Transform</a></td></tr>
 <tr class="separator:abc569a2f5bfd0d842be170593c445f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -251,36 +251,34 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/de0/_geometry_8cpp_source.html#l00031">31</a> of file <a class="el" href="../../d8/de0/_geometry_8cpp_source.html">Geometry.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a> = <span class="keyword">new</span> <span class="keywordtype">float</span>[3];</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a> = <span class="keyword">new</span> <span class="keywordtype">float</span>[3];</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    min = <span class="keyword">new</span> <span class="keywordtype">float</span>[3];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    max = <span class="keyword">new</span> <span class="keywordtype">float</span>[3];</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i)</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[i] = <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">std::numeric_limits&lt;float&gt;::min</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[i] = <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">std::numeric_limits&lt;float&gt;::max</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        max[i] = std::numeric_limits&lt;float&gt;::min();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        min[i] = std::numeric_limits&lt;float&gt;::max();</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Vector3&gt;::iterator itr = <a class="code" href="../../db/d0b/class_geometry.html#a3f1e21143e2a108630987a7a0946874a">Vertices</a>.begin(); itr != <a class="code" href="../../db/d0b/class_geometry.html#a3f1e21143e2a108630987a7a0946874a">Vertices</a>.end(); ++itr)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;x &gt; <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[0])</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[0] = itr-&gt;x;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;x &lt; <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[0])</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[0] = itr-&gt;x;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;x &gt; max[0])</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            max[0] = itr-&gt;x;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;x &lt; min[0])</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            min[0] = itr-&gt;x;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;y &gt; <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[1])</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[1] = itr-&gt;y;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;y &lt; <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[1])</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[1] = itr-&gt;y;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;y &gt; max[1])</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            max[1] = itr-&gt;y;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;y &lt; min[1])</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            min[1] = itr-&gt;y;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;z &gt; <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[2])</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>[2] = itr-&gt;z;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;z &lt; <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[2])</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>[2] = itr-&gt;z;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;z &gt; max[2])</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            max[2] = itr-&gt;z;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">if</span> (itr-&gt;z &lt; min[2])</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            min[2] = itr-&gt;z;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="ttc" id="amy__global_8h_html_ac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l01387">my_global.h:1387</a></div></div>
-<div class="ttc" id="amy__global_8h_html_affe776513b24d84b39af8ab0930fef7f"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a></div><div class="ttdeci">#define max(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l01386">my_global.h:1386</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/df6/my__global_8h_source.html#l01386">max</a>, <a class="el" href="../../d9/df6/my__global_8h_source.html#l01387">min</a>, and <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00036">Vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00036">Vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d77/_tile_builder_8cpp_source.html#l00092">TileBuilder::BuildInstance()</a>.</p>
 
@@ -314,29 +312,29 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/de0/_geometry_8cpp_source.html#l00060">60</a> of file <a class="el" href="../../d8/de0/_geometry_8cpp_source.html">Geometry.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a> = <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">std::numeric_limits&lt;float&gt;::max</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a> = <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">std::numeric_limits&lt;float&gt;::min</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    min = std::numeric_limits&lt;float&gt;::max();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    max = std::numeric_limits&lt;float&gt;::min();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">for</span> (std::vector&lt;Vector3&gt;::iterator itr = <a class="code" href="../../db/d0b/class_geometry.html#a3f1e21143e2a108630987a7a0946874a">Vertices</a>.begin(); itr != <a class="code" href="../../db/d0b/class_geometry.html#a3f1e21143e2a108630987a7a0946874a">Vertices</a>.end(); ++itr)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../db/d0b/class_geometry.html#abc569a2f5bfd0d842be170593c445f15">Transform</a>)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;y &lt; <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a> = itr-&gt;y;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;y &gt; <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>)</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a> = itr-&gt;y;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;y &lt; min)</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                min = itr-&gt;y;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;y &gt; max)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                max = itr-&gt;y;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;z &lt; <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                <a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a> = itr-&gt;z;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;z &gt; <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a>)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <a class="code" href="../../d9/df6/my__global_8h.html#affe776513b24d84b39af8ab0930fef7f">max</a> = itr-&gt;z;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;z &lt; min)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                min = itr-&gt;z;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span> (itr-&gt;z &gt; max)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                max = itr-&gt;z;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/df6/my__global_8h_source.html#l01386">max</a>, <a class="el" href="../../d9/df6/my__global_8h_source.html#l01387">min</a>, <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00038">Transform</a>, and <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00036">Vertices</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00038">Transform</a>, and <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00036">Vertices</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d77/_tile_builder_8cpp_source.html#l00219">TileBuilder::BuildTiled()</a>.</p>
 
@@ -363,7 +361,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> *&amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> *&amp;&#160;</td>
           <td class="paramname"><em>areas</em>&#160;</td>
         </tr>
         <tr>
@@ -394,7 +392,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        tris[(i * 3) + 2] = (<span class="keywordtype">int</span>)tri.<a class="code" href="../../d5/d4f/struct_triangle.html#ad32bdc42b6c8e6a8c468bae05281e061">V2</a>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    areas = <span class="keyword">new</span> <a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a>[<a class="code" href="../../db/d0b/class_geometry.html#a89d6f669f5ff8ff4c0fda7145f8d3439">Triangles</a>.size()];</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    areas = <span class="keyword">new</span> <a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a>[<a class="code" href="../../db/d0b/class_geometry.html#a89d6f669f5ff8ff4c0fda7145f8d3439">Triangles</a>.size()];</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> i = 0; i &lt; <a class="code" href="../../db/d0b/class_geometry.html#a89d6f669f5ff8ff4c0fda7145f8d3439">Triangles</a>.size(); i++)</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="../../db/d0b/class_geometry.html#a89d6f669f5ff8ff4c0fda7145f8d3439">Triangles</a>[i].Type)</div>
@@ -408,10 +406,10 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-<div class="ttc" id="aclass_constants_html_a4bdfb8b5cbaed6d1d0a3450b642c5039a69ec3b4b6f42c44915997dbbf8bc022f"><div class="ttname"><a href="../../da/d09/class_constants.html#a4bdfb8b5cbaed6d1d0a3450b642c5039a69ec3b4b6f42c44915997dbbf8bc022f">Constants::POLY_AREA_TERRAIN</a></div><div class="ttdeci">@ POLY_AREA_TERRAIN</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8a/src_2tools_2mesh__extractor_2constants_8h_source.html#l00035">Constants.h:35</a></div></div>
-<div class="ttc" id="aclass_constants_html_a4bdfb8b5cbaed6d1d0a3450b642c5039a6e1055d6bf15a6bb251d95221bdb37ab"><div class="ttname"><a href="../../da/d09/class_constants.html#a4bdfb8b5cbaed6d1d0a3450b642c5039a6e1055d6bf15a6bb251d95221bdb37ab">Constants::POLY_AREA_WATER</a></div><div class="ttdeci">@ POLY_AREA_WATER</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8a/src_2tools_2mesh__extractor_2constants_8h_source.html#l00036">Constants.h:36</a></div></div>
-<div class="ttc" id="aclass_constants_html_a8d761afd38460dde3bed8bd20de09b1fab1f64c0f30866a0684940c8843f496e8"><div class="ttname"><a href="../../da/d09/class_constants.html#a8d761afd38460dde3bed8bd20de09b1fab1f64c0f30866a0684940c8843f496e8">Constants::TRIANGLE_TYPE_WATER</a></div><div class="ttdeci">@ TRIANGLE_TYPE_WATER</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d8a/src_2tools_2mesh__extractor_2constants_8h_source.html#l00028">Constants.h:28</a></div></div>
-<div class="ttc" id="amy__global_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00881">my_global.h:881</a></div></div>
+<div class="ttc" id="a_define_8h_html_a15a8d014fadf85c99a2268d8cbd00767"><div class="ttname"><a href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a></div><div class="ttdeci">std::uint8_t uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00116">Define.h:116</a></div></div>
+<div class="ttc" id="aclass_constants_html_a4bdfb8b5cbaed6d1d0a3450b642c5039a69ec3b4b6f42c44915997dbbf8bc022f"><div class="ttname"><a href="../../da/d09/class_constants.html#a4bdfb8b5cbaed6d1d0a3450b642c5039a69ec3b4b6f42c44915997dbbf8bc022f">Constants::POLY_AREA_TERRAIN</a></div><div class="ttdeci">@ POLY_AREA_TERRAIN</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d51/_constants_8h_source.html#l00035">Constants.h:35</a></div></div>
+<div class="ttc" id="aclass_constants_html_a4bdfb8b5cbaed6d1d0a3450b642c5039a6e1055d6bf15a6bb251d95221bdb37ab"><div class="ttname"><a href="../../da/d09/class_constants.html#a4bdfb8b5cbaed6d1d0a3450b642c5039a6e1055d6bf15a6bb251d95221bdb37ab">Constants::POLY_AREA_WATER</a></div><div class="ttdeci">@ POLY_AREA_WATER</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d51/_constants_8h_source.html#l00036">Constants.h:36</a></div></div>
+<div class="ttc" id="aclass_constants_html_a8d761afd38460dde3bed8bd20de09b1fab1f64c0f30866a0684940c8843f496e8"><div class="ttname"><a href="../../da/d09/class_constants.html#a8d761afd38460dde3bed8bd20de09b1fab1f64c0f30866a0684940c8843f496e8">Constants::TRIANGLE_TYPE_WATER</a></div><div class="ttdeci">@ TRIANGLE_TYPE_WATER</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d51/_constants_8h_source.html#l00028">Constants.h:28</a></div></div>
 <div class="ttc" id="astruct_triangle_html_a25019df292c806a5d62cf1600312a8bf"><div class="ttname"><a href="../../d5/d4f/struct_triangle.html#a25019df292c806a5d62cf1600312a8bf">Triangle::V0</a></div><div class="ttdeci">T V0</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00076">Utils.h:76</a></div></div>
 <div class="ttc" id="astruct_triangle_html_acc91137511e8cff3200efc6ec9d2f98e"><div class="ttname"><a href="../../d5/d4f/struct_triangle.html#acc91137511e8cff3200efc6ec9d2f98e">Triangle::V1</a></div><div class="ttdeci">T V1</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00077">Utils.h:77</a></div></div>
 <div class="ttc" id="astruct_triangle_html_ad32bdc42b6c8e6a8c468bae05281e061"><div class="ttname"><a href="../../d5/d4f/struct_triangle.html#ad32bdc42b6c8e6a8c468bae05281e061">Triangle::V2</a></div><div class="ttdeci">T V2</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00078">Utils.h:78</a></div></div>
@@ -420,7 +418,7 @@ Public Attributes</h2></td></tr>
 <div class="ttc" id="astruct_vector3_html_a86eb35a9fa2d5a49e7fad66a35fa9c13"><div class="ttname"><a href="../../d0/de3/struct_vector3.html#a86eb35a9fa2d5a49e7fad66a35fa9c13">Vector3::y</a></div><div class="ttdeci">float y</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00042">Utils.h:42</a></div></div>
 <div class="ttc" id="astruct_vector3_html_aa8c9461eb24bd2c364258078811a3e9d"><div class="ttname"><a href="../../d0/de3/struct_vector3.html#aa8c9461eb24bd2c364258078811a3e9d">Vector3::z</a></div><div class="ttdeci">float z</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00043">Utils.h:43</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/d8a/src_2tools_2mesh__extractor_2constants_8h_source.html#l00035">Constants::POLY_AREA_TERRAIN</a>, <a class="el" href="../../de/d8a/src_2tools_2mesh__extractor_2constants_8h_source.html#l00036">Constants::POLY_AREA_WATER</a>, <a class="el" href="../../de/d8a/src_2tools_2mesh__extractor_2constants_8h_source.html#l00028">Constants::TRIANGLE_TYPE_WATER</a>, <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00037">Triangles</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00076">Triangle&lt; T &gt;::V0</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00077">Triangle&lt; T &gt;::V1</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00078">Triangle&lt; T &gt;::V2</a>, <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00036">Vertices</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00041">Vector3::x</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00042">Vector3::y</a>, and <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00043">Vector3::z</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d51/_constants_8h_source.html#l00035">Constants::POLY_AREA_TERRAIN</a>, <a class="el" href="../../db/d51/_constants_8h_source.html#l00036">Constants::POLY_AREA_WATER</a>, <a class="el" href="../../db/d51/_constants_8h_source.html#l00028">Constants::TRIANGLE_TYPE_WATER</a>, <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00037">Triangles</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00076">Triangle&lt; T &gt;::V0</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00077">Triangle&lt; T &gt;::V1</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00078">Triangle&lt; T &gt;::V2</a>, <a class="el" href="../../d7/d81/tools_2mesh__extractor_2_geometry_8h_source.html#l00036">Vertices</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00041">Vector3::x</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00042">Vector3::y</a>, and <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00043">Vector3::z</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d9/d77/_tile_builder_8cpp_source.html#l00092">TileBuilder::BuildInstance()</a>, and <a class="el" href="../../d9/d77/_tile_builder_8cpp_source.html#l00219">TileBuilder::BuildTiled()</a>.</p>
 
@@ -434,7 +432,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> Geometry::Transform</td>
+          <td class="memname">bool Geometry::Transform</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -72,7 +72,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d18/_built_in_config_8h_source.html">BuiltInConfig.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/db0/src_2common_2_configuration_2config_8h_source.html">Config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d71/_config_8h_source.html">Config.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d6/d00/_git_revision_8h_source.html">GitRevision.h</a>&quot;</code><br />
 </div>
 <p><a href="../../db/d30/_built_in_config_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -80,7 +80,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a659c80f8f32962119a0640bbcd2009c9"><td class="memTemplParams" colspan="2">template&lt;typename Fn &gt; </td></tr>
-<tr class="memitem:a659c80f8f32962119a0640bbcd2009c9"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d30/_built_in_config_8cpp.html#a659c80f8f32962119a0640bbcd2009c9">GetStringWithDefaultValueFromFunction</a> (std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;key, Fn getter)</td></tr>
+<tr class="memitem:a659c80f8f32962119a0640bbcd2009c9"><td class="memTemplItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d30/_built_in_config_8cpp.html#a659c80f8f32962119a0640bbcd2009c9">GetStringWithDefaultValueFromFunction</a> (std::string const &amp;key, Fn getter)</td></tr>
 <tr class="separator:a659c80f8f32962119a0640bbcd2009c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -98,7 +98,7 @@ template&lt;typename Fn &gt; </div>
         <tr>
           <td class="memname">static std::string GetStringWithDefaultValueFromFunction </td>
           <td>(</td>
-          <td class="paramtype">std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>key</em>, </td>
         </tr>
         <tr>
@@ -122,13 +122,12 @@ template&lt;typename Fn &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d30/_built_in_config_8cpp_source.html#l00023">23</a> of file <a class="el" href="../../db/d30/_built_in_config_8cpp_source.html">BuiltInConfig.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::string <span class="keyword">const</span> <a class="code" href="../../d7/d71/classvalue.html">value</a> = <a class="code" href="../../d9/db0/src_2common_2_configuration_2config_8h.html#a7236988e98bdd405bf435a029b70a26f">sConfigMgr</a>-&gt;GetOption&lt;std::string&gt;(key, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d7/d71/classvalue.html">value</a>.empty() ? getter() : <a class="code" href="../../d7/d71/classvalue.html">value</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    std::string <span class="keyword">const</span> value = <a class="code" href="../../d4/d71/_config_8h.html#a7236988e98bdd405bf435a029b70a26f">sConfigMgr</a>-&gt;GetOption&lt;std::string&gt;(key, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> value.empty() ? getter() : value;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="../../d7/d71/classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01120">core.h:1120</a></div></div>
-<div class="ttc" id="asrc_2common_2_configuration_2config_8h_html_a7236988e98bdd405bf435a029b70a26f"><div class="ttname"><a href="../../d9/db0/src_2common_2_configuration_2config_8h.html#a7236988e98bdd405bf435a029b70a26f">sConfigMgr</a></div><div class="ttdeci">#define sConfigMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db0/src_2common_2_configuration_2config_8h_source.html#l00094">Config.h:94</a></div></div>
+<div class="ttc" id="a_config_8h_html_a7236988e98bdd405bf435a029b70a26f"><div class="ttname"><a href="../../d4/d71/_config_8h.html#a7236988e98bdd405bf435a029b70a26f">sConfigMgr</a></div><div class="ttdeci">#define sConfigMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d71/_config_8h_source.html#l00094">Config.h:94</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/db0/src_2common_2_configuration_2config_8h_source.html#l00094">sConfigMgr</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d71/_config_8h_source.html#l00094">sConfigMgr</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../db/d30/_built_in_config_8cpp_source.html#l00036">BuiltInConfig::GetBuildDirectory()</a>, <a class="el" href="../../db/d30/_built_in_config_8cpp_source.html#l00030">BuiltInConfig::GetCMakeCommand()</a>, <a class="el" href="../../db/d30/_built_in_config_8cpp_source.html#l00048">BuiltInConfig::GetMySQLExecutable()</a>, and <a class="el" href="../../db/d30/_built_in_config_8cpp_source.html#l00042">BuiltInConfig::GetSourceDirectory()</a>.</p>
 

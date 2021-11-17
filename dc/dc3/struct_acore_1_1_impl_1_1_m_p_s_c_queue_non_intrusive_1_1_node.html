@@ -78,7 +78,7 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4dcacffb32f3e739604ab6ef39b5031"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#aa4dcacffb32f3e739604ab6ef39b5031">Node</a> ()=default</td></tr>
 <tr class="separator:aa4dcacffb32f3e739604ab6ef39b5031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5f116e3d84286f313ee8730bde7b936"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#aa5f116e3d84286f313ee8730bde7b936">Node</a> (T *<a class="el" href="../../df/dea/structdata.html">data</a>)</td></tr>
+<tr class="memitem:aa5f116e3d84286f313ee8730bde7b936"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#aa5f116e3d84286f313ee8730bde7b936">Node</a> (T *data)</td></tr>
 <tr class="separator:aa5f116e3d84286f313ee8730bde7b936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -149,13 +149,12 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dc5/_m_p_s_c_queue_8h_source.html#l00072">72</a> of file <a class="el" href="../../d8/dc5/_m_p_s_c_queue_8h_source.html">MPSCQueue.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                   : <a class="code" href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#aa7cdbff9817871b548fe639e0956f1f4">Data</a>(<a class="code" href="../../df/dea/structdata.html">data</a>)</div>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                   : <a class="code" href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#aa7cdbff9817871b548fe639e0956f1f4">Data</a>(data)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <a class="code" href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#a7508e249dd3ff2b3ac291d67ddf87a71">Next</a>.store(<span class="keyword">nullptr</span>, std::memory_order_relaxed);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
 <div class="ttc" id="astruct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node_html_a7508e249dd3ff2b3ac291d67ddf87a71"><div class="ttname"><a href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#a7508e249dd3ff2b3ac291d67ddf87a71">Acore::Impl::MPSCQueueNonIntrusive::Node::Next</a></div><div class="ttdeci">std::atomic&lt; Node * &gt; Next</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc5/_m_p_s_c_queue_8h_source.html#l00078">MPSCQueue.h:78</a></div></div>
 <div class="ttc" id="astruct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node_html_aa7cdbff9817871b548fe639e0956f1f4"><div class="ttname"><a href="../../dc/dc3/struct_acore_1_1_impl_1_1_m_p_s_c_queue_non_intrusive_1_1_node.html#aa7cdbff9817871b548fe639e0956f1f4">Acore::Impl::MPSCQueueNonIntrusive::Node::Data</a></div><div class="ttdeci">T * Data</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/dc5/_m_p_s_c_queue_8h_source.html#l00077">MPSCQueue.h:77</a></div></div>
-<div class="ttc" id="astructdata_html"><div class="ttname"><a href="../../df/dea/structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddf/fmt_2include_2fmt_2format_8h_source.html#l00897">format.h:897</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d8/dc5/_m_p_s_c_queue_8h_source.html#l00078">Acore::Impl::MPSCQueueNonIntrusive&lt; T &gt;::Node::Next</a>.</p>
 
@@ -177,6 +176,8 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d8/dc5/_m_p_s_c_queue_8h_source.html#l00077">77</a> of file <a class="el" href="../../d8/dc5/_m_p_s_c_queue_8h_source.html">MPSCQueue.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/dc5/_m_p_s_c_queue_8h_source.html#l00055">Acore::Impl::MPSCQueueNonIntrusive&lt; T &gt;::Dequeue()</a>.</p>
 
 </div>
 </div>

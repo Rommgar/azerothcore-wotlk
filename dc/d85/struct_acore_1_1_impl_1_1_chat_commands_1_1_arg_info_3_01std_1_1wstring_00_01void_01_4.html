@@ -77,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f2b6448f80a4fac69d0157c9f556dc4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d85/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info_3_01std_1_1wstring_00_01void_01_4.html#a8f2b6448f80a4fac69d0157c9f556dc4">TryConsume</a> (std::wstring &amp;val, <a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *handler, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> args)</td></tr>
+<tr class="memitem:a8f2b6448f80a4fac69d0157c9f556dc4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d85/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info_3_01std_1_1wstring_00_01void_01_4.html#a8f2b6448f80a4fac69d0157c9f556dc4">TryConsume</a> (std::wstring &amp;val, <a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *handler, std::string_view args)</td></tr>
 <tr class="separator:a8f2b6448f80a4fac69d0157c9f556dc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -102,13 +102,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -126,13 +126,13 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d79/_chat_command_args_8h_source.html#l00109">109</a> of file <a class="el" href="../../d8/d79/_chat_command_args_8h_source.html">ChatCommandArgs.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> utf8view;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a> <a class="code" href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a> = ArgInfo&lt;std::string_view&gt;::TryConsume(utf8view, handler, args);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            std::string_view utf8view;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a> next = ArgInfo&lt;std::string_view&gt;::TryConsume(utf8view, handler, args);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a>)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordflow">if</span> (next)</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../db/d35/_util_8cpp.html#adaef8bf262f1d546b903005e5a06e565">Utf8toWStr</a>(utf8view, val))</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                    <span class="keywordflow">return</span> next;</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#a671c2d8ee25e88cc8f58246b1486f1de">GetAcoreString</a>(handler, <a class="code" href="../../dc/d4b/_language_8h.html#af9ee42b1cf006ecb2d2e74fe71c0761aafa07aec7bd59db026c454dcf92ef600d">LANG_CMDPARSER_INVALID_UTF8</a>);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            }</div>
@@ -140,13 +140,11 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
 <div class="ttc" id="a_language_8h_html_af9ee42b1cf006ecb2d2e74fe71c0761aafa07aec7bd59db026c454dcf92ef600d"><div class="ttname"><a href="../../dc/d4b/_language_8h.html#af9ee42b1cf006ecb2d2e74fe71c0761aafa07aec7bd59db026c454dcf92ef600d">LANG_CMDPARSER_INVALID_UTF8</a></div><div class="ttdeci">@ LANG_CMDPARSER_INVALID_UTF8</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4b/_language_8h_source.html#l01104">Language.h:1104</a></div></div>
-<div class="ttc" id="a_recast_contour_8cpp_html_af019d68006e1f2d7b24c8f09051424cc"><div class="ttname"><a href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a></div><div class="ttdeci">int next(int i, int n)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_recast_contour_8cpp_source.html#l00469">RecastContour.cpp:469</a></div></div>
 <div class="ttc" id="a_util_8cpp_html_adaef8bf262f1d546b903005e5a06e565"><div class="ttname"><a href="../../db/d35/_util_8cpp.html#adaef8bf262f1d546b903005e5a06e565">Utf8toWStr</a></div><div class="ttdeci">bool Utf8toWStr(char const *utf8str, size_t csize, wchar_t *wstr, size_t &amp;wsize)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_util_8cpp_source.html#l00377">Util.cpp:377</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l00529">core.h:529</a></div></div>
 <div class="ttc" id="anamespace_acore_1_1_impl_1_1_chat_commands_html_a671c2d8ee25e88cc8f58246b1486f1de"><div class="ttname"><a href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#a671c2d8ee25e88cc8f58246b1486f1de">Acore::Impl::ChatCommands::GetAcoreString</a></div><div class="ttdeci">AC_GAME_API char const  * GetAcoreString(ChatHandler const *handler, AcoreStrings which)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d6d/_chat_command_helpers_8cpp_source.html#l00028">ChatCommandHelpers.cpp:28</a></div></div>
 <div class="ttc" id="astruct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result_html"><div class="ttname"><a href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">Acore::Impl::ChatCommands::ChatCommandResult</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00100">ChatCommandHelpers.h:101</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d6d/_chat_command_helpers_8cpp_source.html#l00028">Acore::Impl::ChatCommands::GetAcoreString()</a>, <a class="el" href="../../dc/d4b/_language_8h_source.html#l01104">LANG_CMDPARSER_INVALID_UTF8</a>, <a class="el" href="../../de/d0e/_recast_contour_8cpp_source.html#l00469">next()</a>, and <a class="el" href="../../db/d35/_util_8cpp_source.html#l00377">Utf8toWStr()</a>.</p>
+<p class="reference">References <a class="el" href="../../d4/d6d/_chat_command_helpers_8cpp_source.html#l00028">Acore::Impl::ChatCommands::GetAcoreString()</a>, <a class="el" href="../../dc/d4b/_language_8h_source.html#l01104">LANG_CMDPARSER_INVALID_UTF8</a>, and <a class="el" href="../../db/d35/_util_8cpp_source.html#l00377">Utf8toWStr()</a>.</p>
 
 </div>
 </div>

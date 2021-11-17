@@ -110,7 +110,7 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a07ae61ed7dc31e9cddbdf9da244567c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/adtfile_8h.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>&#160;&#160;&#160;(533.33333<a class="el" href="../../d5/dfc/stack__direction_8c.html#a163af97e64bb0d7abc2c0b18e6210367">f</a>)</td></tr>
+<tr class="memitem:a07ae61ed7dc31e9cddbdf9da244567c7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/adtfile_8h.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>&#160;&#160;&#160;(533.33333f)</td></tr>
 <tr class="separator:a07ae61ed7dc31e9cddbdf9da244567c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239bebe1697b474e6f84945e9fb9faee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/adtfile_8h.html#a239bebe1697b474e6f84945e9fb9faee">CHUNKSIZE</a>&#160;&#160;&#160;((<a class="el" href="../../d7/d14/wmo_8h.html#a07ae61ed7dc31e9cddbdf9da244567c7">TILESIZE</a>) / 16.0f)</td></tr>
 <tr class="separator:a239bebe1697b474e6f84945e9fb9faee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,7 +119,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7c4c329ae7135f96ac5582e67ab467b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/adtfile_8h.html#a7c4c329ae7135f96ac5582e67ab467b9">GetPlainName</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *FileName)</td></tr>
+<tr class="memitem:a7c4c329ae7135f96ac5582e67ab467b9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/adtfile_8h.html#a7c4c329ae7135f96ac5582e67ab467b9">GetPlainName</a> (const char *FileName)</td></tr>
 <tr class="separator:a7c4c329ae7135f96ac5582e67ab467b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae69136b8ef3677a2ddb633751f8a03fc"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d48/adtfile_8h.html#ae69136b8ef3677a2ddb633751f8a03fc">GetPlainName</a> (char *FileName)</td></tr>
 <tr class="separator:ae69136b8ef3677a2ddb633751f8a03fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,7 +154,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define TILESIZE&#160;&#160;&#160;(533.33333<a class="el" href="../../d5/dfc/stack__direction_8c.html#a163af97e64bb0d7abc2c0b18e6210367">f</a>)</td>
+          <td class="memname">#define TILESIZE&#160;&#160;&#160;(533.33333f)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,9 +213,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; len - 3; i++)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">if</span> (name[i] == <span class="charliteral">&#39; &#39;</span>)</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a>[i] = <span class="charliteral">&#39;_&#39;</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            name[i] = <span class="charliteral">&#39;_&#39;</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
-<div class="ttc" id="anamespacesetup_html_ab3a7a0638d76a01367c5bc3cc699447f"><div class="ttname"><a href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">setup.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dab/setup_8py_source.html#l00011">setup.py:11</a></div></div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d4/dbe/gameobject__extract_8cpp_source.html#l00060">ExtractGameobjectModels()</a>, <a class="el" href="../../d4/d1d/vmap4__extractor_2_model_8cpp_source.html#l00182">Doodad::ExtractSet()</a>, <a class="el" href="../../d4/dbe/gameobject__extract_8cpp_source.html#l00025">ExtractSingleModel()</a>, <a class="el" href="../../de/da5/vmapexport_8cpp_source.html#l00105">ExtractSingleWmo()</a>, <a class="el" href="../../d4/d42/adtfile_8cpp_source.html#l00085">ADTFile::init()</a>, <a class="el" href="../../d7/dcc/wdtfile_8cpp_source.html#l00038">WDTFile::init()</a>, and <a class="el" href="../../d5/d6b/wmo_8cpp_source.html#l00040">WMORoot::open()</a>.</p>
 
@@ -255,9 +254,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; len - 3; i++)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span> (i &gt; 0 &amp;&amp; name[i] &gt;= <span class="charliteral">&#39;A&#39;</span> &amp;&amp; name[i] &lt;= <span class="charliteral">&#39;Z&#39;</span> &amp;&amp; isalpha(name[i - 1]))</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a>[i] |= 0x20;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            name[i] |= 0x20;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ((i == 0 || !isalpha(name[i - 1])) &amp;&amp; name[i] &gt;= <span class="charliteral">&#39;a&#39;</span> &amp;&amp; name[i] &lt;= <span class="charliteral">&#39;z&#39;</span>)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a>[i] &amp;= ~0x20;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            name[i] &amp;= ~0x20;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//extension in lowercase</span></div>
@@ -330,9 +329,9 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char* GetPlainName </td>
+          <td class="memname">const char* GetPlainName </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *&#160;</td>
+          <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>FileName</em></td><td>)</td>
           <td></td>
         </tr>

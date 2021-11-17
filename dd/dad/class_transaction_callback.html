@@ -80,16 +80,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adeff62976c11d9d90169e4650640118b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7b9810a269a390cf70f8ba0071dfe94"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/class_transaction_callback.html">TransactionCallback</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#ab7b9810a269a390cf70f8ba0071dfe94">operator=</a> (<a class="el" href="../../dd/dad/class_transaction_callback.html">TransactionCallback</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:ab7b9810a269a390cf70f8ba0071dfe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ec892bbca8d2cc694b36fb931fc1e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#af2ec892bbca8d2cc694b36fb931fc1e8">AfterComplete</a> (std::function&lt; void(<a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>)&gt; callback) &amp;</td></tr>
+<tr class="memitem:af2ec892bbca8d2cc694b36fb931fc1e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#af2ec892bbca8d2cc694b36fb931fc1e8">AfterComplete</a> (std::function&lt; void(bool)&gt; callback) &amp;</td></tr>
 <tr class="separator:af2ec892bbca8d2cc694b36fb931fc1e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7937d93dbd22617a2fd3893a6fe8c23c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#a7937d93dbd22617a2fd3893a6fe8c23c">InvokeIfReady</a> ()</td></tr>
+<tr class="memitem:a7937d93dbd22617a2fd3893a6fe8c23c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#a7937d93dbd22617a2fd3893a6fe8c23c">InvokeIfReady</a> ()</td></tr>
 <tr class="separator:a7937d93dbd22617a2fd3893a6fe8c23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a381e889074bc5ca48574d37fe6eea00f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d04/_database_env_fwd_8h.html#ad8826e834522c9cacfd021d4529b4f87">TransactionFuture</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#a381e889074bc5ca48574d37fe6eea00f">m_future</a></td></tr>
 <tr class="separator:a381e889074bc5ca48574d37fe6eea00f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb0dbcebb22ea716025ed6aca99f6afb"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#abb0dbcebb22ea716025ed6aca99f6afb">m_callback</a></td></tr>
+<tr class="memitem:abb0dbcebb22ea716025ed6aca99f6afb"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(bool)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/class_transaction_callback.html#abb0dbcebb22ea716025ed6aca99f6afb">m_callback</a></td></tr>
 <tr class="separator:abb0dbcebb22ea716025ed6aca99f6afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -165,7 +165,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void TransactionCallback::AfterComplete </td>
           <td>(</td>
-          <td class="paramtype">std::function&lt; void(<a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>)&gt;&#160;</td>
+          <td class="paramtype">std::function&lt; void(bool)&gt;&#160;</td>
           <td class="paramname"><em>callback</em></td><td>)</td>
           <td> &amp;</td>
         </tr>
@@ -192,7 +192,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> TransactionCallback::InvokeIfReady </td>
+          <td class="memname">bool TransactionCallback::InvokeIfReady </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -202,7 +202,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/d11/_transaction_8cpp_source.html#l00152">152</a> of file <a class="el" href="../../df/d11/_transaction_8cpp_source.html">Transaction.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;{</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dd/dad/class_transaction_callback.html#a381e889074bc5ca48574d37fe6eea00f">m_future</a>.valid() &amp;&amp; <a class="code" href="../../dd/dad/class_transaction_callback.html#a381e889074bc5ca48574d37fe6eea00f">m_future</a>.wait_for(<a class="code" href="../../d0/dc5/namespace_g3_d_1_1units.html#a0ca6270913320f6655ea7dfe8f28659d">std::chrono::seconds</a>(0)) == std::future_status::ready)</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../dd/dad/class_transaction_callback.html#a381e889074bc5ca48574d37fe6eea00f">m_future</a>.valid() &amp;&amp; <a class="code" href="../../dd/dad/class_transaction_callback.html#a381e889074bc5ca48574d37fe6eea00f">m_future</a>.wait_for(std::chrono::seconds(0)) == std::future_status::ready)</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="../../dd/dad/class_transaction_callback.html#abb0dbcebb22ea716025ed6aca99f6afb">m_callback</a>(<a class="code" href="../../dd/dad/class_transaction_callback.html#a381e889074bc5ca48574d37fe6eea00f">m_future</a>.get());</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -210,9 +210,8 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
-<div class="ttc" id="anamespace_g3_d_1_1units_html_a0ca6270913320f6655ea7dfe8f28659d"><div class="ttname"><a href="../../d0/dc5/namespace_g3_d_1_1units.html#a0ca6270913320f6655ea7dfe8f28659d">G3D::units::seconds</a></div><div class="ttdeci">float seconds()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dfa/units_8h_source.html#l00097">units.h:97</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d8/d99/_transaction_8h_source.html#l00120">m_callback</a>, <a class="el" href="../../d8/d99/_transaction_8h_source.html#l00119">m_future</a>, and <a class="el" href="../../d3/dfa/units_8h_source.html#l00097">G3D::units::seconds()</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/d99/_transaction_8h_source.html#l00120">m_callback</a>, and <a class="el" href="../../d8/d99/_transaction_8h_source.html#l00119">m_future</a>.</p>
 
 </div>
 </div>
@@ -250,7 +249,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::function&lt;void(<a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>)&gt; TransactionCallback::m_callback</td>
+          <td class="memname">std::function&lt;void(bool)&gt; TransactionCallback::m_callback</td>
         </tr>
       </table>
 </div><div class="memdoc">

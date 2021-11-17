@@ -76,11 +76,11 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0744c615f437514a52b5a26fb717013a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#a0744c615f437514a52b5a26fb717013a">ChaseAngle</a> (float angle, float _tolerance=M_PI_4)</td></tr>
 <tr class="separator:a0744c615f437514a52b5a26fb717013a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a275d01ce57b23d42d4150b10c8433dee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#a275d01ce57b23d42d4150b10c8433dee">UpperBound</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a275d01ce57b23d42d4150b10c8433dee"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#a275d01ce57b23d42d4150b10c8433dee">UpperBound</a> () const</td></tr>
 <tr class="separator:a275d01ce57b23d42d4150b10c8433dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8296cadbada4322ec9c754aed4a5ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#a2f8296cadbada4322ec9c754aed4a5ec">LowerBound</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a2f8296cadbada4322ec9c754aed4a5ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#a2f8296cadbada4322ec9c754aed4a5ec">LowerBound</a> () const</td></tr>
 <tr class="separator:a2f8296cadbada4322ec9c754aed4a5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec86c653850655b723e5224ea20b0e21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#aec86c653850655b723e5224ea20b0e21">IsAngleOkay</a> (float relativeAngle) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:aec86c653850655b723e5224ea20b0e21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5f/struct_chase_angle.html#aec86c653850655b723e5224ea20b0e21">IsAngleOkay</a> (float relativeAngle) const</td></tr>
 <tr class="separator:aec86c653850655b723e5224ea20b0e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -136,7 +136,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> ChaseAngle::IsAngleOkay </td>
+          <td class="memname">bool ChaseAngle::IsAngleOkay </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
           <td class="paramname"><em>relativeAngle</em></td><td>)</td>
@@ -147,16 +147,12 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/d24/_motion_master_8cpp_source.html#l00054">54</a> of file <a class="el" href="../../d9/d24/_motion_master_8cpp_source.html">MotionMaster.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">float</span> <span class="keyword">const</span> <a class="code" href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a> = <a class="code" href="../../d0/d45/_matrix_8h.html#aaf9f9f8a87c718439346b4e96107f5e9">std::abs</a>(relativeAngle - <a class="code" href="../../d5/d5f/struct_chase_angle.html#a810a730ae905bfa296dbe6c1e4b86416">RelativeAngle</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">float</span> <span class="keyword">const</span> diff = std::abs(relativeAngle - <a class="code" href="../../d5/d5f/struct_chase_angle.html#a810a730ae905bfa296dbe6c1e4b86416">RelativeAngle</a>);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">std::min</a>(<a class="code" href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a>, <span class="keywordtype">float</span>(2 * <a class="code" href="../../d9/df6/my__global_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a>) - <a class="code" href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a>) &lt;= <a class="code" href="../../d5/d5f/struct_chase_angle.html#a2bb42885da594380cb742c29b6518ea3">Tolerance</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> (std::min(diff, <span class="keywordtype">float</span>(2 * M_PI) - diff) &lt;= <a class="code" href="../../d5/d5f/struct_chase_angle.html#a2bb42885da594380cb742c29b6518ea3">Tolerance</a>);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="ttc" id="a_matrix_8h_html_aaf9f9f8a87c718439346b4e96107f5e9"><div class="ttname"><a href="../../d0/d45/_matrix_8h.html#aaf9f9f8a87c718439346b4e96107f5e9">abs</a></div><div class="ttdeci">G3D::Matrix abs(const G3D::Matrix &amp;M)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d45/_matrix_8h_source.html#l00632">Matrix.h:632</a></div></div>
-<div class="ttc" id="adtoa_8c_html_a158860430cb5f139d88fdf19cf9ad511"><div class="ttname"><a href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a></div><div class="ttdeci">static Bigint * diff(Bigint *a, Bigint *b, Stack_alloc *alloc)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/dtoa_8c_source.html#l01108">dtoa.c:1108</a></div></div>
-<div class="ttc" id="amy__global_8h_html_ac6afabdc09a49a433ee19d8a9486056d"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#ac6afabdc09a49a433ee19d8a9486056d">min</a></div><div class="ttdeci">#define min(a, b)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l01387">my_global.h:1387</a></div></div>
-<div class="ttc" id="amy__global_8h_html_ae71449b1cc6e6250b91f539153a7a0d3"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#ae71449b1cc6e6250b91f539153a7a0d3">M_PI</a></div><div class="ttdeci">#define M_PI</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00819">my_global.h:819</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d45/_matrix_8h_source.html#l00632">abs()</a>, <a class="el" href="../../d9/d39/dtoa_8c_source.html#l01108">diff()</a>, <a class="el" href="../../d9/df6/my__global_8h_source.html#l00819">M_PI</a>, <a class="el" href="../../d9/df6/my__global_8h_source.html#l01387">min</a>, <a class="el" href="../../d8/dea/_motion_master_8h_source.html#l00098">RelativeAngle</a>, and <a class="el" href="../../d8/dea/_motion_master_8h_source.html#l00099">Tolerance</a>.</p>
+<p class="reference">References <a class="el" href="../../d8/dea/_motion_master_8h_source.html#l00098">RelativeAngle</a>, and <a class="el" href="../../d8/dea/_motion_master_8h_source.html#l00099">Tolerance</a>.</p>
 
 </div>
 </div>

@@ -1542,7 +1542,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a097bf4a24bf1a1ae8b593024d18613ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d88/boss__assembly__of__iron_8cpp.html#a097bf4a24bf1a1ae8b593024d18613ee">IsEncounterComplete</a> (<a class="el" href="../../d8/d83/class_instance_script.html">InstanceScript</a> *pInstance, <a class="el" href="../../d1/dac/class_creature.html">Creature</a> *me)</td></tr>
+<tr class="memitem:a097bf4a24bf1a1ae8b593024d18613ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d88/boss__assembly__of__iron_8cpp.html#a097bf4a24bf1a1ae8b593024d18613ee">IsEncounterComplete</a> (<a class="el" href="../../d8/d83/class_instance_script.html">InstanceScript</a> *pInstance, <a class="el" href="../../d1/dac/class_creature.html">Creature</a> *me)</td></tr>
 <tr class="separator:a097bf4a24bf1a1ae8b593024d18613ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17a6a60c682f5ce1ebc97521a02b1f22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d88/boss__assembly__of__iron_8cpp.html#a17a6a60c682f5ce1ebc97521a02b1f22">RespawnAssemblyOfIron</a> (<a class="el" href="../../d8/d83/class_instance_script.html">InstanceScript</a> *pInstance, <a class="el" href="../../d1/dac/class_creature.html">Creature</a> *me)</td></tr>
 <tr class="separator:a17a6a60c682f5ce1ebc97521a02b1f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3130,7 +3130,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> IsEncounterComplete </td>
+          <td class="memname">bool IsEncounterComplete </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d8/d83/class_instance_script.html">InstanceScript</a> *&#160;</td>
           <td class="paramname"><em>pInstance</em>, </td>
@@ -3154,7 +3154,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">if</span> (!pInstance || !me)</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> i = 0; i &lt; 3; ++i)</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> i = 0; i &lt; 3; ++i)</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <a class="code" href="../../d8/d03/class_object_guid.html">ObjectGuid</a> guid = pInstance-&gt;<a class="code" href="../../d8/d83/class_instance_script.html#a3be7f24ca31c9433aca546e1087109b4">GetGuidData</a>(<a class="code" href="../../d9/df7/ulduar_8h.html#a637b611fb0e8ff96b12cacdde24ac9b2a91876d310676eef418844a12e3e2a08e">DATA_STEELBREAKER</a> + i);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">if</span> (!guid)</div>
@@ -3171,10 +3171,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="ttc" id="a_define_8h_html_a15a8d014fadf85c99a2268d8cbd00767"><div class="ttname"><a href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a></div><div class="ttdeci">std::uint8_t uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00116">Define.h:116</a></div></div>
 <div class="ttc" id="aclass_creature_html"><div class="ttname"><a href="../../d1/dac/class_creature.html">Creature</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d93/_creature_8h_source.html#l00045">Creature.h:46</a></div></div>
 <div class="ttc" id="aclass_instance_script_html_a3be7f24ca31c9433aca546e1087109b4"><div class="ttname"><a href="../../d8/d83/class_instance_script.html#a3be7f24ca31c9433aca546e1087109b4">InstanceScript::GetGuidData</a></div><div class="ttdeci">ObjectGuid GetGuidData(uint32 type) const override</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d83/_instance_script_8cpp_source.html#l00085">InstanceScript.cpp:85</a></div></div>
 <div class="ttc" id="aclass_object_guid_html"><div class="ttname"><a href="../../d8/d03/class_object_guid.html">ObjectGuid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d83/_object_guid_8h_source.html#l00119">ObjectGuid.h:120</a></div></div>
-<div class="ttc" id="amy__global_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00881">my_global.h:881</a></div></div>
 <div class="ttc" id="anamespace_object_accessor_html_ae42e503fe79bbeaea1aaa665418c43f8"><div class="ttname"><a href="../../d4/d27/namespace_object_accessor.html#ae42e503fe79bbeaea1aaa665418c43f8">ObjectAccessor::GetCreature</a></div><div class="ttdeci">Creature * GetCreature(WorldObject const &amp;u, ObjectGuid const guid)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d5d/_object_accessor_8cpp_source.html#l00210">ObjectAccessor.cpp:210</a></div></div>
 <div class="ttc" id="aulduar_8h_html_a637b611fb0e8ff96b12cacdde24ac9b2a91876d310676eef418844a12e3e2a08e"><div class="ttname"><a href="../../d9/df7/ulduar_8h.html#a637b611fb0e8ff96b12cacdde24ac9b2a91876d310676eef418844a12e3e2a08e">DATA_STEELBREAKER</a></div><div class="ttdeci">@ DATA_STEELBREAKER</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df7/ulduar_8h_source.html#l00087">ulduar.h:87</a></div></div>
 </div><!-- fragment -->
@@ -3215,7 +3215,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> (!pInstance || !me)</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> i = 0; i &lt; 3; ++i)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">for</span> (<a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> i = 0; i &lt; 3; ++i)</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    {</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <a class="code" href="../../d8/d03/class_object_guid.html">ObjectGuid</a> guid = pInstance-&gt;<a class="code" href="../../d8/d83/class_instance_script.html#a3be7f24ca31c9433aca546e1087109b4">GetGuidData</a>(<a class="code" href="../../d9/df7/ulduar_8h.html#a637b611fb0e8ff96b12cacdde24ac9b2a91876d310676eef418844a12e3e2a08e">DATA_STEELBREAKER</a> + i);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">if</span> (!guid)</div>

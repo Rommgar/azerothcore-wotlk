@@ -77,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afb6bc0250c190a2b52c031e3540ddf78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d02/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info_3_01std_1_1string_00_01void_01_4.html#afb6bc0250c190a2b52c031e3540ddf78">TryConsume</a> (std::string &amp;val, <a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *handler, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> args)</td></tr>
+<tr class="memitem:afb6bc0250c190a2b52c031e3540ddf78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d02/struct_acore_1_1_impl_1_1_chat_commands_1_1_arg_info_3_01std_1_1string_00_01void_01_4.html#afb6bc0250c190a2b52c031e3540ddf78">TryConsume</a> (std::string &amp;val, <a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *handler, std::string_view args)</td></tr>
 <tr class="separator:afb6bc0250c190a2b52c031e3540ddf78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -102,13 +102,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -126,19 +126,14 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d79/_chat_command_args_8h_source.html#l00095">95</a> of file <a class="el" href="../../d8/d79/_chat_command_args_8h_source.html">ChatCommandArgs.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="code" href="../../d8/db1/structview.html">view</a>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a> <a class="code" href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a> = ArgInfo&lt;std::string_view&gt;::TryConsume(<a class="code" href="../../d8/db1/structview.html">view</a>, handler, args);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a>)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                val.assign(<a class="code" href="../../d8/db1/structview.html">view</a>);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            std::string_view view;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">ChatCommandResult</a> next = ArgInfo&lt;std::string_view&gt;::TryConsume(view, handler, args);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="keywordflow">if</span> (next)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                val.assign(view);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> next;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="ttc" id="a_recast_contour_8cpp_html_af019d68006e1f2d7b24c8f09051424cc"><div class="ttname"><a href="../../de/d0e/_recast_contour_8cpp.html#af019d68006e1f2d7b24c8f09051424cc">next</a></div><div class="ttdeci">int next(int i, int n)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d0e/_recast_contour_8cpp_source.html#l00469">RecastContour.cpp:469</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l00529">core.h:529</a></div></div>
 <div class="ttc" id="astruct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result_html"><div class="ttname"><a href="../../d4/d2a/struct_acore_1_1_impl_1_1_chat_commands_1_1_chat_command_result.html">Acore::Impl::ChatCommands::ChatCommandResult</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00100">ChatCommandHelpers.h:101</a></div></div>
-<div class="ttc" id="astructview_html"><div class="ttname"><a href="../../d8/db1/structview.html">view</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l00971">core.h:971</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../de/d0e/_recast_contour_8cpp_source.html#l00469">next()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

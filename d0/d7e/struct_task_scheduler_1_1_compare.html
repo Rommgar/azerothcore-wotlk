@@ -78,7 +78,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f528af97bd248dc4532b303f4f38a63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7e/struct_task_scheduler_1_1_compare.html#a4f528af97bd248dc4532b303f4f38a63">operator()</a> (<a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../d9/dbf/_recast_mesh_8cpp.html#a0ba03d6a44337bfbcef8f0c9dad4289f">left</a>, <a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;right) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a4f528af97bd248dc4532b303f4f38a63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7e/struct_task_scheduler_1_1_compare.html#a4f528af97bd248dc4532b303f4f38a63">operator()</a> (<a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> const &amp;left, <a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> const &amp;right) const</td></tr>
 <tr class="separator:a4f528af97bd248dc4532b303f4f38a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -96,15 +96,15 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> TaskScheduler::Compare::operator() </td>
+          <td class="memname">bool TaskScheduler::Compare::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> const &amp;&#160;</td>
           <td class="paramname"><em>left</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/dc4/class_task_scheduler.html#a0c6c7a95026322208866b6b829e0b598">TaskContainer</a> const &amp;&#160;</td>
           <td class="paramname"><em>right</em>&#160;</td>
         </tr>
         <tr>
@@ -122,13 +122,9 @@ Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../db/dd6/_task_scheduler_8h_source.html#l00114">114</a> of file <a class="el" href="../../db/dd6/_task_scheduler_8h_source.html">TaskScheduler.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> (*<a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a>.get()) &lt; (*<a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a>.get());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> (*left.get()) &lt; (*right.get());</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        };</div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd"><div class="ttname"><a href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">align::left</a></div><div class="ttdeci">@ left</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">core.h:1859</a></div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79"><div class="ttname"><a href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">align::right</a></div><div class="ttdeci">@ right</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">core.h:1859</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::left</a>, and <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::right</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

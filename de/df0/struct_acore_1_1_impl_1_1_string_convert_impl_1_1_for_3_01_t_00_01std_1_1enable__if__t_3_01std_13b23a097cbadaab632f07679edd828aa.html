@@ -77,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a708bace15e76a0201a01eb8021c66d27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_13b23a097cbadaab632f07679edd828aa.html#a708bace15e76a0201a01eb8021c66d27">FromString</a> (<a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, int base=10)</td></tr>
+<tr class="memitem:a708bace15e76a0201a01eb8021c66d27"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_13b23a097cbadaab632f07679edd828aa.html#a708bace15e76a0201a01eb8021c66d27">FromString</a> (std::string_view str, int base=10)</td></tr>
 <tr class="separator:a708bace15e76a0201a01eb8021c66d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf8940ea78f2f947274a2653da04b0a3"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_13b23a097cbadaab632f07679edd828aa.html#abf8940ea78f2f947274a2653da04b0a3">ToString</a> (T val)</td></tr>
 <tr class="separator:abf8940ea78f2f947274a2653da04b0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -101,9 +101,9 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt;T&gt; <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_integral_v&lt; T &gt; &amp;&amp;!std::is_same_v&lt; T, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt; &gt; &gt;::FromString </td>
+          <td class="memname">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt;T&gt; <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, std::enable_if_t&lt; std::is_integral_v&lt; T &gt; &amp;&amp;!std::is_same_v&lt; T, bool &gt; &gt; &gt;::FromString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -182,7 +182,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::string <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_integral_v&lt; T &gt; &amp;&amp;!std::is_same_v&lt; T, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &gt; &gt; &gt;::ToString </td>
+          <td class="memname">static std::string <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, std::enable_if_t&lt; std::is_integral_v&lt; T &gt; &amp;&amp;!std::is_same_v&lt; T, bool &gt; &gt; &gt;::ToString </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>

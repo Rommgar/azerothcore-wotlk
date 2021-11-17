@@ -89,14 +89,14 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef _MMAP_COMMON_H</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define _MMAP_COMMON_H</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;Common.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d1f/_common_8h.html">Common.h</a>&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef _WIN32</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;cstddef&gt;</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="../../d7/da9/dirent_8h.html">dirent.h</a>&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;dirent.h&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../db/def/namespace_m_m_a_p.html#a3620968f3c1f5c1a3bb0c809ab0eb4ab">   77</a></span>&#160;    <span class="keyword">inline</span> <a class="code" href="../../db/def/namespace_m_m_a_p.html#a030b28c9f552c0de4a4b4844fc5e6101">ListFilesResult</a> <a class="code" href="../../db/def/namespace_m_m_a_p.html#a3620968f3c1f5c1a3bb0c809ab0eb4ab">getDirContents</a>(std::vector&lt;std::string&gt;&amp; fileList, std::string dirpath = <span class="stringliteral">&quot;.&quot;</span>, std::string filter = <span class="stringliteral">&quot;*&quot;</span>)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef WIN32</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="../../d2/dd9/violite_8h.html#ab521aa5010fb1afb801a899a55569e03">HANDLE</a> hFind;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        HANDLE hFind;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        WIN32_FIND_DATA findFileInfo;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        std::string directory;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
@@ -168,23 +168,23 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* p = dirpath.c_str();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="../../d9/d31/struct_d_i_r.html">DIR</a>* dirp = <a class="code" href="../../d7/da9/dirent_8h.html#a56af8d3cfb4a2b2f44e20b276db71f2a">opendir</a>(p);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">struct </span><a class="code" href="../../d5/de2/structdirent.html">dirent</a>* dp;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        DIR* dirp = opendir(p);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keyword">struct </span>dirent* dp;</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">while</span> (dirp)</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="../../db/da9/my__sys_8h.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a> = 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">if</span> ((dp = <a class="code" href="../../d7/da9/dirent_8h.html#aff48ec2514bda89769c968c66db181f3">readdir</a>(dirp)) != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            errno = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">if</span> ((dp = readdir(dirp)) != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../db/def/namespace_m_m_a_p.html#a0b1c31a5b3e8bebc7fa860b40f7997e1">matchWildcardFilter</a>(filter.c_str(), dp-&gt;<a class="code" href="../../d5/de2/structdirent.html#a1450b4488b7067c7dc9d627b61fd4aa1">d_name</a>))</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    fileList.emplace_back(dp-&gt;<a class="code" href="../../d5/de2/structdirent.html#a1450b4488b7067c7dc9d627b61fd4aa1">d_name</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../db/def/namespace_m_m_a_p.html#a0b1c31a5b3e8bebc7fa860b40f7997e1">matchWildcardFilter</a>(filter.c_str(), dp-&gt;d_name))</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                    fileList.emplace_back(dp-&gt;d_name);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">if</span> (dirp)</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="../../d7/da9/dirent_8h.html#a748b9bd26c040c2ad9107c9d8c1aab42">closedir</a>(dirp);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            closedir(dirp);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../db/def/namespace_m_m_a_p.html#a030b28c9f552c0de4a4b4844fc5e6101a868c0f60f6afa222577730606ed493a6">LISTFILE_DIRECTORY_NOT_FOUND</a>;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
@@ -194,21 +194,13 @@ $(function() {
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="adirent_8h_html"><div class="ttname"><a href="../../d7/da9/dirent_8h.html">dirent.h</a></div></div>
-<div class="ttc" id="adirent_8h_html_a56af8d3cfb4a2b2f44e20b276db71f2a"><div class="ttname"><a href="../../d7/da9/dirent_8h.html#a56af8d3cfb4a2b2f44e20b276db71f2a">opendir</a></div><div class="ttdeci">static DIR * opendir(const char *dirname)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/dirent_8h_source.html#l00102">dirent.h:102</a></div></div>
-<div class="ttc" id="adirent_8h_html_a748b9bd26c040c2ad9107c9d8c1aab42"><div class="ttname"><a href="../../d7/da9/dirent_8h.html#a748b9bd26c040c2ad9107c9d8c1aab42">closedir</a></div><div class="ttdeci">static int closedir(DIR *dirp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/dirent_8h_source.html#l00186">dirent.h:186</a></div></div>
-<div class="ttc" id="adirent_8h_html_aff48ec2514bda89769c968c66db181f3"><div class="ttname"><a href="../../d7/da9/dirent_8h.html#aff48ec2514bda89769c968c66db181f3">readdir</a></div><div class="ttdeci">static struct dirent * readdir(DIR *dirp)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/dirent_8h_source.html#l00148">dirent.h:148</a></div></div>
-<div class="ttc" id="amy__sys_8h_html_ad65a8842cc674e3ddf69355898c0ecbf"><div class="ttname"><a href="../../db/da9/my__sys_8h.html#ad65a8842cc674e3ddf69355898c0ecbf">errno</a></div><div class="ttdeci">int errno</div></div>
+<div class="ttc" id="a_common_8h_html"><div class="ttname"><a href="../../db/d1f/_common_8h.html">Common.h</a></div></div>
 <div class="ttc" id="anamespace_m_m_a_p_html"><div class="ttname"><a href="../../db/def/namespace_m_m_a_p.html">MMAP</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d31/_i_m_m_a_p_mgr_8h_source.html#l00025">IMMAPMgr.h:26</a></div></div>
 <div class="ttc" id="anamespace_m_m_a_p_html_a030b28c9f552c0de4a4b4844fc5e6101"><div class="ttname"><a href="../../db/def/namespace_m_m_a_p.html#a030b28c9f552c0de4a4b4844fc5e6101">MMAP::ListFilesResult</a></div><div class="ttdeci">ListFilesResult</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/_path_common_8h_source.html#l00071">PathCommon.h:72</a></div></div>
 <div class="ttc" id="anamespace_m_m_a_p_html_a030b28c9f552c0de4a4b4844fc5e6101a868c0f60f6afa222577730606ed493a6"><div class="ttname"><a href="../../db/def/namespace_m_m_a_p.html#a030b28c9f552c0de4a4b4844fc5e6101a868c0f60f6afa222577730606ed493a6">MMAP::LISTFILE_DIRECTORY_NOT_FOUND</a></div><div class="ttdeci">@ LISTFILE_DIRECTORY_NOT_FOUND</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/_path_common_8h_source.html#l00073">PathCommon.h:73</a></div></div>
 <div class="ttc" id="anamespace_m_m_a_p_html_a030b28c9f552c0de4a4b4844fc5e6101a952e90f65bfd2eefbd80a8b830eb5687"><div class="ttname"><a href="../../db/def/namespace_m_m_a_p.html#a030b28c9f552c0de4a4b4844fc5e6101a952e90f65bfd2eefbd80a8b830eb5687">MMAP::LISTFILE_OK</a></div><div class="ttdeci">@ LISTFILE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/_path_common_8h_source.html#l00075">PathCommon.h:74</a></div></div>
 <div class="ttc" id="anamespace_m_m_a_p_html_a0b1c31a5b3e8bebc7fa860b40f7997e1"><div class="ttname"><a href="../../db/def/namespace_m_m_a_p.html#a0b1c31a5b3e8bebc7fa860b40f7997e1">MMAP::matchWildcardFilter</a></div><div class="ttdeci">bool matchWildcardFilter(const char *filter, const char *str)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/_path_common_8h_source.html#l00039">PathCommon.h:39</a></div></div>
 <div class="ttc" id="anamespace_m_m_a_p_html_a3620968f3c1f5c1a3bb0c809ab0eb4ab"><div class="ttname"><a href="../../db/def/namespace_m_m_a_p.html#a3620968f3c1f5c1a3bb0c809ab0eb4ab">MMAP::getDirContents</a></div><div class="ttdeci">ListFilesResult getDirContents(std::vector&lt; std::string &gt; &amp;fileList, std::string dirpath=&quot;.&quot;, std::string filter=&quot;*&quot;)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d12/_path_common_8h_source.html#l00077">PathCommon.h:77</a></div></div>
-<div class="ttc" id="astruct_d_i_r_html"><div class="ttname"><a href="../../d9/d31/struct_d_i_r.html">DIR</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/dirent_8h_source.html#l00073">dirent.h:74</a></div></div>
-<div class="ttc" id="astructdirent_html"><div class="ttname"><a href="../../d5/de2/structdirent.html">dirent</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/dirent_8h_source.html#l00066">dirent.h:67</a></div></div>
-<div class="ttc" id="astructdirent_html_a1450b4488b7067c7dc9d627b61fd4aa1"><div class="ttname"><a href="../../d5/de2/structdirent.html#a1450b4488b7067c7dc9d627b61fd4aa1">dirent::d_name</a></div><div class="ttdeci">char d_name[MAX_PATH+1]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/da9/dirent_8h_source.html#l00068">dirent.h:68</a></div></div>
-<div class="ttc" id="aviolite_8h_html_ab521aa5010fb1afb801a899a55569e03"><div class="ttname"><a href="../../d2/dd9/violite_8h.html#ab521aa5010fb1afb801a899a55569e03">HANDLE</a></div><div class="ttdeci">#define HANDLE</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dd9/violite_8h_source.html#l00059">violite.h:59</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

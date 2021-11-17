@@ -70,7 +70,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af72dcedf300ac261ca2bad700a5e3ca5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d48/namespaceanonymous__namespace_02_errors_8cpp_03.html#af72dcedf300ac261ca2bad700a5e3ca5">FormatAssertionMessage</a> (char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *<a class="el" href="../../dc/d12/xchar_8h.html#adbec664fb40387a823078cb103b965f9">format</a>, va_list args)</td></tr>
+<tr class="memitem:af72dcedf300ac261ca2bad700a5e3ca5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d48/namespaceanonymous__namespace_02_errors_8cpp_03.html#af72dcedf300ac261ca2bad700a5e3ca5">FormatAssertionMessage</a> (char const *format, va_list args)</td></tr>
 <tr class="separator:af72dcedf300ac261ca2bad700a5e3ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -83,7 +83,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">std::string anonymous_namespace{Errors.cpp}::FormatAssertionMessage </td>
           <td>(</td>
-          <td class="paramtype">char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
@@ -106,20 +106,16 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        va_list len;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        va_copy(len, args);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../db/d35/_define_8h.html#a0bf9964a3ce962c07ad3d8b5432bbbcd">int32</a> <a class="code" href="../../df/de2/namespace_g3_d.html#a69a355f92fa3aab4f301667be00cd3eb">length</a> = vsnprintf(<span class="keyword">nullptr</span>, 0, <a class="code" href="../../da/dec/color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a>, len);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="../../db/d35/_define_8h.html#a0bf9964a3ce962c07ad3d8b5432bbbcd">int32</a> length = vsnprintf(<span class="keyword">nullptr</span>, 0, format, len);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        va_end(len);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        formatted.resize(<a class="code" href="../../df/de2/namespace_g3_d.html#a69a355f92fa3aab4f301667be00cd3eb">length</a>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        vsnprintf(&amp;formatted[0], <a class="code" href="../../df/de2/namespace_g3_d.html#a69a355f92fa3aab4f301667be00cd3eb">length</a> + 1, <a class="code" href="../../da/dec/color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a>, args);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        formatted.resize(length);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        vsnprintf(&amp;formatted[0], length + 1, format, args);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> formatted;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="ttc" id="a_define_8h_html_a0bf9964a3ce962c07ad3d8b5432bbbcd"><div class="ttname"><a href="../../db/d35/_define_8h.html#a0bf9964a3ce962c07ad3d8b5432bbbcd">int32</a></div><div class="ttdeci">std::int32_t int32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00110">Define.h:110</a></div></div>
-<div class="ttc" id="acolor_8h_html_a5237d5a1dab3f47a095266bf83d2b5ea"><div class="ttname"><a href="../../da/dec/color_8h.html#a5237d5a1dab3f47a095266bf83d2b5ea">format</a></div><div class="ttdeci">std::basic_string&lt; Char &gt; format(const text_style &amp;ts, const S &amp;format_str, const Args &amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dec/color_8h_source.html#l00583">color.h:583</a></div></div>
-<div class="ttc" id="anamespace_g3_d_html_a69a355f92fa3aab4f301667be00cd3eb"><div class="ttname"><a href="../../df/de2/namespace_g3_d.html#a69a355f92fa3aab4f301667be00cd3eb">G3D::length</a></div><div class="ttdeci">float length(float v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d0b/vector_math_8h_source.html#l00208">vectorMath.h:208</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/dec/color_8h_source.html#l00583">format()</a>, and <a class="el" href="../../d3/d0b/vector_math_8h_source.html#l00208">G3D::length()</a>.</p>
-
 <p class="reference">Referenced by <a class="el" href="../../dc/d43/_errors_8cpp_source.html#l00118">Acore::Abort()</a>, <a class="el" href="../../dc/d43/_errors_8cpp_source.html#l00067">Acore::Assert()</a>, and <a class="el" href="../../dc/d43/_errors_8cpp_source.html#l00081">Acore::Fatal()</a>.</p>
 
 </div>

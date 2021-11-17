@@ -96,14 +96,14 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad98dd12bf2b9d4c5a3812d91232c4b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d3d/struct_acore_1_1_impl_1_1_chat_commands_1_1_container_tag.html#a6150ebd46977676b2ddeebfb818e86a9">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ad98dd12bf2b9d4c5a3812d91232c4b8e">TryConsume</a> (<a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *handler, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> args) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:ad98dd12bf2b9d4c5a3812d91232c4b8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d3d/struct_acore_1_1_impl_1_1_chat_commands_1_1_container_tag.html#a6150ebd46977676b2ddeebfb818e86a9">ChatCommandResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ad98dd12bf2b9d4c5a3812d91232c4b8e">TryConsume</a> (<a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *handler, std::string_view args) const</td></tr>
 <tr class="separator:ad98dd12bf2b9d4c5a3812d91232c4b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
-<tr class="memitem:a0480bb23bf5c47ac03935901211952b5"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../de/d17/lf_8h.html#ac47d04d1cac123a9779b8c943cc4d269">std::array</a>&lt; char, sizeof...(chars)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#a0480bb23bf5c47ac03935901211952b5">_storage</a> = { chars... }</td></tr>
+<tr class="memitem:a0480bb23bf5c47ac03935901211952b5"><td class="memItemLeft" align="right" valign="top">static constexpr std::array&lt; char, sizeof...(chars)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#a0480bb23bf5c47ac03935901211952b5">_storage</a> = { chars... }</td></tr>
 <tr class="separator:a0480bb23bf5c47ac03935901211952b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0538263243f423c8f86459300aec8d7"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">_string</a> = { _storage.data(), std::string_view::traits_type::length(_storage.data()) }</td></tr>
+<tr class="memitem:ae0538263243f423c8f86459300aec8d7"><td class="memItemLeft" align="right" valign="top">static constexpr std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">_string</a> = { _storage.data(), std::string_view::traits_type::length(_storage.data()) }</td></tr>
 <tr class="separator:ae0538263243f423c8f86459300aec8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -146,13 +146,13 @@ template&lt;char... chars&gt; </div>
         <tr>
           <td class="memname"><a class="el" href="../../d5/d3d/struct_acore_1_1_impl_1_1_chat_commands_1_1_container_tag.html#a6150ebd46977676b2ddeebfb818e86a9">ChatCommandResult</a> <a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html">Acore::ChatCommands::ExactSequence</a>&lt; chars &gt;::TryConsume </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> const *&#160;</td>
           <td class="paramname"><em>handler</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -172,7 +172,7 @@ template&lt;char... chars&gt; </div>
 <div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">if</span> (args.empty())</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">return</span> std::nullopt;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> start = args.substr(0, <a class="code" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">_string</a>.length());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            std::string_view start = args.substr(0, <a class="code" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">_string</a>.length());</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../db/d35/_util_8cpp.html#a131b997858d0d4c6825222d64948db73">StringEqualI</a>(start, <a class="code" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">_string</a>))</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                <span class="keyword">auto</span> [remainingToken, tail] = <a class="code" href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#aeca95018e8d551d917cf69e0764ccef7">Acore::Impl::ChatCommands::tokenize</a>(args.substr(<a class="code" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">_string</a>.length()));</div>
@@ -185,7 +185,6 @@ template&lt;char... chars&gt; </div>
 <div class="ttc" id="a_define_8h_html_a426f0c72f52eca709249d5962bf31b6d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a426f0c72f52eca709249d5962bf31b6d">STRING_VIEW_FMT_ARG</a></div><div class="ttdeci">#define STRING_VIEW_FMT_ARG(str)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00107">Define.h:107</a></div></div>
 <div class="ttc" id="a_language_8h_html_af9ee42b1cf006ecb2d2e74fe71c0761aa86ab7dfa54dc1f0a9671dd0e64715002"><div class="ttname"><a href="../../dc/d4b/_language_8h.html#af9ee42b1cf006ecb2d2e74fe71c0761aa86ab7dfa54dc1f0a9671dd0e64715002">LANG_CMDPARSER_EXACT_SEQ_MISMATCH</a></div><div class="ttdeci">@ LANG_CMDPARSER_EXACT_SEQ_MISMATCH</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d4b/_language_8h_source.html#l01116">Language.h:1116</a></div></div>
 <div class="ttc" id="a_util_8cpp_html_a131b997858d0d4c6825222d64948db73"><div class="ttname"><a href="../../db/d35/_util_8cpp.html#a131b997858d0d4c6825222d64948db73">StringEqualI</a></div><div class="ttdeci">bool StringEqualI(std::string_view a, std::string_view b)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_util_8cpp_source.html#l00683">Util.cpp:683</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a204ca715c2febee035464fa53dfc50c4"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">string_view</a></div><div class="ttdeci">basic_string_view&lt; char &gt; string_view</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l00529">core.h:529</a></div></div>
 <div class="ttc" id="anamespace_acore_1_1_impl_1_1_chat_commands_html_a496bce28eb0bf0ac4b5e1c54c19193b7"><div class="ttname"><a href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#a496bce28eb0bf0ac4b5e1c54c19193b7">Acore::Impl::ChatCommands::FormatAcoreString</a></div><div class="ttdeci">std::string FormatAcoreString(ChatHandler const *handler, AcoreStrings which, Ts &amp;&amp;... args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00126">ChatCommandHelpers.h:126</a></div></div>
 <div class="ttc" id="anamespace_acore_1_1_impl_1_1_chat_commands_html_aeca95018e8d551d917cf69e0764ccef7"><div class="ttname"><a href="../../db/db5/namespace_acore_1_1_impl_1_1_chat_commands.html#aeca95018e8d551d917cf69e0764ccef7">Acore::Impl::ChatCommands::tokenize</a></div><div class="ttdeci">TokenizeResult tokenize(std::string_view args)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d7e/_chat_command_helpers_8h_source.html#l00055">ChatCommandHelpers.h:55</a></div></div>
 <div class="ttc" id="astruct_acore_1_1_chat_commands_1_1_exact_sequence_html_ae0538263243f423c8f86459300aec8d7"><div class="ttname"><a href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html#ae0538263243f423c8f86459300aec8d7">Acore::ChatCommands::ExactSequence::_string</a></div><div class="ttdeci">static constexpr std::string_view _string</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d40/_chat_command_tags_8h_source.html#l00111">ChatCommandTags.h:111</a></div></div>
@@ -207,7 +206,7 @@ template&lt;char... chars&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="../../de/d17/lf_8h.html#ac47d04d1cac123a9779b8c943cc4d269">std::array</a>&lt;char, sizeof...(chars)&gt; <a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html">Acore::ChatCommands::ExactSequence</a>&lt; chars &gt;::_storage = { chars... }</td>
+          <td class="memname">constexpr std::array&lt;char, sizeof...(chars)&gt; <a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html">Acore::ChatCommands::ExactSequence</a>&lt; chars &gt;::_storage = { chars... }</td>
         </tr>
       </table>
   </td>
@@ -233,7 +232,7 @@ template&lt;char... chars&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> <a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html">Acore::ChatCommands::ExactSequence</a>&lt; chars &gt;::_string = { _storage.data(), std::string_view::traits_type::length(_storage.data()) }</td>
+          <td class="memname">constexpr std::string_view <a class="el" href="../../d6/df6/struct_acore_1_1_chat_commands_1_1_exact_sequence.html">Acore::ChatCommands::ExactSequence</a>&lt; chars &gt;::_string = { _storage.data(), std::string_view::traits_type::length(_storage.data()) }</td>
         </tr>
       </table>
   </td>

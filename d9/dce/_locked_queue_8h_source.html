@@ -104,7 +104,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="../../d2/d4b/class_locked_queue.html#aee2e535fc427f0c3bce748ec078a6d80">   39</a></span>&#160;    <a class="code" href="../../d2/d4b/class_locked_queue.html#aee2e535fc427f0c3bce748ec078a6d80">LockedQueue</a>()</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : <a class="code" href="../../d2/d4b/class_locked_queue.html#a1af6fe1c19a40d2b94873920dd7e8da7">_canceled</a>(<a class="code" href="../../db/def/_c99_2stdbool_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        : <a class="code" href="../../d2/d4b/class_locked_queue.html#a1af6fe1c19a40d2b94873920dd7e8da7">_canceled</a>(false)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
@@ -128,7 +128,7 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.insert(<a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.begin(), begin, end);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d2/d4b/class_locked_queue.html#ac818ec56d60e2ec059857e0aaa99f8a4">   68</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d2/d4b/class_locked_queue.html#ac818ec56d60e2ec059857e0aaa99f8a4">next</a>(T&amp; <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d2/d4b/class_locked_queue.html#ac818ec56d60e2ec059857e0aaa99f8a4">   68</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d2/d4b/class_locked_queue.html#ac818ec56d60e2ec059857e0aaa99f8a4">next</a>(T&amp; result)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        std::lock_guard&lt;std::mutex&gt; <a class="code" href="../../d2/d4b/class_locked_queue.html#a86647b0df50a7f3ce7a312eb8647f624">lock</a>(<a class="code" href="../../d2/d4b/class_locked_queue.html#a64be27c5d4ab7cc4a8c559dd6e1d4ebb">_lock</a>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
@@ -137,14 +137,14 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.front();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        result = <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.front();</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.pop_front();</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> Checker&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../d2/d4b/class_locked_queue.html#acaade33a01794600c72efbf389fe7664">   84</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d2/d4b/class_locked_queue.html#acaade33a01794600c72efbf389fe7664">next</a>(T&amp; <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>, Checker&amp; check)</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="../../d2/d4b/class_locked_queue.html#acaade33a01794600c72efbf389fe7664">   84</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="../../d2/d4b/class_locked_queue.html#acaade33a01794600c72efbf389fe7664">next</a>(T&amp; result, Checker&amp; check)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::lock_guard&lt;std::mutex&gt; <a class="code" href="../../d2/d4b/class_locked_queue.html#a86647b0df50a7f3ce7a312eb8647f624">lock</a>(<a class="code" href="../../d2/d4b/class_locked_queue.html#a64be27c5d4ab7cc4a8c559dd6e1d4ebb">_lock</a>);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
@@ -153,8 +153,8 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.front();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (!check.Process(<a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>))</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        result = <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.front();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">if</span> (!check.Process(result))</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
@@ -167,14 +167,14 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="../../d2/d4b/class_locked_queue.html#a86647b0df50a7f3ce7a312eb8647f624">lock</a>();</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        T&amp; <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a> = <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.front();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        T&amp; result = <a class="code" href="../../d2/d4b/class_locked_queue.html#a55ced2abb0a6dd64554597347b61ebf1">_queue</a>.front();</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span> (autoUnlock)</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <a class="code" href="../../d2/d4b/class_locked_queue.html#a3d74de7cc364ba891c538ee3d166e9aa">unlock</a>();</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">result</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="../../d2/d4b/class_locked_queue.html#ab3d04497f8a07c5c6b6208b136a297a4">  119</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d2/d4b/class_locked_queue.html#ab3d04497f8a07c5c6b6208b136a297a4">cancel</a>()</div>
@@ -213,7 +213,6 @@ $(function() {
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;};</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="a_c99_2stdbool_8h_html_a65e9886d74aaee76545e83dd09011727"><div class="ttname"><a href="../../db/def/_c99_2stdbool_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></div><div class="ttdeci">#define false</div><div class="ttdef"><b>Definition:</b> <a href="../../db/def/_c99_2stdbool_8h_source.html#l00016">stdbool.h:16</a></div></div>
 <div class="ttc" id="aclass_locked_queue_html"><div class="ttname"><a href="../../d2/d4b/class_locked_queue.html">LockedQueue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dce/_locked_queue_8h_source.html#l00025">LockedQueue.h:26</a></div></div>
 <div class="ttc" id="aclass_locked_queue_html_a03f459044b4ffb413fb8d1ba98179ab8"><div class="ttname"><a href="../../d2/d4b/class_locked_queue.html#a03f459044b4ffb413fb8d1ba98179ab8">LockedQueue::add</a></div><div class="ttdeci">void add(const T &amp;item)</div><div class="ttdoc">Adds an item to the queue.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dce/_locked_queue_8h_source.html#l00050">LockedQueue.h:50</a></div></div>
 <div class="ttc" id="aclass_locked_queue_html_a1af6fe1c19a40d2b94873920dd7e8da7"><div class="ttname"><a href="../../d2/d4b/class_locked_queue.html#a1af6fe1c19a40d2b94873920dd7e8da7">LockedQueue::_canceled</a></div><div class="ttdeci">volatile bool _canceled</div><div class="ttdoc">Cancellation flag.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dce/_locked_queue_8h_source.html#l00034">LockedQueue.h:34</a></div></div>
@@ -231,7 +230,6 @@ $(function() {
 <div class="ttc" id="aclass_locked_queue_html_acaade33a01794600c72efbf389fe7664"><div class="ttname"><a href="../../d2/d4b/class_locked_queue.html#acaade33a01794600c72efbf389fe7664">LockedQueue::next</a></div><div class="ttdeci">bool next(T &amp;result, Checker &amp;check)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dce/_locked_queue_8h_source.html#l00084">LockedQueue.h:84</a></div></div>
 <div class="ttc" id="aclass_locked_queue_html_accb1cf6f21e950bbc163cd3a4e145610"><div class="ttname"><a href="../../d2/d4b/class_locked_queue.html#accb1cf6f21e950bbc163cd3a4e145610">LockedQueue::~LockedQueue</a></div><div class="ttdeci">virtual ~LockedQueue()</div><div class="ttdoc">Destroy a LockedQueue.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dce/_locked_queue_8h_source.html#l00045">LockedQueue.h:45</a></div></div>
 <div class="ttc" id="aclass_locked_queue_html_aee2e535fc427f0c3bce748ec078a6d80"><div class="ttname"><a href="../../d2/d4b/class_locked_queue.html#aee2e535fc427f0c3bce748ec078a6d80">LockedQueue::LockedQueue</a></div><div class="ttdeci">LockedQueue()</div><div class="ttdoc">Create a LockedQueue.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dce/_locked_queue_8h_source.html#l00039">LockedQueue.h:39</a></div></div>
-<div class="ttc" id="anamespacedetail_1_1digits_html_aad69d2373aa047bdd9e81494bf3da5ae"><div class="ttname"><a href="../../df/d60/namespacedetail_1_1digits.html#aad69d2373aa047bdd9e81494bf3da5ae">detail::digits::result</a></div><div class="ttdeci">result</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d50/format-inl_8h_source.html#l00622">format-inl.h:622</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

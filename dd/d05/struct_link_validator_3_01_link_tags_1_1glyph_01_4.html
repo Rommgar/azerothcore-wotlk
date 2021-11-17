@@ -71,9 +71,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4704555f7e926f8facce237de6772a3d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d05/struct_link_validator_3_01_link_tags_1_1glyph_01_4.html#a4704555f7e926f8facce237de6772a3d">IsTextValid</a> (<a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../df/dea/structdata.html">data</a>, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> text)</td></tr>
+<tr class="memitem:a4704555f7e926f8facce237de6772a3d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d05/struct_link_validator_3_01_link_tags_1_1glyph_01_4.html#a4704555f7e926f8facce237de6772a3d">IsTextValid</a> (<a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> const &amp;data, std::string_view text)</td></tr>
 <tr class="separator:a4704555f7e926f8facce237de6772a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e2a1ab20d086987429174f41887bc45"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d05/struct_link_validator_3_01_link_tags_1_1glyph_01_4.html#a4e2a1ab20d086987429174f41887bc45">IsColorValid</a> (<a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;, <a class="el" href="../../de/dd7/struct_acore_1_1_hyperlinks_1_1_hyperlink_color.html">HyperlinkColor</a> c)</td></tr>
+<tr class="memitem:a4e2a1ab20d086987429174f41887bc45"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d05/struct_link_validator_3_01_link_tags_1_1glyph_01_4.html#a4e2a1ab20d086987429174f41887bc45">IsColorValid</a> (<a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> const &amp;, <a class="el" href="../../de/dd7/struct_acore_1_1_hyperlinks_1_1_hyperlink_color.html">HyperlinkColor</a> c)</td></tr>
 <tr class="separator:a4e2a1ab20d086987429174f41887bc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -90,9 +90,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d9/dcf/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1glyph.html">LinkTags::glyph</a> &gt;::IsColorValid </td>
+          <td class="memname">static bool <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d9/dcf/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1glyph.html">LinkTags::glyph</a> &gt;::IsColorValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> const &amp;&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -116,12 +116,11 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html#l00286">286</a> of file <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html">Hyperlinks.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    {</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">c</a> == <a class="code" href="../../df/d0b/_shared_defines_8h.html#aff4462a11392766622feb9f20463ffb6ac72f5fbb9b7f0f6d339383c0fdcca622">CHAT_LINK_COLOR_GLYPH</a>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        <span class="keywordflow">return</span> c == <a class="code" href="../../df/d0b/_shared_defines_8h.html#aff4462a11392766622feb9f20463ffb6ac72f5fbb9b7f0f6d339383c0fdcca622">CHAT_LINK_COLOR_GLYPH</a>;</div>
 <div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    }</div>
 <div class="ttc" id="a_shared_defines_8h_html_aff4462a11392766622feb9f20463ffb6ac72f5fbb9b7f0f6d339383c0fdcca622"><div class="ttname"><a href="../../df/d0b/_shared_defines_8h.html#aff4462a11392766622feb9f20463ffb6ac72f5fbb9b7f0f6d339383c0fdcca622">CHAT_LINK_COLOR_GLYPH</a></div><div class="ttdeci">@ CHAT_LINK_COLOR_GLYPH</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0b/_shared_defines_8h_source.html#l03186">SharedDefines.h:3185</a></div></div>
-<div class="ttc" id="anamespacempq_html_af509b98ca1ebe6c0248f215d23e06c93"><div class="ttname"><a href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">mpq.c</a></div><div class="ttdeci">list c</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3e/mpq_8py_source.html#l00295">mpq.py:295</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d3e/mpq_8py_source.html#l00295">mpq::c</a>, and <a class="el" href="../../df/d0b/_shared_defines_8h_source.html#l03185">CHAT_LINK_COLOR_GLYPH</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d0b/_shared_defines_8h_source.html#l03185">CHAT_LINK_COLOR_GLYPH</a>.</p>
 
 </div>
 </div>
@@ -135,15 +134,15 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d9/dcf/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1glyph.html">LinkTags::glyph</a> &gt;::IsTextValid </td>
+          <td class="memname">static bool <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d9/dcf/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1glyph.html">LinkTags::glyph</a> &gt;::IsTextValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d0/d3a/struct_acore_1_1_hyperlinks_1_1_glyph_link_data.html">GlyphLinkData</a> const &amp;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>text</em>&#160;</td>
         </tr>
         <tr>
@@ -161,7 +160,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html#l00278">278</a> of file <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html">Hyperlinks.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    {</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> <span class="keyword">const</span>* info = <a class="code" href="../../d3/d75/_spell_mgr_8h.html#aa21e14d8e1145507b746a69b5487109d">sSpellMgr</a>-&gt;GetSpellInfo(<a class="code" href="../../df/dea/structdata.html">data</a>.Glyph-&gt;SpellId))</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> <span class="keyword">const</span>* info = <a class="code" href="../../d3/d75/_spell_mgr_8h.html#aa21e14d8e1145507b746a69b5487109d">sSpellMgr</a>-&gt;GetSpellInfo(data.Glyph-&gt;SpellId))</div>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d5/d4a/struct_link_validator.html#a1c9a027ff1f355b16fe629b7c4af7b98">LinkValidator&lt;LinkTags::spell&gt;::IsTextValid</a>(info, text);</div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -169,9 +168,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="ttc" id="a_spell_mgr_8h_html_aa21e14d8e1145507b746a69b5487109d"><div class="ttname"><a href="../../d3/d75/_spell_mgr_8h.html#aa21e14d8e1145507b746a69b5487109d">sSpellMgr</a></div><div class="ttdeci">#define sSpellMgr</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d75/_spell_mgr_8h_source.html#l00794">SpellMgr.h:794</a></div></div>
 <div class="ttc" id="aclass_spell_info_html"><div class="ttname"><a href="../../d4/d7d/class_spell_info.html">SpellInfo</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d70/_spell_info_8h_source.html#l00312">SpellInfo.h:313</a></div></div>
 <div class="ttc" id="astruct_link_validator_html_a1c9a027ff1f355b16fe629b7c4af7b98"><div class="ttname"><a href="../../d5/d4a/struct_link_validator.html#a1c9a027ff1f355b16fe629b7c4af7b98">LinkValidator::IsTextValid</a></div><div class="ttdeci">static bool IsTextValid(typename T::value_type, std::string_view)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d61/_hyperlinks_8cpp_source.html#l00108">Hyperlinks.cpp:108</a></div></div>
-<div class="ttc" id="astructdata_html"><div class="ttname"><a href="../../df/dea/structdata.html">data</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddf/fmt_2include_2fmt_2format_8h_source.html#l00897">format.h:897</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html#l00108">LinkValidator&lt; T &gt;::IsTextValid()</a>, and <a class="el" href="../../d3/d75/_spell_mgr_8h_source.html#l00794">sSpellMgr</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d78/_hyperlinks_8h_source.html#l00055">Acore::Hyperlinks::GlyphLinkData::Glyph</a>, <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html#l00108">LinkValidator&lt; T &gt;::IsTextValid()</a>, <a class="el" href="../../d1/d22/_d_b_c_structure_8h_source.html#l00977">GlyphPropertiesEntry::SpellId</a>, and <a class="el" href="../../d3/d75/_spell_mgr_8h_source.html#l00794">sSpellMgr</a>.</p>
 
 </div>
 </div>

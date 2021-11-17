@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Azerotcore-wotlk: How to compile:</title>
+<title>Azerotcore-wotlk: Custom folder</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,29 +62,28 @@ $(function() {
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">How to compile: </div>  </div>
+<div class="title">Custom folder </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_apps_compiler_README"></a> first of all, if you need some custom configuration you have to copy /conf/dist/config.sh in /conf/config.sh and configure it</p>
-<ul>
-<li>for a "clean" compilation you must run all scripts in their order: <pre class="fragment">  ./1-clean.sh
-  ./2-configure.sh
-  ./3-build.sh
-</pre></li>
-<li>if you add/rename/delete some sources and you need to compile it you have to run: <pre class="fragment">  ./2-configure.sh
-  ./3-build.sh
-</pre></li>
-<li>if you have modified code only, you just need to run <pre class="fragment">  ./3-build.sh
-</pre></li>
-</ul>
-<h1><a class="anchor" id="autotoc_md1"></a>
-compiler.sh</h1>
-<p>compiler.sh script contains an interactive menu to clean/compile/build. You can also run actions directly by command lines specifying the option. Ex: ./compiler.sh 3 <br  />
-</p>
-<p>It will start the build process (it's equivalent to ./3-build.sh)</p>
+<div class="textblock"><p><a class="anchor" id="md_src_server_scripts_Custom_README"></a> Here you can create a CMakeLists.txt file where to add your custom scripts. They will be git-ignored.</p>
+<p>Remember to use cmake macros inside your CMakeLists.txt to correctly add your scripts to the project solution.</p>
+<p>**/!\ BTW, we strongly suggest you to use our module system to create your custom powerful module instead of simple scripts.**</p>
+<hr  />
 <h1><a class="anchor" id="autotoc_md2"></a>
-Note:</h1>
-<p>For an optimal development process and <b>really faster</b> compilation time, is suggested to use clang instead of gcc </p>
+How to add your custom script:</h1>
+<p><b>1 - Create a CMakeLists.txt in this directory</b></p>
+<p>Example (everything below is needed, just replace with your scripts' names):</p>
+<div class="fragment"><div class="line">set(scripts_STAT_SRCS</div>
+<div class="line">  ${scripts_STAT_SRCS}</div>
+<div class="line">  ${AC_SCRIPTS_DIR}/Custom/your_script.cpp</div>
+<div class="line">  ${AC_SCRIPTS_DIR}/Custom/your_script.h</div>
+<div class="line">)</div>
+<div class="line"> </div>
+<div class="line">AC_ADD_SCRIPT_LOADER(&quot;Custom&quot; &quot;ScriptLoader.h&quot;)</div>
+<div class="line"> </div>
+<div class="line">message(&quot;  -&gt; Prepared: My custom scripts&quot;)</div>
+</div><!-- fragment --><p><b>2 - Add the script to ../ScriptLoader.cpp</b></p>
+<p>Open the file <code>ScriptLoader.cpp</code> and go at the end to know what to edit. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->

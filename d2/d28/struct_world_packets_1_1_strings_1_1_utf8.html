@@ -77,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab0d4c07b4ce9903a913bdced5e05bbd6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d28/struct_world_packets_1_1_strings_1_1_utf8.html#ab0d4c07b4ce9903a913bdced5e05bbd6">Validate</a> (std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../d7/d71/classvalue.html">value</a>)</td></tr>
+<tr class="memitem:ab0d4c07b4ce9903a913bdced5e05bbd6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d28/struct_world_packets_1_1_strings_1_1_utf8.html#ab0d4c07b4ce9903a913bdced5e05bbd6">Validate</a> (std::string const &amp;value)</td></tr>
 <tr class="separator:ab0d4c07b4ce9903a913bdced5e05bbd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -94,9 +94,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> WorldPackets::Strings::Utf8::Validate </td>
+          <td class="memname">bool WorldPackets::Strings::Utf8::Validate </td>
           <td>(</td>
-          <td class="paramtype">std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
@@ -110,16 +110,12 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../de/dd6/_packet_utilities_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../de/dd6/_packet_utilities_8cpp_source.html">PacketUtilities.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="../../dd/de8/namespaceutf8.html#add2dbec3d058aa66500ec4f97cc8174b">utf8::is_valid</a>(<a class="code" href="../../d7/d71/classvalue.html">value</a>.begin(), <a class="code" href="../../d7/d71/classvalue.html">value</a>.end()))</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">throw</span> InvalidUtf8ValueException(<a class="code" href="../../d7/d71/classvalue.html">value</a>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (!utf8::is_valid(value.begin(), value.end()))</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">throw</span> InvalidUtf8ValueException(value);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="../../d7/d71/classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01120">core.h:1120</a></div></div>
-<div class="ttc" id="anamespaceutf8_html_add2dbec3d058aa66500ec4f97cc8174b"><div class="ttname"><a href="../../dd/de8/namespaceutf8.html#add2dbec3d058aa66500ec4f97cc8174b">utf8::is_valid</a></div><div class="ttdeci">bool is_valid(octet_iterator start, octet_iterator end)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d70/utf8cpp_2utf8_2core_8h_source.html#l00300">core.h:300</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../df/d70/utf8cpp_2utf8_2core_8h_source.html#l00300">utf8::is_valid()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>

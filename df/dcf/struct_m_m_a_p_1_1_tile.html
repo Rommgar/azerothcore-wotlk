@@ -85,15 +85,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a9cd4f4be0393e1b40d1ea83dad189a35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc4/structrc_compact_heightfield.html">rcCompactHeightfield</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a9cd4f4be0393e1b40d1ea83dad189a35">chf</a> {nullptr}</td></tr>
+<tr class="memitem:a9cd4f4be0393e1b40d1ea83dad189a35"><td class="memItemLeft" align="right" valign="top">rcCompactHeightfield *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a9cd4f4be0393e1b40d1ea83dad189a35">chf</a> {nullptr}</td></tr>
 <tr class="separator:a9cd4f4be0393e1b40d1ea83dad189a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c263578a352c75a21570a26439d6156"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/df7/structrc_heightfield.html">rcHeightfield</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a6c263578a352c75a21570a26439d6156">solid</a> {nullptr}</td></tr>
+<tr class="memitem:a6c263578a352c75a21570a26439d6156"><td class="memItemLeft" align="right" valign="top">rcHeightfield *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a6c263578a352c75a21570a26439d6156">solid</a> {nullptr}</td></tr>
 <tr class="separator:a6c263578a352c75a21570a26439d6156"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8263aa243c049daa70ed537f206c6a15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d9f/structrc_contour_set.html">rcContourSet</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a8263aa243c049daa70ed537f206c6a15">cset</a> {nullptr}</td></tr>
+<tr class="memitem:a8263aa243c049daa70ed537f206c6a15"><td class="memItemLeft" align="right" valign="top">rcContourSet *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a8263aa243c049daa70ed537f206c6a15">cset</a> {nullptr}</td></tr>
 <tr class="separator:a8263aa243c049daa70ed537f206c6a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00dde7c2b62890f4d78697e669f2a810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d75/structrc_poly_mesh.html">rcPolyMesh</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a00dde7c2b62890f4d78697e669f2a810">pmesh</a> {nullptr}</td></tr>
+<tr class="memitem:a00dde7c2b62890f4d78697e669f2a810"><td class="memItemLeft" align="right" valign="top">rcPolyMesh *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a00dde7c2b62890f4d78697e669f2a810">pmesh</a> {nullptr}</td></tr>
 <tr class="separator:a00dde7c2b62890f4d78697e669f2a810"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23efb981de3dbc2ecdbe4dafdbaa8f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d70/structrc_poly_mesh_detail.html">rcPolyMeshDetail</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a23efb981de3dbc2ecdbe4dafdbaa8f58">dmesh</a> {nullptr}</td></tr>
+<tr class="memitem:a23efb981de3dbc2ecdbe4dafdbaa8f58"><td class="memItemLeft" align="right" valign="top">rcPolyMeshDetail *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a23efb981de3dbc2ecdbe4dafdbaa8f58">dmesh</a> {nullptr}</td></tr>
 <tr class="separator:a23efb981de3dbc2ecdbe4dafdbaa8f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -153,25 +153,18 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dbb/_map_builder_8h_source.html#l00060">60</a> of file <a class="el" href="../../d2/dbb/_map_builder_8h_source.html">MapBuilder.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="../../de/d78/_recast_8h.html#a67311a62f4476274e58bfd4fc1897c2b">rcFreeCompactHeightfield</a>(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a9cd4f4be0393e1b40d1ea83dad189a35">chf</a>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="../../de/d78/_recast_8h.html#a2fb91095dd65acee1c4dfad8f61449b2">rcFreeContourSet</a>(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a8263aa243c049daa70ed537f206c6a15">cset</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="../../de/d78/_recast_8h.html#a370dc7ef848ed74b7660d70a3972557c">rcFreeHeightField</a>(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a6c263578a352c75a21570a26439d6156">solid</a>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="../../de/d78/_recast_8h.html#a06d2af90959be1bc0090a7fd3bca4af3">rcFreePolyMesh</a>(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a00dde7c2b62890f4d78697e669f2a810">pmesh</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="../../de/d78/_recast_8h.html#a4d34c07695552e9fbd277809581af8c6">rcFreePolyMeshDetail</a>(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a23efb981de3dbc2ecdbe4dafdbaa8f58">dmesh</a>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            rcFreeCompactHeightfield(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a9cd4f4be0393e1b40d1ea83dad189a35">chf</a>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            rcFreeContourSet(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a8263aa243c049daa70ed537f206c6a15">cset</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            rcFreeHeightField(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a6c263578a352c75a21570a26439d6156">solid</a>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            rcFreePolyMesh(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a00dde7c2b62890f4d78697e669f2a810">pmesh</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            rcFreePolyMeshDetail(<a class="code" href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a23efb981de3dbc2ecdbe4dafdbaa8f58">dmesh</a>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
-<div class="ttc" id="a_recast_8h_html_a06d2af90959be1bc0090a7fd3bca4af3"><div class="ttname"><a href="../../de/d78/_recast_8h.html#a06d2af90959be1bc0090a7fd3bca4af3">rcFreePolyMesh</a></div><div class="ttdeci">void rcFreePolyMesh(rcPolyMesh *pmesh)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_recast_8cpp_source.html#l00227">Recast.cpp:227</a></div></div>
-<div class="ttc" id="a_recast_8h_html_a2fb91095dd65acee1c4dfad8f61449b2"><div class="ttname"><a href="../../de/d78/_recast_8h.html#a2fb91095dd65acee1c4dfad8f61449b2">rcFreeContourSet</a></div><div class="ttdeci">void rcFreeContourSet(rcContourSet *cset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_recast_8cpp_source.html#l00196">Recast.cpp:196</a></div></div>
-<div class="ttc" id="a_recast_8h_html_a370dc7ef848ed74b7660d70a3972557c"><div class="ttname"><a href="../../de/d78/_recast_8h.html#a370dc7ef848ed74b7660d70a3972557c">rcFreeHeightField</a></div><div class="ttdeci">void rcFreeHeightField(rcHeightfield *hf)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_recast_8cpp_source.html#l00127">Recast.cpp:127</a></div></div>
-<div class="ttc" id="a_recast_8h_html_a4d34c07695552e9fbd277809581af8c6"><div class="ttname"><a href="../../de/d78/_recast_8h.html#a4d34c07695552e9fbd277809581af8c6">rcFreePolyMeshDetail</a></div><div class="ttdeci">void rcFreePolyMeshDetail(rcPolyMeshDetail *dmesh)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_recast_8cpp_source.html#l00265">Recast.cpp:265</a></div></div>
-<div class="ttc" id="a_recast_8h_html_a67311a62f4476274e58bfd4fc1897c2b"><div class="ttname"><a href="../../de/d78/_recast_8h.html#a67311a62f4476274e58bfd4fc1897c2b">rcFreeCompactHeightfield</a></div><div class="ttdeci">void rcFreeCompactHeightfield(rcCompactHeightfield *chf)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d01/_recast_8cpp_source.html#l00137">Recast.cpp:137</a></div></div>
 <div class="ttc" id="astruct_m_m_a_p_1_1_tile_html_a00dde7c2b62890f4d78697e669f2a810"><div class="ttname"><a href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a00dde7c2b62890f4d78697e669f2a810">MMAP::Tile::pmesh</a></div><div class="ttdeci">rcPolyMesh * pmesh</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbb/_map_builder_8h_source.html#l00071">MapBuilder.h:71</a></div></div>
 <div class="ttc" id="astruct_m_m_a_p_1_1_tile_html_a23efb981de3dbc2ecdbe4dafdbaa8f58"><div class="ttname"><a href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a23efb981de3dbc2ecdbe4dafdbaa8f58">MMAP::Tile::dmesh</a></div><div class="ttdeci">rcPolyMeshDetail * dmesh</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbb/_map_builder_8h_source.html#l00072">MapBuilder.h:72</a></div></div>
 <div class="ttc" id="astruct_m_m_a_p_1_1_tile_html_a6c263578a352c75a21570a26439d6156"><div class="ttname"><a href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a6c263578a352c75a21570a26439d6156">MMAP::Tile::solid</a></div><div class="ttdeci">rcHeightfield * solid</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbb/_map_builder_8h_source.html#l00069">MapBuilder.h:69</a></div></div>
 <div class="ttc" id="astruct_m_m_a_p_1_1_tile_html_a8263aa243c049daa70ed537f206c6a15"><div class="ttname"><a href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a8263aa243c049daa70ed537f206c6a15">MMAP::Tile::cset</a></div><div class="ttdeci">rcContourSet * cset</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbb/_map_builder_8h_source.html#l00070">MapBuilder.h:70</a></div></div>
 <div class="ttc" id="astruct_m_m_a_p_1_1_tile_html_a9cd4f4be0393e1b40d1ea83dad189a35"><div class="ttname"><a href="../../df/dcf/struct_m_m_a_p_1_1_tile.html#a9cd4f4be0393e1b40d1ea83dad189a35">MMAP::Tile::chf</a></div><div class="ttdeci">rcCompactHeightfield * chf</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dbb/_map_builder_8h_source.html#l00068">MapBuilder.h:68</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/d01/_recast_8cpp_source.html#l00137">rcFreeCompactHeightfield()</a>, <a class="el" href="../../d3/d01/_recast_8cpp_source.html#l00196">rcFreeContourSet()</a>, <a class="el" href="../../d3/d01/_recast_8cpp_source.html#l00127">rcFreeHeightField()</a>, <a class="el" href="../../d3/d01/_recast_8cpp_source.html#l00227">rcFreePolyMesh()</a>, and <a class="el" href="../../d3/d01/_recast_8cpp_source.html#l00265">rcFreePolyMeshDetail()</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -182,7 +175,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc4/structrc_compact_heightfield.html">rcCompactHeightfield</a>* MMAP::Tile::chf {nullptr}</td>
+          <td class="memname">rcCompactHeightfield* MMAP::Tile::chf {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +193,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d9f/structrc_contour_set.html">rcContourSet</a>* MMAP::Tile::cset {nullptr}</td>
+          <td class="memname">rcContourSet* MMAP::Tile::cset {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -218,7 +211,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/d70/structrc_poly_mesh_detail.html">rcPolyMeshDetail</a>* MMAP::Tile::dmesh {nullptr}</td>
+          <td class="memname">rcPolyMeshDetail* MMAP::Tile::dmesh {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,7 +229,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/d75/structrc_poly_mesh.html">rcPolyMesh</a>* MMAP::Tile::pmesh {nullptr}</td>
+          <td class="memname">rcPolyMesh* MMAP::Tile::pmesh {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -254,7 +247,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/df7/structrc_heightfield.html">rcHeightfield</a>* MMAP::Tile::solid {nullptr}</td>
+          <td class="memname">rcHeightfield* MMAP::Tile::solid {nullptr}</td>
         </tr>
       </table>
 </div><div class="memdoc">

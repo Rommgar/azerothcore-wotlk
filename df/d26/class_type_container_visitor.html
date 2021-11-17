@@ -78,7 +78,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1dd5b1ac8e4703358a32431efed8faa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8110dd70655223f06fb08b552420a6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d26/class_type_container_visitor.html#af8110dd70655223f06fb08b552420a6d">Visit</a> (TYPE_CONTAINER &amp;c)</td></tr>
 <tr class="separator:af8110dd70655223f06fb08b552420a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf0874fc1f8bb38d2f62530f5667c836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d26/class_type_container_visitor.html#adf0874fc1f8bb38d2f62530f5667c836">Visit</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> TYPE_CONTAINER &amp;c) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:adf0874fc1f8bb38d2f62530f5667c836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d26/class_type_container_visitor.html#adf0874fc1f8bb38d2f62530f5667c836">Visit</a> (const TYPE_CONTAINER &amp;c) const</td></tr>
 <tr class="separator:adf0874fc1f8bb38d2f62530f5667c836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -140,7 +140,7 @@ template&lt;class VISITOR , class TYPE_CONTAINER &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="../../df/d26/class_type_container_visitor.html">TypeContainerVisitor</a>&lt; VISITOR, TYPE_CONTAINER &gt;::Visit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> TYPE_CONTAINER &amp;&#160;</td>
+          <td class="paramtype">const TYPE_CONTAINER &amp;&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -154,12 +154,11 @@ template&lt;class VISITOR , class TYPE_CONTAINER &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00094">94</a> of file <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html">TypeContainerVisitor.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../d0/d84/_type_container_visitor_8h.html#a3a47e8382377ca85476452be8786e00f">VisitorHelper</a>(<a class="code" href="../../df/d26/class_type_container_visitor.html#a7be8eccd05fd489da52e587f51555891">i_visitor</a>, <a class="code" href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">c</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="../../d0/d84/_type_container_visitor_8h.html#a3a47e8382377ca85476452be8786e00f">VisitorHelper</a>(<a class="code" href="../../df/d26/class_type_container_visitor.html#a7be8eccd05fd489da52e587f51555891">i_visitor</a>, c);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
 <div class="ttc" id="a_type_container_visitor_8h_html_a3a47e8382377ca85476452be8786e00f"><div class="ttname"><a href="../../d0/d84/_type_container_visitor_8h.html#a3a47e8382377ca85476452be8786e00f">VisitorHelper</a></div><div class="ttdeci">void VisitorHelper(VISITOR &amp;v, TYPE_CONTAINER &amp;c)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d84/_type_container_visitor_8h_source.html#l00034">TypeContainerVisitor.h:34</a></div></div>
-<div class="ttc" id="anamespacempq_html_af509b98ca1ebe6c0248f215d23e06c93"><div class="ttname"><a href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">mpq.c</a></div><div class="ttdeci">list c</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3e/mpq_8py_source.html#l00295">mpq.py:295</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d3e/mpq_8py_source.html#l00295">mpq::c</a>, <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00100">TypeContainerVisitor&lt; VISITOR, TYPE_CONTAINER &gt;::i_visitor</a>, and <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00034">VisitorHelper()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00100">TypeContainerVisitor&lt; VISITOR, TYPE_CONTAINER &gt;::i_visitor</a>, and <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00034">VisitorHelper()</a>.</p>
 
 </div>
 </div>
@@ -191,10 +190,10 @@ template&lt;class VISITOR , class TYPE_CONTAINER &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00089">89</a> of file <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html">TypeContainerVisitor.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    {</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../d0/d84/_type_container_visitor_8h.html#a3a47e8382377ca85476452be8786e00f">VisitorHelper</a>(<a class="code" href="../../df/d26/class_type_container_visitor.html#a7be8eccd05fd489da52e587f51555891">i_visitor</a>, <a class="code" href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">c</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="../../d0/d84/_type_container_visitor_8h.html#a3a47e8382377ca85476452be8786e00f">VisitorHelper</a>(<a class="code" href="../../df/d26/class_type_container_visitor.html#a7be8eccd05fd489da52e587f51555891">i_visitor</a>, c);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d3e/mpq_8py_source.html#l00295">mpq::c</a>, <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00100">TypeContainerVisitor&lt; VISITOR, TYPE_CONTAINER &gt;::i_visitor</a>, and <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00034">VisitorHelper()</a>.</p>
+<p class="reference">References <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00100">TypeContainerVisitor&lt; VISITOR, TYPE_CONTAINER &gt;::i_visitor</a>, and <a class="el" href="../../d0/d84/_type_container_visitor_8h_source.html#l00034">VisitorHelper()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/df4/_game_event_mgr_8cpp_source.html#l01754">GameEventMgr::RunSmartAIScripts()</a>.</p>
 

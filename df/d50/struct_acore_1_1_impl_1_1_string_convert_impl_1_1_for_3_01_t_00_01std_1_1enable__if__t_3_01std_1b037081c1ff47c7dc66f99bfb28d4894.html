@@ -77,9 +77,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a72f670439493874ebba06e36a5fb919d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d50/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_1b037081c1ff47c7dc66f99bfb28d4894.html#a72f670439493874ebba06e36a5fb919d">FromString</a> (<a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, std::chars_format <a class="el" href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a>=std::chars_format())</td></tr>
+<tr class="memitem:a72f670439493874ebba06e36a5fb919d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d50/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_1b037081c1ff47c7dc66f99bfb28d4894.html#a72f670439493874ebba06e36a5fb919d">FromString</a> (std::string_view str, std::chars_format fmt=std::chars_format())</td></tr>
 <tr class="separator:a72f670439493874ebba06e36a5fb919d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3d09ab18708ed779c589464fa7fd32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d50/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_1b037081c1ff47c7dc66f99bfb28d4894.html#a6e3d09ab18708ed779c589464fa7fd32">FromString</a> (<a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> str, int base)</td></tr>
+<tr class="memitem:a6e3d09ab18708ed779c589464fa7fd32"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d50/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_1b037081c1ff47c7dc66f99bfb28d4894.html#a6e3d09ab18708ed779c589464fa7fd32">FromString</a> (std::string_view str, int base)</td></tr>
 <tr class="separator:a6e3d09ab18708ed779c589464fa7fd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3130708d0068bd82f9c2861b130303"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d50/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for_3_01_t_00_01std_1_1enable__if__t_3_01std_1b037081c1ff47c7dc66f99bfb28d4894.html#a8e3130708d0068bd82f9c2861b130303">ToString</a> (T val)</td></tr>
 <tr class="separator:a8e3130708d0068bd82f9c2861b130303"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -103,9 +103,9 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt;T&gt; <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_floating_point_v&lt; T &gt; &gt; &gt;::FromString </td>
+          <td class="memname">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt;T&gt; <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, std::enable_if_t&lt; std::is_floating_point_v&lt; T &gt; &gt; &gt;::FromString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -158,9 +158,9 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt;T&gt; <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_floating_point_v&lt; T &gt; &gt; &gt;::FromString </td>
+          <td class="memname">static <a class="el" href="../../d5/dcf/_optional_8h.html#aaf8f4d77efd311ec7818ab421294ef82">Optional</a>&lt;T&gt; <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, std::enable_if_t&lt; std::is_floating_point_v&lt; T &gt; &gt; &gt;::FromString </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -189,16 +189,16 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">return</span> std::nullopt;</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a> == std::chars_format())</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">if</span> (fmt == std::chars_format())</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            {</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                <span class="keywordflow">if</span> (<a class="code" href="../../db/d35/_util_8cpp.html#a131b997858d0d4c6825222d64948db73">StringEqualI</a>(str.substr(0, 2), <span class="stringliteral">&quot;0x&quot;</span>))</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    <a class="code" href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a> = std::chars_format::hex;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    fmt = std::chars_format::hex;</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    str.remove_prefix(2);</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                }</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    <a class="code" href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a> = std::chars_format::general;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    fmt = std::chars_format::general;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                }</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="keywordflow">if</span> (str.empty())</div>
@@ -211,7 +211,7 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="keyword">const</span> end = (start + str.length());</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            T val;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            std::from_chars_result <span class="keyword">const</span> res = std::from_chars(start, end, val, <a class="code" href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            std::from_chars_result <span class="keyword">const</span> res = std::from_chars(start, end, val, fmt);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">if</span> ((res.ptr == end) &amp;&amp; (res.ec == std::errc()))</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            {</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;                <span class="keywordflow">return</span> val;</div>
@@ -222,9 +222,8 @@ template&lt;typename T &gt; </div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            }</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        }</div>
 <div class="ttc" id="a_util_8cpp_html_a131b997858d0d4c6825222d64948db73"><div class="ttname"><a href="../../db/d35/_util_8cpp.html#a131b997858d0d4c6825222d64948db73">StringEqualI</a></div><div class="ttdeci">bool StringEqualI(std::string_view a, std::string_view b)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_util_8cpp_source.html#l00683">Util.cpp:683</a></div></div>
-<div class="ttc" id="afmt_8cc_html_a7fb945a0739ee85a6cb82424f6043d27"><div class="ttname"><a href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a></div><div class="ttdeci">export module fmt</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d7a/fmt_8cc_source.html#l00071">fmt.cc:71</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d4/d7a/fmt_8cc_source.html#l00071">fmt</a>, and <a class="el" href="../../db/d35/_util_8cpp_source.html#l00683">StringEqualI()</a>.</p>
+<p class="reference">References <a class="el" href="../../db/d35/_util_8cpp_source.html#l00683">StringEqualI()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +239,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::string <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a012819c9e8b5e04872a271f50f8b8196">std::enable_if_t</a>&lt; std::is_floating_point_v&lt; T &gt; &gt; &gt;::ToString </td>
+          <td class="memname">static std::string <a class="el" href="../../df/d66/struct_acore_1_1_impl_1_1_string_convert_impl_1_1_for.html">Acore::Impl::StringConvertImpl::For</a>&lt; T, std::enable_if_t&lt; std::is_floating_point_v&lt; T &gt; &gt; &gt;::ToString </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>val</em></td><td>)</td>
@@ -256,12 +255,9 @@ template&lt;typename T &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../de/d3c/_string_convert_8h_source.html#l00256">256</a> of file <a class="el" href="../../de/d3c/_string_convert_8h_source.html">StringConvert.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#aa1899efcee92a5f5ca77b11423b256c5">std::to_string</a>(val);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">return</span> std::to_string(val);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
-<div class="ttc" id="afmt_2include_2fmt_2format_8h_html_aa1899efcee92a5f5ca77b11423b256c5"><div class="ttname"><a href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#aa1899efcee92a5f5ca77b11423b256c5">to_string</a></div><div class="ttdeci">auto to_string(const T &amp;value) -&gt; std::string</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddf/fmt_2include_2fmt_2format_8h_source.html#l02600">format.h:2600</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/ddf/fmt_2include_2fmt_2format_8h_source.html#l02600">to_string()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>

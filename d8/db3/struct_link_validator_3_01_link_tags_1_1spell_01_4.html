@@ -71,9 +71,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a54af0b68fa7891adbc3001c74e251ea1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db3/struct_link_validator_3_01_link_tags_1_1spell_01_4.html#a54af0b68fa7891adbc3001c74e251ea1">IsTextValid</a> (<a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *info, <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> text)</td></tr>
+<tr class="memitem:a54af0b68fa7891adbc3001c74e251ea1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db3/struct_link_validator_3_01_link_tags_1_1spell_01_4.html#a54af0b68fa7891adbc3001c74e251ea1">IsTextValid</a> (<a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> const *info, std::string_view text)</td></tr>
 <tr class="separator:a54af0b68fa7891adbc3001c74e251ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a816b3afba97af88a04cd5a724e9b663c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db3/struct_link_validator_3_01_link_tags_1_1spell_01_4.html#a816b3afba97af88a04cd5a724e9b663c">IsColorValid</a> (<a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *, <a class="el" href="../../de/dd7/struct_acore_1_1_hyperlinks_1_1_hyperlink_color.html">HyperlinkColor</a> c)</td></tr>
+<tr class="memitem:a816b3afba97af88a04cd5a724e9b663c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db3/struct_link_validator_3_01_link_tags_1_1spell_01_4.html#a816b3afba97af88a04cd5a724e9b663c">IsColorValid</a> (<a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> const *, <a class="el" href="../../de/dd7/struct_acore_1_1_hyperlinks_1_1_hyperlink_color.html">HyperlinkColor</a> c)</td></tr>
 <tr class="separator:a816b3afba97af88a04cd5a724e9b663c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -90,9 +90,9 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d0/d83/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1spell.html">LinkTags::spell</a> &gt;::IsColorValid </td>
+          <td class="memname">static bool <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d0/d83/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1spell.html">LinkTags::spell</a> &gt;::IsColorValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> const *&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -116,12 +116,11 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html#l00230">230</a> of file <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html">Hyperlinks.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">c</a> == <a class="code" href="../../df/d0b/_shared_defines_8h.html#aff4462a11392766622feb9f20463ffb6a56dac043536cc715837469acf48edda1">CHAT_LINK_COLOR_SPELL</a>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">return</span> c == <a class="code" href="../../df/d0b/_shared_defines_8h.html#aff4462a11392766622feb9f20463ffb6a56dac043536cc715837469acf48edda1">CHAT_LINK_COLOR_SPELL</a>;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
 <div class="ttc" id="a_shared_defines_8h_html_aff4462a11392766622feb9f20463ffb6a56dac043536cc715837469acf48edda1"><div class="ttname"><a href="../../df/d0b/_shared_defines_8h.html#aff4462a11392766622feb9f20463ffb6a56dac043536cc715837469acf48edda1">CHAT_LINK_COLOR_SPELL</a></div><div class="ttdeci">@ CHAT_LINK_COLOR_SPELL</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0b/_shared_defines_8h_source.html#l03182">SharedDefines.h:3182</a></div></div>
-<div class="ttc" id="anamespacempq_html_af509b98ca1ebe6c0248f215d23e06c93"><div class="ttname"><a href="../../d4/d71/namespacempq.html#af509b98ca1ebe6c0248f215d23e06c93">mpq.c</a></div><div class="ttdeci">list c</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d3e/mpq_8py_source.html#l00295">mpq.py:295</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/d3e/mpq_8py_source.html#l00295">mpq::c</a>, and <a class="el" href="../../df/d0b/_shared_defines_8h_source.html#l03182">CHAT_LINK_COLOR_SPELL</a>.</p>
+<p class="reference">References <a class="el" href="../../df/d0b/_shared_defines_8h_source.html#l03182">CHAT_LINK_COLOR_SPELL</a>.</p>
 
 </div>
 </div>
@@ -135,15 +134,15 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d0/d83/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1spell.html">LinkTags::spell</a> &gt;::IsTextValid </td>
+          <td class="memname">static bool <a class="el" href="../../d5/d4a/struct_link_validator.html">LinkValidator</a>&lt; <a class="el" href="../../d0/d83/struct_acore_1_1_hyperlinks_1_1_link_tags_1_1spell.html">LinkTags::spell</a> &gt;::IsTextValid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d4/d7d/class_spell_info.html">SpellInfo</a> const *&#160;</td>
           <td class="paramname"><em>info</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a>&#160;</td>
+          <td class="paramtype">std::string_view&#160;</td>
           <td class="paramname"><em>text</em>&#160;</td>
         </tr>
         <tr>
@@ -161,15 +160,15 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html#l00222">222</a> of file <a class="el" href="../../d2/d61/_hyperlinks_8cpp_source.html">Hyperlinks.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    {</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a> i = 0; i &lt; <a class="code" href="../../d1/d8b/src_2common_2common_8h.html#a54c9b637be7283ba1a04fb5215594332a7f84fea169b93e300da83986234a30d8">TOTAL_LOCALES</a>; ++i)</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a> i = 0; i &lt; <a class="code" href="../../db/d1f/_common_8h.html#a54c9b637be7283ba1a04fb5215594332a7f84fea169b93e300da83986234a30d8">TOTAL_LOCALES</a>; ++i)</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">if</span> (text == info-&gt;SpellName[i])</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
-<div class="ttc" id="amy__global_8h_html_adde6aaee8457bee49c2a92621fe22b79"><div class="ttname"><a href="../../d9/df6/my__global_8h.html#adde6aaee8457bee49c2a92621fe22b79">uint8</a></div><div class="ttdeci">unsigned char uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/df6/my__global_8h_source.html#l00881">my_global.h:881</a></div></div>
-<div class="ttc" id="asrc_2common_2common_8h_html_a54c9b637be7283ba1a04fb5215594332a7f84fea169b93e300da83986234a30d8"><div class="ttname"><a href="../../d1/d8b/src_2common_2common_8h.html#a54c9b637be7283ba1a04fb5215594332a7f84fea169b93e300da83986234a30d8">TOTAL_LOCALES</a></div><div class="ttdeci">@ TOTAL_LOCALES</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d8b/src_2common_2common_8h_source.html#l00086">Common.h:85</a></div></div>
+<div class="ttc" id="a_common_8h_html_a54c9b637be7283ba1a04fb5215594332a7f84fea169b93e300da83986234a30d8"><div class="ttname"><a href="../../db/d1f/_common_8h.html#a54c9b637be7283ba1a04fb5215594332a7f84fea169b93e300da83986234a30d8">TOTAL_LOCALES</a></div><div class="ttdeci">@ TOTAL_LOCALES</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1f/_common_8h_source.html#l00086">Common.h:85</a></div></div>
+<div class="ttc" id="a_define_8h_html_a15a8d014fadf85c99a2268d8cbd00767"><div class="ttname"><a href="../../db/d35/_define_8h.html#a15a8d014fadf85c99a2268d8cbd00767">uint8</a></div><div class="ttdeci">std::uint8_t uint8</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00116">Define.h:116</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/d70/_spell_info_8h_source.html#l00377">SpellInfo::SpellName</a>, and <a class="el" href="../../d1/d8b/src_2common_2common_8h_source.html#l00085">TOTAL_LOCALES</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d70/_spell_info_8h_source.html#l00377">SpellInfo::SpellName</a>, and <a class="el" href="../../db/d1f/_common_8h_source.html#l00085">TOTAL_LOCALES</a>.</p>
 
 </div>
 </div>

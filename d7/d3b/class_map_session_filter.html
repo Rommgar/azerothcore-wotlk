@@ -86,9 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad11a700c36f8f45640402e96edc74b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82960e741c8f64d24a764a915f14e2b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/class_map_session_filter.html#a82960e741c8f64d24a764a915f14e2b8">~MapSessionFilter</a> () override=default</td></tr>
 <tr class="separator:a82960e741c8f64d24a764a915f14e2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54483596fe2a5a0d30fab9a13506b375"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/class_map_session_filter.html#a54483596fe2a5a0d30fab9a13506b375">Process</a> (<a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *packet) override</td></tr>
+<tr class="memitem:a54483596fe2a5a0d30fab9a13506b375"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/class_map_session_filter.html#a54483596fe2a5a0d30fab9a13506b375">Process</a> (<a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *packet) override</td></tr>
 <tr class="separator:a54483596fe2a5a0d30fab9a13506b375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e3a7dd5affb24305435aea2c57718fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/class_map_session_filter.html#a8e3a7dd5affb24305435aea2c57718fa">ProcessUnsafe</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> override</td></tr>
+<tr class="memitem:a8e3a7dd5affb24305435aea2c57718fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d3b/class_map_session_filter.html#a8e3a7dd5affb24305435aea2c57718fa">ProcessUnsafe</a> () const override</td></tr>
 <tr class="separator:a8e3a7dd5affb24305435aea2c57718fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_packet_filter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_packet_filter')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/ded/class_packet_filter.html">PacketFilter</a></td></tr>
 <tr class="memitem:accfa43359c62d2e9d6c38086c77374bd inherit pub_methods_class_packet_filter"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#accfa43359c62d2e9d6c38086c77374bd">PacketFilter</a> (<a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a> *pSession)</td></tr>
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_packet_filter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_packet_filter')"><img src="../../closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="../../dc/ded/class_packet_filter.html">PacketFilter</a></td></tr>
-<tr class="memitem:ad3723289ea93f1095cf82584268335d9 inherit pro_attribs_class_packet_filter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a> *<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#ad3723289ea93f1095cf82584268335d9">m_pSession</a></td></tr>
+<tr class="memitem:ad3723289ea93f1095cf82584268335d9 inherit pro_attribs_class_packet_filter"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#ad3723289ea93f1095cf82584268335d9">m_pSession</a></td></tr>
 <tr class="separator:ad3723289ea93f1095cf82584268335d9 inherit pro_attribs_class_packet_filter"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -172,7 +172,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> MapSessionFilter::Process </td>
+          <td class="memname">bool MapSessionFilter::Process </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
@@ -233,7 +233,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> MapSessionFilter::ProcessUnsafe </td>
+          <td class="memname">bool MapSessionFilter::ProcessUnsafe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

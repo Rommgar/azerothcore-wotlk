@@ -97,7 +97,7 @@ $(function() {
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">    #include &lt;mm_malloc.h&gt;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#elif defined(__GNUC__)</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d1/d28/bzlib__private_8h.html#a9f04218fe09e6ee659e045b2f11542ed">__inline__</a> <span class="keywordtype">void</span> *<a class="code" href="../../d4/d72/my__attribute_8h.html#a4fb2431b46656ad0908c4e0195540182">__attribute__</a>((__always_inline__, __nodebug__, __malloc__))</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> __inline__ <span class="keywordtype">void</span> *__attribute__((__always_inline__, __nodebug__, __malloc__))</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    _mm_malloc(<span class="keywordtype">size_t</span> __size, <span class="keywordtype">size_t</span> __align)</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span> (__align == 1)</div>
@@ -111,12 +111,12 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> *__mallocedMemory;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (posix_memalign(&amp;__mallocedMemory, __align, __size))</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d9/d33/jemalloc__internal_8h.html#ae89ee89f41328ac0ade1e3e26c103570">NULL</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> __mallocedMemory;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d1/d28/bzlib__private_8h.html#a9f04218fe09e6ee659e045b2f11542ed">__inline__</a> <span class="keywordtype">void</span> <a class="code" href="../../d4/d72/my__attribute_8h.html#a4fb2431b46656ad0908c4e0195540182">__attribute__</a>((__always_inline__, __nodebug__))</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> __inline__ <span class="keywordtype">void</span> __attribute__((__always_inline__, __nodebug__))</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    _mm_free(<span class="keywordtype">void</span> *__p)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        free(__p);</div>
@@ -137,17 +137,17 @@ $(function() {
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        std::array&lt;uint32, SFMT_N32&gt; seed;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        std::generate(seed.begin(), seed.end(), std::ref(dev));</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="../../dd/dda/_s_f_m_t_8c.html#a28f357a6d2a9cd74cec3c9d458e58475">sfmt_init_by_array</a>(&amp;<a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">_state</a>, seed.data(), seed.size());</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        sfmt_init_by_array(&amp;<a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">_state</a>, seed.data(), seed.size());</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="../../dd/dda/_s_f_m_t_8c.html#a674d820db863265836ef9cb203aa4130">sfmt_init_gen_rand</a>(&amp;<a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">_state</a>, <a class="code" href="../../df/de2/namespace_g3_d.html#ae911b90657d7162d47997c702af655a8">uint32</a>(time(<span class="keyword">nullptr</span>)));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        sfmt_init_gen_rand(&amp;<a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">_state</a>, <a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>(time(<span class="keyword">nullptr</span>)));</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a8d129952ad2916419cdf54aa474c23c0">   77</a></span>&#160;<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> <a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a8d129952ad2916419cdf54aa474c23c0">SFMTRand::RandomUInt32</a>()                            <span class="comment">// Output random bits</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d4/d5c/_s_f_m_t_8h.html#a320ad3d4b201c8b5525871b5d4c9d110">sfmt_genrand_uint32</a>(&amp;<a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">_state</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> sfmt_genrand_uint32(&amp;<a class="code" href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">_state</a>);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#aca05c084eb681e29c2e6d94004d2211d">   82</a></span>&#160;<span class="keywordtype">void</span>* SFMTRand::operator <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size, std::nothrow_t <span class="keyword">const</span>&amp;)</div>
@@ -155,9 +155,9 @@ $(function() {
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> _mm_malloc(size, 16);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#ac6267ac04c03814f574a155a4a0cffcb">   87</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>(<span class="keywordtype">void</span>* <a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>, std::nothrow_t <span class="keyword">const</span>&amp;)</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#ac6267ac04c03814f574a155a4a0cffcb">   87</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>(<span class="keywordtype">void</span>* ptr, std::nothrow_t <span class="keyword">const</span>&amp;)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    _mm_free(<a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    _mm_free(ptr);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
 <div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a2aeb7be6e4330872312d025c20f38cde">   92</a></span>&#160;<span class="keywordtype">void</span>* SFMTRand::operator <span class="keyword">new</span>(<span class="keywordtype">size_t</span> size)</div>
@@ -165,9 +165,9 @@ $(function() {
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">return</span> _mm_malloc(size, 16);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a20ef76641899ebf23ecfdfa03933d1d9">   97</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>(<span class="keywordtype">void</span>* <a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a20ef76641899ebf23ecfdfa03933d1d9">   97</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>(<span class="keywordtype">void</span>* ptr)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    _mm_free(<a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    _mm_free(ptr);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a7fc8af93666391048ac284fb21838d00">  102</a></span>&#160;<span class="keywordtype">void</span>* SFMTRand::operator <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> size, std::nothrow_t <span class="keyword">const</span>&amp;)</div>
@@ -175,9 +175,9 @@ $(function() {
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">return</span> _mm_malloc(size, 16);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a7cfe99d3c100b6ba124b82fce756960f">  107</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* <a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>, std::nothrow_t <span class="keyword">const</span>&amp;)</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a7cfe99d3c100b6ba124b82fce756960f">  107</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* ptr, std::nothrow_t <span class="keyword">const</span>&amp;)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    _mm_free(<a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    _mm_free(ptr);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a8ec91b566c3b1defe53ea094c31e9aac">  112</a></span>&#160;<span class="keywordtype">void</span>* SFMTRand::operator <span class="keyword">new</span>[](<span class="keywordtype">size_t</span> size)</div>
@@ -185,23 +185,15 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> _mm_malloc(size, 16);</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a5051cdb95e18230b7fee753beb621603">  117</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* <a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>)</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="../../dd/dfa/class_s_f_m_t_rand.html#a5051cdb95e18230b7fee753beb621603">  117</a></span>&#160;<span class="keywordtype">void</span> SFMTRand::operator <span class="keyword">delete</span>[](<span class="keywordtype">void</span>* ptr)</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    _mm_free(<a class="code" href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    _mm_free(ptr);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
 <div class="ttc" id="a_define_8h_html_a22f78cc9780bf32aff91ae17c3101c8d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a></div><div class="ttdeci">std::uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00114">Define.h:114</a></div></div>
-<div class="ttc" id="a_s_f_m_t_8c_html_a28f357a6d2a9cd74cec3c9d458e58475"><div class="ttname"><a href="../../dd/dda/_s_f_m_t_8c.html#a28f357a6d2a9cd74cec3c9d458e58475">sfmt_init_by_array</a></div><div class="ttdeci">void sfmt_init_by_array(sfmt_t *sfmt, uint32_t *init_key, int key_length)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dda/_s_f_m_t_8c_source.html#l00371">SFMT.c:371</a></div></div>
-<div class="ttc" id="a_s_f_m_t_8c_html_a674d820db863265836ef9cb203aa4130"><div class="ttname"><a href="../../dd/dda/_s_f_m_t_8c.html#a674d820db863265836ef9cb203aa4130">sfmt_init_gen_rand</a></div><div class="ttdeci">void sfmt_init_gen_rand(sfmt_t *sfmt, uint32_t seed)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dda/_s_f_m_t_8c_source.html#l00349">SFMT.c:349</a></div></div>
-<div class="ttc" id="a_s_f_m_t_8h_html_a320ad3d4b201c8b5525871b5d4c9d110"><div class="ttname"><a href="../../d4/d5c/_s_f_m_t_8h.html#a320ad3d4b201c8b5525871b5d4c9d110">sfmt_genrand_uint32</a></div><div class="ttdeci">static uint32_t sfmt_genrand_uint32(sfmt_t *sfmt)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d5c/_s_f_m_t_8h_source.html#l00139">SFMT.h:139</a></div></div>
 <div class="ttc" id="a_s_f_m_t_rand_8h_html"><div class="ttname"><a href="../../d0/dcb/_s_f_m_t_rand_8h.html">SFMTRand.h</a></div></div>
-<div class="ttc" id="abzlib__private_8h_html_a9f04218fe09e6ee659e045b2f11542ed"><div class="ttname"><a href="../../d1/d28/bzlib__private_8h.html#a9f04218fe09e6ee659e045b2f11542ed">__inline__</a></div><div class="ttdeci">#define __inline__</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d28/bzlib__private_8h_source.html#l00053">bzlib_private.h:53</a></div></div>
 <div class="ttc" id="aclass_s_f_m_t_rand_html_a8d129952ad2916419cdf54aa474c23c0"><div class="ttname"><a href="../../dd/dfa/class_s_f_m_t_rand.html#a8d129952ad2916419cdf54aa474c23c0">SFMTRand::RandomUInt32</a></div><div class="ttdeci">uint32 RandomUInt32()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db0/_s_f_m_t_rand_8cpp_source.html#l00077">SFMTRand.cpp:77</a></div></div>
 <div class="ttc" id="aclass_s_f_m_t_rand_html_a9bc20836138e5dd4db93f7d03a9e856b"><div class="ttname"><a href="../../dd/dfa/class_s_f_m_t_rand.html#a9bc20836138e5dd4db93f7d03a9e856b">SFMTRand::_state</a></div><div class="ttdeci">sfmt_t _state</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dcb/_s_f_m_t_rand_8h_source.html#l00042">SFMTRand.h:42</a></div></div>
 <div class="ttc" id="aclass_s_f_m_t_rand_html_aa40843ec8c3162e4be6cbf8067f93c9b"><div class="ttname"><a href="../../dd/dfa/class_s_f_m_t_rand.html#aa40843ec8c3162e4be6cbf8067f93c9b">SFMTRand::SFMTRand</a></div><div class="ttdeci">SFMTRand()</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db0/_s_f_m_t_rand_8cpp_source.html#l00060">SFMTRand.cpp:60</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2format_8h_html_adb6e274f8eb0b74b2865215e1b49c535"><div class="ttname"><a href="../../d0/ddf/fmt_2include_2fmt_2format_8h.html#adb6e274f8eb0b74b2865215e1b49c535">ptr</a></div><div class="ttdeci">auto ptr(T p) -&gt; const void *</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/ddf/fmt_2include_2fmt_2format_8h_source.html#l02451">format.h:2451</a></div></div>
-<div class="ttc" id="ajemalloc__internal_8h_html_ae89ee89f41328ac0ade1e3e26c103570"><div class="ttname"><a href="../../d9/d33/jemalloc__internal_8h.html#ae89ee89f41328ac0ade1e3e26c103570">NULL</a></div><div class="ttdeci">arena_t NULL</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d33/jemalloc__internal_8h_source.html#l00624">jemalloc_internal.h:624</a></div></div>
-<div class="ttc" id="amy__attribute_8h_html_a4fb2431b46656ad0908c4e0195540182"><div class="ttname"><a href="../../d4/d72/my__attribute_8h.html#a4fb2431b46656ad0908c4e0195540182">__attribute__</a></div><div class="ttdeci">#define __attribute__(A)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d72/my__attribute_8h_source.html#l00038">my_attribute.h:38</a></div></div>
-<div class="ttc" id="anamespace_g3_d_html_ae911b90657d7162d47997c702af655a8"><div class="ttname"><a href="../../df/de2/namespace_g3_d.html#ae911b90657d7162d47997c702af655a8">G3D::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/dfa/g3dmath_8h_source.html#l00168">g3dmath.h:168</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

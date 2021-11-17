@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Register a database to the loader (lazy implemented)</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../da/dd2/class_database_loader.html">DatabaseLoader</a>&amp; AddDatabase(<a class="code" href="../../d7/d10/class_database_worker_pool.html">DatabaseWorkerPool&lt;T&gt;</a>&amp; pool, std::string <span class="keyword">const</span>&amp; <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">name</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../da/dd2/class_database_loader.html">DatabaseLoader</a>&amp; AddDatabase(<a class="code" href="../../d7/d10/class_database_worker_pool.html">DatabaseWorkerPool&lt;T&gt;</a>&amp; pool, std::string <span class="keyword">const</span>&amp; name);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Load all databases</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> Load();</div>
@@ -134,7 +134,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> UpdateDatabases();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> PrepareStatements();</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../da/dd2/class_database_loader.html#ab1d02ab7bac2f577a2472a931bfc81b8">   66</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../da/dd2/class_database_loader.html#ab1d02ab7bac2f577a2472a931bfc81b8">Predicate</a> = std::function&lt;<a class="code" href="../../db/def/_c99_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>()&gt;;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="../../da/dd2/class_database_loader.html#ab1d02ab7bac2f577a2472a931bfc81b8">   66</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../da/dd2/class_database_loader.html#ab1d02ab7bac2f577a2472a931bfc81b8">Predicate</a> = std::function&lt;bool()&gt;;</div>
 <div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../da/dd2/class_database_loader.html#a54f793710e2cb0264ac32ec21ce64db5">   67</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="../../da/dd2/class_database_loader.html#a54f793710e2cb0264ac32ec21ce64db5">Closer</a> = std::function&lt;void()&gt;;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Invokes all functions in the given queue and closes the databases on errors.</span></div>
@@ -150,7 +150,6 @@ $(function() {
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// DatabaseLoader_h__</span></div>
-<div class="ttc" id="a_c99_2stdbool_8h_html_abb452686968e48b67397da5f97445f5b"><div class="ttname"><a href="../../db/def/_c99_2stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a></div><div class="ttdeci">#define bool</div><div class="ttdef"><b>Definition:</b> <a href="../../db/def/_c99_2stdbool_8h_source.html#l00014">stdbool.h:14</a></div></div>
 <div class="ttc" id="a_define_8h_html"><div class="ttname"><a href="../../db/d35/_define_8h.html">Define.h</a></div></div>
 <div class="ttc" id="a_define_8h_html_a22f78cc9780bf32aff91ae17c3101c8d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a></div><div class="ttdeci">std::uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00114">Define.h:114</a></div></div>
 <div class="ttc" id="a_define_8h_html_a4239bd747d930d5084e8f6e489980585"><div class="ttname"><a href="../../db/d35/_define_8h.html#a4239bd747d930d5084e8f6e489980585">AC_DATABASE_API</a></div><div class="ttdeci">#define AC_DATABASE_API</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00083">Define.h:83</a></div></div>
@@ -165,7 +164,6 @@ $(function() {
 <div class="ttc" id="aclass_database_loader_html_ac63afc15ce746ed014f0e91832a6d1ea"><div class="ttname"><a href="../../da/dd2/class_database_loader.html#ac63afc15ce746ed014f0e91832a6d1ea">DatabaseLoader::_close</a></div><div class="ttdeci">std::stack&lt; Closer &gt; _close</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d04/_database_loader_8h_source.html#l00078">DatabaseLoader.h:78</a></div></div>
 <div class="ttc" id="aclass_database_loader_html_af0cd17307aa123f7e390aa67cab3d0d3"><div class="ttname"><a href="../../da/dd2/class_database_loader.html#af0cd17307aa123f7e390aa67cab3d0d3">DatabaseLoader::GetUpdateFlags</a></div><div class="ttdeci">uint32 GetUpdateFlags() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d04/_database_loader_8h_source.html#l00055">DatabaseLoader.h:55</a></div></div>
 <div class="ttc" id="aclass_database_worker_pool_html"><div class="ttname"><a href="../../d7/d10/class_database_worker_pool.html">DatabaseWorkerPool</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dcd/_database_worker_pool_8h_source.html#l00035">DatabaseWorkerPool.h:36</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7fc0249f0f8ba720115d2430f5b86cbaab068931cc450442b63f5b3d276ea4297">arg_id_kind::name</a></div><div class="ttdeci">@ name</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

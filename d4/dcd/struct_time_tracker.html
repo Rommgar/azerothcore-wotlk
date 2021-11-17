@@ -76,13 +76,13 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b9f585de223c1051136b10b03a27684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#a2b9f585de223c1051136b10b03a27684">TimeTracker</a> (time_t expiry)</td></tr>
 <tr class="separator:a2b9f585de223c1051136b10b03a27684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2009e98647f04c20cb3064e1e9e9a611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#a2009e98647f04c20cb3064e1e9e9a611">Update</a> (time_t <a class="el" href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a>)</td></tr>
+<tr class="memitem:a2009e98647f04c20cb3064e1e9e9a611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#a2009e98647f04c20cb3064e1e9e9a611">Update</a> (time_t diff)</td></tr>
 <tr class="separator:a2009e98647f04c20cb3064e1e9e9a611"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a13002766153882150b1985a84013ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#a9a13002766153882150b1985a84013ad">Passed</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a9a13002766153882150b1985a84013ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#a9a13002766153882150b1985a84013ad">Passed</a> () const</td></tr>
 <tr class="separator:a9a13002766153882150b1985a84013ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a798cf19378c4de243fac01d7d51a3572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#a798cf19378c4de243fac01d7d51a3572">Reset</a> (time_t interval)</td></tr>
 <tr class="separator:a798cf19378c4de243fac01d7d51a3572"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc0d5503c1f5ec4d0bdc103d70dfbb3"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#acfc0d5503c1f5ec4d0bdc103d70dfbb3">GetExpiry</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:acfc0d5503c1f5ec4d0bdc103d70dfbb3"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcd/struct_time_tracker.html#acfc0d5503c1f5ec4d0bdc103d70dfbb3">GetExpiry</a> () const</td></tr>
 <tr class="separator:acfc0d5503c1f5ec4d0bdc103d70dfbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -169,7 +169,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> TimeTracker::Passed </td>
+          <td class="memname">bool TimeTracker::Passed </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -252,11 +252,10 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d29/_timer_8h_source.html#l00129">129</a> of file <a class="el" href="../../d5/d29/_timer_8h_source.html">Timer.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="../../d4/dcd/struct_time_tracker.html#adf2e301fdefb32008f14ced5f1c37f33">i_expiryTime</a> -= <a class="code" href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="../../d4/dcd/struct_time_tracker.html#adf2e301fdefb32008f14ced5f1c37f33">i_expiryTime</a> -= diff;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="ttc" id="adtoa_8c_html_a158860430cb5f139d88fdf19cf9ad511"><div class="ttname"><a href="../../d9/d39/dtoa_8c.html#a158860430cb5f139d88fdf19cf9ad511">diff</a></div><div class="ttdeci">static Bigint * diff(Bigint *a, Bigint *b, Stack_alloc *alloc)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d39/dtoa_8c_source.html#l01108">dtoa.c:1108</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d9/d39/dtoa_8c_source.html#l01108">diff()</a>, and <a class="el" href="../../d5/d29/_timer_8h_source.html#l00150">i_expiryTime</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d29/_timer_8h_source.html#l00150">i_expiryTime</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d2/d55/_fleeing_movement_generator_8cpp_source.html#l00385">TimedFleeingMovementGenerator::Update()</a>.</p>
 

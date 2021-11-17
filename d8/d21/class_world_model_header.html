@@ -167,35 +167,43 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">360</a> of file <a class="el" href="../../d6/dad/_utils_8cpp_source.html">Utils.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;{</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="../../d8/d21/class_world_model_header.html">WorldModelHeader</a> <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> = 0;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <a class="code" href="../../d8/d21/class_world_model_header.html">WorldModelHeader</a> ret;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordtype">int</span> count = 0;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountMaterials, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountGroups, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountPortals, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountLights, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountModels, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountDoodads, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.CountSets, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.AmbientColorUnk, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.WmoId, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.BoundingBox[0] = <a class="code" href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a>(stream);</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.BoundingBox[1] = <a class="code" href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a>(stream);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> += fread(&amp;<a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>.LiquidTypeRelated, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a98786a17d7f03ab99c768c0eaeb91246">CountMaterials</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#af957ec044869a4eb15a3191947c713f7">CountGroups</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#ab5619dffc69e79eea56abe2edc05c2fe">CountPortals</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a41857574b0b9d85867aff45cf089c9b4">CountLights</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a38bf0b5b699f35a0962eaf329e95fbc6">CountModels</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#ab813392c35b1d8654683eccd3f0a52d3">CountDoodads</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#afb2dc359c71fd8a80fe13fe27bf2ac17">CountSets</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a16a1aea03a50a797edd799290347ce37">AmbientColorUnk</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a4b747c9e9f14fbba880ccb5bda183876">WmoId</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a6ae512434721f34d9e2935c0b34892eb">BoundingBox</a>[0] = <a class="code" href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a>(stream);</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    ret.<a class="code" href="../../d8/d21/class_world_model_header.html#a6ae512434721f34d9e2935c0b34892eb">BoundingBox</a>[1] = <a class="code" href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a>(stream);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    count += fread(&amp;ret.<a class="code" href="../../d8/d21/class_world_model_header.html#ac717254fe0a9362ced363624f584d005">LiquidTypeRelated</a>, <span class="keyword">sizeof</span>(<a class="code" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a>), 1, stream);</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a> != 10)</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <a class="code" href="../../d3/d6b/printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a>(<span class="stringliteral">&quot;WorldModelHeader::Read: Failed to read some data expected 10, read %d\n&quot;</span>, <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a>);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">if</span> (count != 10)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        printf(<span class="stringliteral">&quot;WorldModelHeader::Read: Failed to read some data expected 10, read %d\n&quot;</span>, count);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160; </div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a>;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">return</span> ret;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;}</div>
 <div class="ttc" id="a_define_8h_html_a22f78cc9780bf32aff91ae17c3101c8d"><div class="ttname"><a href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a></div><div class="ttdeci">std::uint32_t uint32</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d35/_define_8h_source.html#l00114">Define.h:114</a></div></div>
 <div class="ttc" id="aclass_world_model_header_html"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html">WorldModelHeader</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00192">Utils.h:193</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a501bb1bb2f0cc5706178ed237958e73b"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a501bb1bb2f0cc5706178ed237958e73b">count</a></div><div class="ttdeci">constexpr auto count() -&gt; size_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01039">core.h:1039</a></div></div>
-<div class="ttc" id="aprintf_8h_html_aa3739712ffc6e717626ef803d2782ad5"><div class="ttname"><a href="../../d3/d6b/printf_8h.html#aa3739712ffc6e717626ef803d2782ad5">printf</a></div><div class="ttdeci">auto printf(const S &amp;fmt, const T &amp;... args) -&gt; int</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d6b/printf_8h_source.html#l00626">printf.h:626</a></div></div>
-<div class="ttc" id="aprof_8c_html_a339672ff94e6199019102f50d317c3d7"><div class="ttname"><a href="../../df/d31/prof_8c.html#a339672ff94e6199019102f50d317c3d7">ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d31/prof_8c_source.html#l00281">prof.c:281</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_a16a1aea03a50a797edd799290347ce37"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#a16a1aea03a50a797edd799290347ce37">WorldModelHeader::AmbientColorUnk</a></div><div class="ttdeci">uint32 AmbientColorUnk</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00203">Utils.h:203</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_a38bf0b5b699f35a0962eaf329e95fbc6"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#a38bf0b5b699f35a0962eaf329e95fbc6">WorldModelHeader::CountModels</a></div><div class="ttdeci">uint32 CountModels</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00200">Utils.h:200</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_a41857574b0b9d85867aff45cf089c9b4"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#a41857574b0b9d85867aff45cf089c9b4">WorldModelHeader::CountLights</a></div><div class="ttdeci">uint32 CountLights</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00199">Utils.h:199</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_a4b747c9e9f14fbba880ccb5bda183876"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#a4b747c9e9f14fbba880ccb5bda183876">WorldModelHeader::WmoId</a></div><div class="ttdeci">uint32 WmoId</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00204">Utils.h:204</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_a6ae512434721f34d9e2935c0b34892eb"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#a6ae512434721f34d9e2935c0b34892eb">WorldModelHeader::BoundingBox</a></div><div class="ttdeci">Vector3 BoundingBox[2]</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00205">Utils.h:205</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_a98786a17d7f03ab99c768c0eaeb91246"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#a98786a17d7f03ab99c768c0eaeb91246">WorldModelHeader::CountMaterials</a></div><div class="ttdeci">uint32 CountMaterials</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00196">Utils.h:196</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_ab5619dffc69e79eea56abe2edc05c2fe"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#ab5619dffc69e79eea56abe2edc05c2fe">WorldModelHeader::CountPortals</a></div><div class="ttdeci">uint32 CountPortals</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00198">Utils.h:198</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_ab813392c35b1d8654683eccd3f0a52d3"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#ab813392c35b1d8654683eccd3f0a52d3">WorldModelHeader::CountDoodads</a></div><div class="ttdeci">uint32 CountDoodads</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00201">Utils.h:201</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_ac717254fe0a9362ced363624f584d005"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#ac717254fe0a9362ced363624f584d005">WorldModelHeader::LiquidTypeRelated</a></div><div class="ttdeci">uint32 LiquidTypeRelated</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00206">Utils.h:206</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_af957ec044869a4eb15a3191947c713f7"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#af957ec044869a4eb15a3191947c713f7">WorldModelHeader::CountGroups</a></div><div class="ttdeci">uint32 CountGroups</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00197">Utils.h:197</a></div></div>
+<div class="ttc" id="aclass_world_model_header_html_afb2dc359c71fd8a80fe13fe27bf2ac17"><div class="ttname"><a href="../../d8/d21/class_world_model_header.html#afb2dc359c71fd8a80fe13fe27bf2ac17">WorldModelHeader::CountSets</a></div><div class="ttdeci">uint32 CountSets</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/dc1/_utils_8h_source.html#l00202">Utils.h:202</a></div></div>
 <div class="ttc" id="astruct_vector3_html_a174f40d0c961939e030d7d61cdcac331"><div class="ttname"><a href="../../d0/de3/struct_vector3.html#a174f40d0c961939e030d7d61cdcac331">Vector3::Read</a></div><div class="ttdeci">static Vector3 Read(FILE *file)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dad/_utils_8cpp_source.html#l00156">Utils.cpp:156</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01039">count()</a>, <a class="el" href="../../d3/d6b/printf_8h_source.html#l00626">printf()</a>, <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00156">Vector3::Read()</a>, and <a class="el" href="../../df/d31/prof_8c_source.html#l00281">ret</a>.</p>
+<p class="reference">References <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00203">AmbientColorUnk</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00205">BoundingBox</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00201">CountDoodads</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00197">CountGroups</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00199">CountLights</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00196">CountMaterials</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00200">CountModels</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00198">CountPortals</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00202">CountSets</a>, <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00206">LiquidTypeRelated</a>, <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00156">Vector3::Read()</a>, and <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00204">WmoId</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00088">WorldModelRoot::ReadHeader()</a>.</p>
 
@@ -216,6 +224,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00203">203</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
+
 </div>
 </div>
 <a id="a6ae512434721f34d9e2935c0b34892eb"></a>
@@ -231,6 +241,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00205">205</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
 
 </div>
 </div>
@@ -248,6 +260,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00201">201</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
+
 </div>
 </div>
 <a id="af957ec044869a4eb15a3191947c713f7"></a>
@@ -264,7 +278,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00197">197</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d4a/_mesh_extractor_8cpp_source.html#l00104">ExtractGameobjectModels()</a>, and <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00037">WorldModelRoot::ReadGroups()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d4a/_mesh_extractor_8cpp_source.html#l00104">ExtractGameobjectModels()</a>, <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>, and <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00037">WorldModelRoot::ReadGroups()</a>.</p>
 
 </div>
 </div>
@@ -282,6 +296,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00199">199</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
+
 </div>
 </div>
 <a id="a98786a17d7f03ab99c768c0eaeb91246"></a>
@@ -297,6 +313,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00196">196</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
 
 </div>
 </div>
@@ -314,6 +332,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00200">200</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
+
 </div>
 </div>
 <a id="ab5619dffc69e79eea56abe2edc05c2fe"></a>
@@ -329,6 +349,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00198">198</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +368,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00202">202</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00051">WorldModelRoot::ReadDoodadSets()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>, and <a class="el" href="../../dc/da9/_world_model_root_8cpp_source.html#l00051">WorldModelRoot::ReadDoodadSets()</a>.</p>
 
 </div>
 </div>
@@ -364,6 +386,8 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00206">206</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
+<p class="reference">Referenced by <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
+
 </div>
 </div>
 <a id="a4b747c9e9f14fbba880ccb5bda183876"></a>
@@ -380,7 +404,7 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d9/dc1/_utils_8h_source.html#l00204">204</a> of file <a class="el" href="../../d9/dc1/_utils_8h_source.html">Utils.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d2/d4a/_mesh_extractor_8cpp_source.html#l00104">ExtractGameobjectModels()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d4a/_mesh_extractor_8cpp_source.html#l00104">ExtractGameobjectModels()</a>, and <a class="el" href="../../d6/dad/_utils_8cpp_source.html#l00360">Read()</a>.</p>
 
 </div>
 </div>

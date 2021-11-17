@@ -74,11 +74,11 @@ $(function() {
 <div class="title">Config.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d9/db0/src_2common_2_configuration_2config_8h_source.html">Config.h</a>&quot;</code><br />
-<code>#include &quot;Log.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d4/d71/_config_8h_source.html">Config.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/df4/_log_8h_source.html">Log.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../de/d3c/_string_convert_8h_source.html">StringConvert.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/ded/_string_format_8h_source.html">StringFormat.h</a>&quot;</code><br />
-<code>#include &quot;Util.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d90/_util_8h_source.html">Util.h</a>&quot;</code><br />
 <code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;mutex&gt;</code><br />
 <code>#include &lt;unordered_map&gt;</code><br />
@@ -92,24 +92,24 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a88481e3afc1a3d0cced9a0eb22ef52c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/_config_8cpp.html#a88481e3afc1a3d0cced9a0eb22ef52c4">TEMPLATE_CONFIG_OPTION</a>(__typename)&#160;&#160;&#160;    template __typename <a class="el" href="../../de/d41/class_config_mgr.html#a711be8eda4077d967a3677bd138998ac">ConfigMgr::GetOption</a>&lt;__typename&gt;(std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&amp; name, __typename <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&amp; def, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> showLogs /*= <a class="el" href="../../d9/d5e/stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>*/) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>;</td></tr>
+<tr class="memitem:a88481e3afc1a3d0cced9a0eb22ef52c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd3/_config_8cpp.html#a88481e3afc1a3d0cced9a0eb22ef52c4">TEMPLATE_CONFIG_OPTION</a>(__typename)&#160;&#160;&#160;    template __typename <a class="el" href="../../de/d41/class_config_mgr.html#a711be8eda4077d967a3677bd138998ac">ConfigMgr::GetOption</a>&lt;__typename&gt;(std::string const&amp; name, __typename const&amp; def, bool showLogs /*= true*/) const;</td></tr>
 <tr class="separator:a88481e3afc1a3d0cced9a0eb22ef52c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac70d5ef108e0df78183c2c28431f34cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#ac70d5ef108e0df78183c2c28431f34cc">anonymous_namespace{Config.cpp}::IsAppConfig</a> (<a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> fileName)</td></tr>
+<tr class="memitem:ac70d5ef108e0df78183c2c28431f34cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#ac70d5ef108e0df78183c2c28431f34cc">anonymous_namespace{Config.cpp}::IsAppConfig</a> (std::string_view fileName)</td></tr>
 <tr class="separator:ac70d5ef108e0df78183c2c28431f34cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b53ef96726f745da939de555373737"><td class="memTemplParams" colspan="2">template&lt;typename Format , typename... Args&gt; </td></tr>
-<tr class="memitem:a31b53ef96726f745da939de555373737"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a31b53ef96726f745da939de555373737">anonymous_namespace{Config.cpp}::PrintError</a> (<a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a204ca715c2febee035464fa53dfc50c4">std::string_view</a> filename, Format &amp;&amp;<a class="el" href="../../d4/d7a/fmt_8cc.html#a7fb945a0739ee85a6cb82424f6043d27">fmt</a>, Args &amp;&amp;... args)</td></tr>
+<tr class="memitem:a31b53ef96726f745da939de555373737"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a31b53ef96726f745da939de555373737">anonymous_namespace{Config.cpp}::PrintError</a> (std::string_view filename, Format &amp;&amp;fmt, Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a31b53ef96726f745da939de555373737"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1b61379eb0c40a640f39cf65ecddad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#aa1b61379eb0c40a640f39cf65ecddad7">anonymous_namespace{Config.cpp}::AddKey</a> (std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;optionName, std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;optionKey, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> replace=<a class="el" href="../../d9/d5e/stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>)</td></tr>
+<tr class="memitem:aa1b61379eb0c40a640f39cf65ecddad7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#aa1b61379eb0c40a640f39cf65ecddad7">anonymous_namespace{Config.cpp}::AddKey</a> (std::string const &amp;optionName, std::string const &amp;optionKey, bool replace=true)</td></tr>
 <tr class="separator:aa1b61379eb0c40a640f39cf65ecddad7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49e5b4d9d14c5d907cd036d797de4690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a49e5b4d9d14c5d907cd036d797de4690">anonymous_namespace{Config.cpp}::ParseFile</a> (std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../d2/dbc/deps_2gsoap_2_c_make_lists_8txt.html#ad0ce1f991d58ccbbb91f81e55e48bf2e">file</a>)</td></tr>
+<tr class="memitem:a49e5b4d9d14c5d907cd036d797de4690"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a49e5b4d9d14c5d907cd036d797de4690">anonymous_namespace{Config.cpp}::ParseFile</a> (std::string const &amp;file)</td></tr>
 <tr class="separator:a49e5b4d9d14c5d907cd036d797de4690"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9313ce410e857467575c8efcd0e48fb2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a9313ce410e857467575c8efcd0e48fb2">anonymous_namespace{Config.cpp}::LoadFile</a> (std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../d2/dbc/deps_2gsoap_2_c_make_lists_8txt.html#ad0ce1f991d58ccbbb91f81e55e48bf2e">file</a>)</td></tr>
+<tr class="memitem:a9313ce410e857467575c8efcd0e48fb2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a9313ce410e857467575c8efcd0e48fb2">anonymous_namespace{Config.cpp}::LoadFile</a> (std::string const &amp;file)</td></tr>
 <tr class="separator:a9313ce410e857467575c8efcd0e48fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7096a6c65872ca33d8f44bdd841eaa31"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
-<tr class="memitem:a7096a6c65872ca33d8f44bdd841eaa31"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/dd3/_config_8cpp.html#a7096a6c65872ca33d8f44bdd841eaa31">ConfigMgr::GetValueDefault&lt; std::string &gt;</a> (std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;name, std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;def, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> showLogs) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a7096a6c65872ca33d8f44bdd841eaa31"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/dd3/_config_8cpp.html#a7096a6c65872ca33d8f44bdd841eaa31">ConfigMgr::GetValueDefault&lt; std::string &gt;</a> (std::string const &amp;name, std::string const &amp;def, bool showLogs) const</td></tr>
 <tr class="separator:a7096a6c65872ca33d8f44bdd841eaa31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -137,7 +137,7 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">__typename</td><td>)</td>
-          <td>&#160;&#160;&#160;    template __typename <a class="el" href="../../de/d41/class_config_mgr.html#a711be8eda4077d967a3677bd138998ac">ConfigMgr::GetOption</a>&lt;__typename&gt;(std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&amp; name, __typename <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&amp; def, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> showLogs /*= <a class="el" href="../../d9/d5e/stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>*/) <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>;</td>
+          <td>&#160;&#160;&#160;    template __typename <a class="el" href="../../de/d41/class_config_mgr.html#a711be8eda4077d967a3677bd138998ac">ConfigMgr::GetOption</a>&lt;__typename&gt;(std::string const&amp; name, __typename const&amp; def, bool showLogs /*= true*/) const;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -158,19 +158,19 @@ template&lt;&gt; </div>
         <tr>
           <td class="memname">std::string <a class="el" href="../../de/d41/class_config_mgr.html#a4a122373714bb95f10e6532e30735e55">ConfigMgr::GetValueDefault</a>&lt; std::string &gt; </td>
           <td>(</td>
-          <td class="paramtype">std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>name</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::string <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype">std::string const &amp;&#160;</td>
           <td class="paramname"><em>def</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>showLogs</em>&#160;</td>
         </tr>
         <tr>
@@ -188,8 +188,8 @@ template&lt;&gt; </div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    {</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">if</span> (showLogs)</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <a class="code" href="../../d3/d07/src_2common_2_logging_2_log_8h.html#a43832e3fa8508deb4ce43e520005fcd9">LOG_ERROR</a>(<span class="stringliteral">&quot;server.loading&quot;</span>, <span class="stringliteral">&quot;&gt; Config: Missing name %s in config, add \&quot;%s = %s\&quot;&quot;</span>,</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                <a class="code" href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a>.c_str(), <a class="code" href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">name</a>.c_str(), def.c_str());</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <a class="code" href="../../da/df4/_log_8h.html#a43832e3fa8508deb4ce43e520005fcd9">LOG_ERROR</a>(<span class="stringliteral">&quot;server.loading&quot;</span>, <span class="stringliteral">&quot;&gt; Config: Missing name %s in config, add \&quot;%s = %s\&quot;&quot;</span>,</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                name.c_str(), name.c_str(), def.c_str());</div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> def;</div>
@@ -197,11 +197,10 @@ template&lt;&gt; </div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> itr-&gt;second;</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;}</div>
+<div class="ttc" id="a_log_8h_html_a43832e3fa8508deb4ce43e520005fcd9"><div class="ttname"><a href="../../da/df4/_log_8h.html#a43832e3fa8508deb4ce43e520005fcd9">LOG_ERROR</a></div><div class="ttdeci">#define LOG_ERROR(filterType__,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../da/df4/_log_8h_source.html#l00261">Log.h:261</a></div></div>
 <div class="ttc" id="anamespaceanonymous__namespace_02_config_8cpp_03_html_a4c4d5bd9313e617a40ed0f27d79dbae9"><div class="ttname"><a href="../../d2/db4/namespaceanonymous__namespace_02_config_8cpp_03.html#a4c4d5bd9313e617a40ed0f27d79dbae9">anonymous_namespace{Config.cpp}::_configOptions</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::string &gt; _configOptions</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dd3/_config_8cpp_source.html#l00032">Config.cpp:32</a></div></div>
-<div class="ttc" id="anamespacesetup_html_ab3a7a0638d76a01367c5bc3cc699447f"><div class="ttname"><a href="../../dd/dc4/namespacesetup.html#ab3a7a0638d76a01367c5bc3cc699447f">setup.name</a></div><div class="ttdeci">name</div><div class="ttdef"><b>Definition:</b> <a href="../../da/dab/setup_8py_source.html#l00011">setup.py:11</a></div></div>
-<div class="ttc" id="asrc_2common_2_logging_2_log_8h_html_a43832e3fa8508deb4ce43e520005fcd9"><div class="ttname"><a href="../../d3/d07/src_2common_2_logging_2_log_8h.html#a43832e3fa8508deb4ce43e520005fcd9">LOG_ERROR</a></div><div class="ttdeci">#define LOG_ERROR(filterType__,...)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d07/src_2common_2_logging_2_log_8h_source.html#l00261">Log.h:261</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d7/dd3/_config_8cpp_source.html#l00032">anonymous_namespace{Config.cpp}::_configOptions</a>, and <a class="el" href="../../d3/d07/src_2common_2_logging_2_log_8h_source.html#l00261">LOG_ERROR</a>.</p>
+<p class="reference">References <a class="el" href="../../d7/dd3/_config_8cpp_source.html#l00032">anonymous_namespace{Config.cpp}::_configOptions</a>, and <a class="el" href="../../da/df4/_log_8h_source.html#l00261">LOG_ERROR</a>.</p>
 
 </div>
 </div>

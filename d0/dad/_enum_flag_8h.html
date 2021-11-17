@@ -91,34 +91,34 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a9f556f9c539f21ae6fd639abe4c39c75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a9f556f9c539f21ae6fd639abe4c39c75">DEFINE_ENUM_FLAG</a>(enumType)&#160;&#160;&#160;constexpr <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a>(enumType) { return <a class="el" href="../../d9/d5e/stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>; }</td></tr>
+<tr class="memitem:a9f556f9c539f21ae6fd639abe4c39c75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a9f556f9c539f21ae6fd639abe4c39c75">DEFINE_ENUM_FLAG</a>(enumType)&#160;&#160;&#160;constexpr bool <a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a>(enumType) { return true; }</td></tr>
 <tr class="separator:a9f556f9c539f21ae6fd639abe4c39c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a7294b75cb336d554d5ce2b75b05c37d6"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a7294b75cb336d554d5ce2b75b05c37d6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/dab/namespace_enum_traits.html#a7294b75cb336d554d5ce2b75b05c37d6">EnumTraits::IsFlag</a> = std::integral_constant&lt; <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>, <a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a>(T{})&gt;</td></tr>
+<tr class="memitem:a7294b75cb336d554d5ce2b75b05c37d6"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/dab/namespace_enum_traits.html#a7294b75cb336d554d5ce2b75b05c37d6">EnumTraits::IsFlag</a> = std::integral_constant&lt; bool, <a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a>(T{})&gt;</td></tr>
 <tr class="separator:a7294b75cb336d554d5ce2b75b05c37d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ae0992e010612850442fc56bcf2d44b47"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ae0992e010612850442fc56bcf2d44b47"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a> (T)</td></tr>
+<tr class="memitem:ae0992e010612850442fc56bcf2d44b47"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a> (T)</td></tr>
 <tr class="separator:ae0992e010612850442fc56bcf2d44b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27ef39aed098304d7387af8257f7cee3"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::value, std::nullptr_t &gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:a27ef39aed098304d7387af8257f7cee3"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a27ef39aed098304d7387af8257f7cee3">operator&amp;</a> (T <a class="el" href="../../d9/dbf/_recast_mesh_8cpp.html#a0ba03d6a44337bfbcef8f0c9dad4289f">left</a>, T right)</td></tr>
+<tr class="memitem:a27ef39aed098304d7387af8257f7cee3"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a27ef39aed098304d7387af8257f7cee3">operator&amp;</a> (T left, T right)</td></tr>
 <tr class="separator:a27ef39aed098304d7387af8257f7cee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382d450763ad83c1cba0d8ad87b87912"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::value, std::nullptr_t &gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:a382d450763ad83c1cba0d8ad87b87912"><td class="memTemplItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a382d450763ad83c1cba0d8ad87b87912">operator&amp;=</a> (T &amp;<a class="el" href="../../d9/dbf/_recast_mesh_8cpp.html#a0ba03d6a44337bfbcef8f0c9dad4289f">left</a>, T right)</td></tr>
+<tr class="memitem:a382d450763ad83c1cba0d8ad87b87912"><td class="memTemplItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a382d450763ad83c1cba0d8ad87b87912">operator&amp;=</a> (T &amp;left, T right)</td></tr>
 <tr class="separator:a382d450763ad83c1cba0d8ad87b87912"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8aaa198de31cb5a3b217d0968f30a3b"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::value, std::nullptr_t &gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:ac8aaa198de31cb5a3b217d0968f30a3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#ac8aaa198de31cb5a3b217d0968f30a3b">operator|</a> (T <a class="el" href="../../d9/dbf/_recast_mesh_8cpp.html#a0ba03d6a44337bfbcef8f0c9dad4289f">left</a>, T right)</td></tr>
+<tr class="memitem:ac8aaa198de31cb5a3b217d0968f30a3b"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#ac8aaa198de31cb5a3b217d0968f30a3b">operator|</a> (T left, T right)</td></tr>
 <tr class="separator:ac8aaa198de31cb5a3b217d0968f30a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e2472bd8e2641344fc0620c34a5c9ad"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::value, std::nullptr_t &gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:a9e2472bd8e2641344fc0620c34a5c9ad"><td class="memTemplItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a9e2472bd8e2641344fc0620c34a5c9ad">operator|=</a> (T &amp;<a class="el" href="../../d9/dbf/_recast_mesh_8cpp.html#a0ba03d6a44337bfbcef8f0c9dad4289f">left</a>, T right)</td></tr>
+<tr class="memitem:a9e2472bd8e2641344fc0620c34a5c9ad"><td class="memTemplItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#a9e2472bd8e2641344fc0620c34a5c9ad">operator|=</a> (T &amp;left, T right)</td></tr>
 <tr class="separator:a9e2472bd8e2641344fc0620c34a5c9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3f4d2eafbceebe9ec46ffcd15cfa76"><td class="memTemplParams" colspan="2">template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::value, std::nullptr_t &gt;  = nullptr&gt; </td></tr>
-<tr class="memitem:abe3f4d2eafbceebe9ec46ffcd15cfa76"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#abe3f4d2eafbceebe9ec46ffcd15cfa76">operator~</a> (T <a class="el" href="../../d7/d71/classvalue.html">value</a>)</td></tr>
+<tr class="memitem:abe3f4d2eafbceebe9ec46ffcd15cfa76"><td class="memTemplItemLeft" align="right" valign="top">constexpr T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dad/_enum_flag_8h.html#abe3f4d2eafbceebe9ec46ffcd15cfa76">operator~</a> (T value)</td></tr>
 <tr class="separator:abe3f4d2eafbceebe9ec46ffcd15cfa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -133,7 +133,7 @@ Functions</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">enumType</td><td>)</td>
-          <td>&#160;&#160;&#160;constexpr <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> <a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a>(enumType) { return <a class="el" href="../../d9/d5e/stdbool_8h.html#a41f9c5fb8b08eb5dc3edce4dcb37fee7">true</a>; }</td>
+          <td>&#160;&#160;&#160;constexpr bool <a class="el" href="../../d0/dad/_enum_flag_8h.html#ae0992e010612850442fc56bcf2d44b47">IsEnumFlag</a>(enumType) { return true; }</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -155,7 +155,7 @@ template&lt;typename T &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> IsEnumFlag </td>
+          <td class="memname">constexpr bool IsEnumFlag </td>
           <td>(</td>
           <td class="paramtype">T&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -212,13 +212,9 @@ template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::val
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dad/_enum_flag_8h_source.html#l00023">23</a> of file <a class="el" href="../../d0/dad/_enum_flag_8h_source.html">EnumFlag.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(<a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a>) &amp; <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(<a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a>));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(left) &amp; <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(right));</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd"><div class="ttname"><a href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">align::left</a></div><div class="ttdeci">@ left</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">core.h:1859</a></div></div>
-<div class="ttc" id="anamespacealign_html_aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79"><div class="ttname"><a href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">align::right</a></div><div class="ttdeci">@ right</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">core.h:1859</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::left</a>, and <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::right</a>.</p>
-
 </div>
 </div>
 <a id="a382d450763ad83c1cba0d8ad87b87912"></a>
@@ -259,11 +255,9 @@ template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::val
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dad/_enum_flag_8h_source.html#l00029">29</a> of file <a class="el" href="../../d0/dad/_enum_flag_8h_source.html">EnumFlag.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a> = <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a> &amp; <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> left = left &amp; right;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::left</a>, and <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::right</a>.</p>
-
 </div>
 </div>
 <a id="ac8aaa198de31cb5a3b217d0968f30a3b"></a>
@@ -304,11 +298,9 @@ template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::val
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dad/_enum_flag_8h_source.html#l00035">35</a> of file <a class="el" href="../../d0/dad/_enum_flag_8h_source.html">EnumFlag.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(<a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a>) | <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(<a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a>));</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(left) | <span class="keyword">static_cast&lt;</span>std::underlying_type_t&lt;T&gt;<span class="keyword">&gt;</span>(right));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::left</a>, and <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::right</a>.</p>
-
 </div>
 </div>
 <a id="a9e2472bd8e2641344fc0620c34a5c9ad"></a>
@@ -349,11 +341,9 @@ template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::val
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dad/_enum_flag_8h_source.html#l00041">41</a> of file <a class="el" href="../../d0/dad/_enum_flag_8h_source.html">EnumFlag.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a> = <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a3282b06f67c5e15c0eaeb515ef8f86fd">left</a> | <a class="code" href="../../d2/d18/namespacealign.html#aff2772e23f6ac91520e57d4b3ac0c759a5bf95244357d6164916bfe6e0ccfbc79">right</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> left = left | right;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::left</a>, and <a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01859">align::right</a>.</p>
-
 </div>
 </div>
 <a id="abe3f4d2eafbceebe9ec46ffcd15cfa76"></a>
@@ -384,9 +374,8 @@ template&lt;typename T , std::enable_if_t&lt; EnumTraits::IsFlag&lt; T &gt;::val
 
 <p class="definition">Definition at line <a class="el" href="../../d0/dad/_enum_flag_8h_source.html#l00047">47</a> of file <a class="el" href="../../d0/dad/_enum_flag_8h_source.html">EnumFlag.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(~static_cast&lt;std::underlying_type_t&lt;T&gt;&gt;(<a class="code" href="../../d7/d71/classvalue.html">value</a>));</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(~static_cast&lt;std::underlying_type_t&lt;T&gt;&gt;(value));</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="../../d7/d71/classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01120">core.h:1120</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

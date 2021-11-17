@@ -88,14 +88,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:accfa43359c62d2e9d6c38086c77374bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a669531cfd9c06d5cf525986069117687"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#a669531cfd9c06d5cf525986069117687">~PacketFilter</a> ()=default</td></tr>
 <tr class="separator:a669531cfd9c06d5cf525986069117687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03679e3c241a535757608c63ca933ac9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#a03679e3c241a535757608c63ca933ac9">Process</a> (<a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *)</td></tr>
+<tr class="memitem:a03679e3c241a535757608c63ca933ac9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#a03679e3c241a535757608c63ca933ac9">Process</a> (<a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *)</td></tr>
 <tr class="separator:a03679e3c241a535757608c63ca933ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e2bdc6d15cfd5cac1b9c130937599e3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#a3e2bdc6d15cfd5cac1b9c130937599e3">ProcessUnsafe</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></td></tr>
+<tr class="memitem:a3e2bdc6d15cfd5cac1b9c130937599e3"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#a3e2bdc6d15cfd5cac1b9c130937599e3">ProcessUnsafe</a> () const</td></tr>
 <tr class="separator:a3e2bdc6d15cfd5cac1b9c130937599e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ad3723289ea93f1095cf82584268335d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a> *<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#ad3723289ea93f1095cf82584268335d9">m_pSession</a></td></tr>
+<tr class="memitem:ad3723289ea93f1095cf82584268335d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/class_packet_filter.html#ad3723289ea93f1095cf82584268335d9">m_pSession</a></td></tr>
 <tr class="separator:ad3723289ea93f1095cf82584268335d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -168,7 +168,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> PacketFilter::Process </td>
+          <td class="memname">virtual bool PacketFilter::Process </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -199,7 +199,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> PacketFilter::ProcessUnsafe </td>
+          <td class="memname">virtual bool PacketFilter::ProcessUnsafe </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -232,7 +232,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a>* <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> PacketFilter::m_pSession</td>
+          <td class="memname"><a class="el" href="../../d1/d47/class_world_session.html">WorldSession</a>* const PacketFilter::m_pSession</td>
         </tr>
       </table>
   </td>

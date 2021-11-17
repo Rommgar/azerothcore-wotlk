@@ -88,9 +88,9 @@ Macros</h2></td></tr>
 <tr class="separator:a2d4c9d3be98a2df4f53a4fb6fb488b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a286f65303b519f7d0fc6d186d29ee83b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc4/_script_mgr_macros_8h.html#a286f65303b519f7d0fc6d186d29ee83b">FOREACH_SCRIPT</a>(T)</td></tr>
 <tr class="separator:a286f65303b519f7d0fc6d186d29ee83b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa573d213c0e1d7e10db5f0e60539a779"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc4/_script_mgr_macros_8h.html#aa573d213c0e1d7e10db5f0e60539a779">GET_SCRIPT</a>(T,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  V)</td></tr>
+<tr class="memitem:aa573d213c0e1d7e10db5f0e60539a779"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc4/_script_mgr_macros_8h.html#aa573d213c0e1d7e10db5f0e60539a779">GET_SCRIPT</a>(T,  I,  V)</td></tr>
 <tr class="separator:aa573d213c0e1d7e10db5f0e60539a779"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4d003e801dcb456472fa37628ab4147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc4/_script_mgr_macros_8h.html#aa4d003e801dcb456472fa37628ab4147">GET_SCRIPT_RET</a>(T,  <a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>,  V,  R)</td></tr>
+<tr class="memitem:aa4d003e801dcb456472fa37628ab4147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc4/_script_mgr_macros_8h.html#aa4d003e801dcb456472fa37628ab4147">GET_SCRIPT_RET</a>(T,  I,  V,  R)</td></tr>
 <tr class="separator:aa4d003e801dcb456472fa37628ab4147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -220,7 +220,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -235,10 +235,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    T* V = <a class="code" href="../../dd/da5/class_script_registry.html#ac210ee60339c260c0db9a1928998682e">ScriptRegistry&lt;T&gt;::GetScriptById</a>(<a class="code" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    T* V = <a class="code" href="../../dd/da5/class_script_registry.html#ac210ee60339c260c0db9a1928998682e">ScriptRegistry&lt;T&gt;::GetScriptById</a>(I); \</div>
 <div class="line">    if (!V) \</div>
 <div class="line">        return;</div>
-<div class="ttc" id="a_crypto__md5_8cpp_html_ac0eafdc9ee161b71e7af98af736952fd"><div class="ttname"><a href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a></div><div class="ttdeci">#define I(x, y, z)</div></div>
 <div class="ttc" id="aclass_script_registry_html_ac210ee60339c260c0db9a1928998682e"><div class="ttname"><a href="../../dd/da5/class_script_registry.html#ac210ee60339c260c0db9a1928998682e">ScriptRegistry::GetScriptById</a></div><div class="ttdeci">static TScript * GetScriptById(uint32 id)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d7d/_script_mgr_8h_source.html#l02153">ScriptMgr.h:2153</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="../../d0/dc4/_script_mgr_macros_8h_source.html#l00038">38</a> of file <a class="el" href="../../d0/dc4/_script_mgr_macros_8h_source.html">ScriptMgrMacros.h</a>.</p>
@@ -261,7 +260,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>, </td>
+          <td class="paramname">I, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -282,7 +281,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    T* V = <a class="code" href="../../dd/da5/class_script_registry.html#ac210ee60339c260c0db9a1928998682e">ScriptRegistry&lt;T&gt;::GetScriptById</a>(<a class="code" href="../../dd/dce/_crypto__md5_8cpp.html#ac0eafdc9ee161b71e7af98af736952fd">I</a>); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    T* V = <a class="code" href="../../dd/da5/class_script_registry.html#ac210ee60339c260c0db9a1928998682e">ScriptRegistry&lt;T&gt;::GetScriptById</a>(I); \</div>
 <div class="line">    if (!V) \</div>
 <div class="line">        return R;</div>
 </div><!-- fragment -->

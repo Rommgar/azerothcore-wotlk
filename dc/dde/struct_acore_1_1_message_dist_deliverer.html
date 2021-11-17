@@ -78,7 +78,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad7713cd3dbe5d2140df58bfd48e7025f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/struct_acore_1_1_message_dist_deliverer.html#ad7713cd3dbe5d2140df58bfd48e7025f">MessageDistDeliverer</a> (<a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> *src, <a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *msg, float dist, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> own_team_only=<a class="el" href="../../d9/d5e/stdbool_8h.html#a65e9886d74aaee76545e83dd09011727">false</a>, <a class="el" href="../../d8/d53/class_player.html">Player</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *skipped=nullptr)</td></tr>
+<tr class="memitem:ad7713cd3dbe5d2140df58bfd48e7025f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/struct_acore_1_1_message_dist_deliverer.html#ad7713cd3dbe5d2140df58bfd48e7025f">MessageDistDeliverer</a> (<a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> *src, <a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> *msg, float dist, bool own_team_only=false, <a class="el" href="../../d8/d53/class_player.html">Player</a> const *skipped=nullptr)</td></tr>
 <tr class="separator:ad7713cd3dbe5d2140df58bfd48e7025f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09171ca5e494d7cc4b19340e95367a64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/struct_acore_1_1_message_dist_deliverer.html#a09171ca5e494d7cc4b19340e95367a64">Visit</a> (<a class="el" href="../../df/d7d/_grid_defines_8h.html#ae35a7f6754cf9950d0027369ada820e7">PlayerMapType</a> &amp;m)</td></tr>
 <tr class="separator:a09171ca5e494d7cc4b19340e95367a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,7 +104,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a871dda581863f0919f1d5b2f60c2fcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfda3713bbde51a110cb160f0325f848"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d0b/_shared_defines_8h.html#a7513eda5ac39f7f649b82c80de7c324d">TeamId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/struct_acore_1_1_message_dist_deliverer.html#acfda3713bbde51a110cb160f0325f848">teamId</a></td></tr>
 <tr class="separator:acfda3713bbde51a110cb160f0325f848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f92e1c65cdc8346dd4bac47f1ba8b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d53/class_player.html">Player</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/struct_acore_1_1_message_dist_deliverer.html#a7f92e1c65cdc8346dd4bac47f1ba8b5b">skipped_receiver</a></td></tr>
+<tr class="memitem:a7f92e1c65cdc8346dd4bac47f1ba8b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d53/class_player.html">Player</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dde/struct_acore_1_1_message_dist_deliverer.html#a7f92e1c65cdc8346dd4bac47f1ba8b5b">skipped_receiver</a></td></tr>
 <tr class="separator:a7f92e1c65cdc8346dd4bac47f1ba8b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -141,13 +141,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td>
-          <td class="paramname"><em>own_team_only</em> = <code><a class="el" href="../../d9/d5e/stdbool_8h.html#a65e9886d74aaee76545e83dd09011727">false</a></code>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>own_team_only</em> = <code>false</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d53/class_player.html">Player</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d8/d53/class_player.html">Player</a> const *&#160;</td>
           <td class="paramname"><em>skipped</em> = <code>nullptr</code>&#160;</td>
         </tr>
         <tr>
@@ -484,7 +484,7 @@ template&lt;class SKIP &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d53/class_player.html">Player</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>* Acore::MessageDistDeliverer::skipped_receiver</td>
+          <td class="memname"><a class="el" href="../../d8/d53/class_player.html">Player</a> const* Acore::MessageDistDeliverer::skipped_receiver</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -67,116 +67,96 @@ $(function() {
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="../../d5/dfc/classaccount__commandscript.html#a4bb0b76ef822011054d699df31f60d7e">account_commandscript::HandleAccountDeleteCommand</a>  (<a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> *handler, char const *args)</dt>
-<dd><a class="anchor" id="_todo000032"></a>This function has to be enhanced to respect the login/realm split (delete char, delete account chars in realm then delete account)  </dd>
+<dd><a class="anchor" id="_todo000022"></a>This function has to be enhanced to respect the login/realm split (delete char, delete account chars in realm then delete account)  </dd>
 <dt>Member <a class="el" href="../../d4/d94/structboss__akilzon_1_1boss__akilzon_a_i.html#a1633e6ec3904c63b5552763ccafa5943">boss_akilzon::boss_akilzonAI::UpdateAI</a>  (uint32 diff) override</dt>
-<dd><a class="anchor" id="_todo000036"></a>: fix it in correct way, that causes player to can fly until logout  </dd>
+<dd><a class="anchor" id="_todo000026"></a>: fix it in correct way, that causes player to can fly until logout  </dd>
 <dt>Member <a class="el" href="../../d2/d16/structboss__skeram_1_1boss__skeram_a_i.html#a7dbdcf88f0abc34746293df5a9574481">boss_skeram::boss_skeramAI::UpdateAI</a>  (uint32 diff) override</dt>
-<dd><a class="anchor" id="_todo000039"></a>For some weird reason boss does not cast this  </dd>
+<dd><a class="anchor" id="_todo000029"></a>For some weird reason boss does not cast this  </dd>
 <dt>Member <a class="el" href="../../d9/daa/structboss__twinemperors_a_i.html#a21a6023da6636a706ebd0ec244add51e">boss_twinemperorsAI::EnterCombat</a>  (<a class="el" href="../../da/db7/class_unit.html">Unit</a> *who) override</dt>
-<dd><a class="anchor" id="_todo000040"></a>we should activate the other boss location so he can start attackning even if nobody  </dd>
+<dd><a class="anchor" id="_todo000030"></a>we should activate the other boss location so he can start attackning even if nobody  </dd>
 <dt>Class <a class="el" href="../../dc/d3b/classboss__viscidus.html">boss_viscidus</a>  </dt>
-<dd><a class="anchor" id="_todo000042"></a>Not sure if its correct  </dd>
+<dd><a class="anchor" id="_todo000032"></a>Not sure if its correct  </dd>
 <dt>Member <a class="el" href="../../d6/d6c/_byte_buffer_8h.html#a31d035bbbf2d8edc4942e9f676b32878">ByteBuffer::read&lt; std::string &gt;</a>  ()</dt>
-<dd><a class="anchor" id="_todo000056"></a>Make a <a class="el" href="../../d4/d6c/_byte_buffer_8cpp.html">ByteBuffer.cpp</a> and move all this inlining to it.  </dd>
+<dd><a class="anchor" id="_todo000046"></a>Make a <a class="el" href="../../d4/d6c/_byte_buffer_8cpp.html">ByteBuffer.cpp</a> and move all this inlining to it.  </dd>
 <dt>Member <a class="el" href="../../d7/d10/class_database_worker_pool.html#a8a5f26f02948171fb65212b852e0c790">DatabaseWorkerPool&lt; T &gt;::DirectCommitTransaction</a>  (SQLTransaction&lt; T &gt; &amp;transaction)</dt>
-<dd><a class="anchor" id="_todo000012"></a>More elegant way  </dd>
-<dt>Member <a class="el" href="../../d9/d39/dtoa_8c.html#a1faee491acbd16eb38f1998705a3d5c9">DTOA_BUFF_SIZE</a>  </dt>
-<dd><a class="anchor" id="_todo000008"></a> see if it is possible to get rid of malloc(). this constant is sufficient to avoid malloc() on all inputs I have tried.  </dd>
+<dd><a class="anchor" id="_todo000002"></a>More elegant way  </dd>
 <dt>Member <a class="el" href="../../d0/dd1/class_game_object.html#ae38c7dd568ca56e2736bd0bb1c89ed8b">GameObject::Update</a>  (uint32 p_time) override</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000013"></a>This is activation radius. Casting radius must be selected from spell data. </p>
-<p class="enddd"><a class="anchor" id="_todo000014"></a>Move activated state code to GO_ACTIVATED, in this place just check for activation and set state.  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000003"></a>This is activation radius. Casting radius must be selected from spell data. </p>
+<p class="enddd"><a class="anchor" id="_todo000004"></a>Move activated state code to GO_ACTIVATED, in this place just check for activation and set state.  </p>
 </dd>
 <dt>Member <a class="el" href="../../db/dae/npcs__special_8cpp.html#a3c4edfa73ac0c163e64077c6b1ce6038">Garments</a>  </dt>
-<dd><a class="anchor" id="_todo000055"></a>get text for each NPC  </dd>
+<dd><a class="anchor" id="_todo000045"></a>get text for each NPC  </dd>
 <dt>Member <a class="el" href="../../d1/d1b/classgo__dragonflayer__cage.html#a542530a0b84879b21a4b9982cf4300d0">go_dragonflayer_cage::OnGossipHello</a>  (<a class="el" href="../../d8/d53/class_player.html">Player</a> *player, <a class="el" href="../../d0/dd1/class_game_object.html">GameObject</a> *go) override</dt>
-<dd><a class="anchor" id="_todo000054"></a>prisoner should help player for a short period of time  </dd>
+<dd><a class="anchor" id="_todo000044"></a>prisoner should help player for a short period of time  </dd>
 <dt>Member <a class="el" href="../../d1/da2/classgobject__commandscript.html#a23717867956cc0da99e3640d2b790346">gobject_commandscript::HandleGameObjectAddCommand</a>  (<a class="el" href="../../d2/d04/class_chat_handler.html">ChatHandler</a> *handler, GameObjectEntry objectId, Optional&lt; int32 &gt; spawnTimeSecs)</dt>
-<dd><a class="anchor" id="_todo000033"></a>is it really necessary to add both the real and DB table guid here ?  </dd>
+<dd><a class="anchor" id="_todo000023"></a>is it really necessary to add both the real and DB table guid here ?  </dd>
 <dt>Member <a class="el" href="../../d9/d2b/structinstance__karazhan_1_1instance__karazhan___instance_map_script.html#a0d1bda09e399c50faa1cd1999fee3297">instance_karazhan::instance_karazhan_InstanceMapScript::OnGameObjectCreate</a>  (<a class="el" href="../../d0/dd1/class_game_object.html">GameObject</a> *go) override</dt>
-<dd><a class="anchor" id="_todo000034"></a>Set <a class="el" href="../../d8/d83/class_object.html">Object</a> visibilities for Opera based on performance  </dd>
-<dt>Member <a class="el" href="../../d1/d08/client__plugin_8c.html#aec5285246b92f70410a7ed2c6170ea51">load_env_plugins</a>  (MYSQL *mysql)</dt>
-<dd><a class="anchor" id="_todo000007"></a> Support extended syntax, passing parameters to plugins, for example LIBMYSQL_PLUGINS="plugin1(param1,param2);plugin2;..." or LIBMYSQL_PLUGINS="plugin1=int:param1,str:param2;plugin2;..."  </dd>
+<dd><a class="anchor" id="_todo000024"></a>Set <a class="el" href="../../d8/d83/class_object.html">Object</a> visibilities for Opera based on performance  </dd>
 <dt>Member <a class="el" href="../../d5/d32/_unit_8h.html#a083358a25d084fb928e170c453128f9da025fc8349887310b1f1e564e7be468c2">MOVEMENTFLAG_MASK_PLAYER_ONLY</a>  </dt>
-<dd><a class="anchor" id="_todo000021"></a>if needed: add more flags to this masks that are exclusive to players  </dd>
-<dt>Member <a class="el" href="../../d8/dd8/mf__iocache2_8c.html#ab9c98cc83631039213e9d4c867288ca3">my_b_vprintf</a>  (IO_CACHE *info, const char *fmt, va_list args)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000002"></a>Implement "#" conversion flag. </p>
-<p class="interdd"><a class="anchor" id="_todo000003"></a>Implement " " conversion flag. </p>
-<p class="enddd"><a class="anchor" id="_todo000004"></a>Implement "+" conversion flag.  </p>
-</dd>
-<dt>Member <a class="el" href="../../d9/d39/dtoa_8c.html#a94e731fb73e1424473a8648e55d517b1">my_gcvt</a>  (double x, my_gcvt_arg_type type, int width, char *to, my_bool *error)</dt>
-<dd><a class="anchor" id="_todo000009"></a> Check if it is possible and makes sense to do our own rounding on top of <a class="el" href="../../d9/d39/dtoa_8c.html#a76a32515db51b972811481d59596a9a1">dtoa()</a> instead of calling <a class="el" href="../../d9/d39/dtoa_8c.html#a76a32515db51b972811481d59596a9a1">dtoa()</a> twice in (rare) cases when the resulting string representation does not fit in the specified field width and we want to re-round the input number with fewer significant digits. Examples: </dd>
-<dt>Member <a class="el" href="../../db/dc8/my__strchr_8c.html#a1d652e1c7ebc6d48fdaaf9c096ce96fc">my_strcspn</a>  (CHARSET_INFO *cs, const char *str, const char *str_end, const char *reject)</dt>
-<dd><a class="anchor" id="_todo000010"></a>should be moved to CHARSET_INFO if it's going to be called frequently. </dd>
-<dt>Member <a class="el" href="../../dc/d7b/net__serv_8cc.html#aab6d3c706ccc04a192b65d195b97e047">net_real_write</a>  (NET *net, const uchar *packet, size_t len)</dt>
-<dd><a class="anchor" id="_todo000006"></a><ul>
-<li>TODO is it needed to set this variable if we have no socket  </li>
-</ul>
-</dd>
+<dd><a class="anchor" id="_todo000011"></a>if needed: add more flags to this masks that are exclusive to players  </dd>
 <dt>Member <a class="el" href="../../d9/d6b/structnpc__a__special__surprise_1_1npc__a__special__surprise_a_i.html#a8572ec4b4fdcaab93666f581edf1c852">npc_a_special_surprise::npc_a_special_surpriseAI::UpdateAI</a>  (uint32 diff) override</dt>
-<dd><a class="anchor" id="_todo000035"></a>simplify text's selection  </dd>
+<dd><a class="anchor" id="_todo000025"></a>simplify text's selection  </dd>
 <dt>Member <a class="el" href="../../de/d72/structnpc__daranelle_1_1npc__daranelle_a_i.html#a353e27c1485b88f0751a64260898d35b">npc_daranelle::npc_daranelleAI::MoveInLineOfSight</a>  (<a class="el" href="../../da/db7/class_unit.html">Unit</a> *who) override</dt>
-<dd><a class="anchor" id="_todo000048"></a>Move the below to updateAI and run if this statement == true  </dd>
+<dd><a class="anchor" id="_todo000038"></a>Move the below to updateAI and run if this statement == true  </dd>
 <dt>Member <a class="el" href="../../d6/db8/structnpc__earthmender__wilda_1_1npc__earthmender__wilda_a_i.html#a8a94dafde69d4a6fce5c3531835a2a3e">npc_earthmender_wilda::npc_earthmender_wildaAI::UpdateAI</a>  (uint32 uiDiff) override</dt>
-<dd><a class="anchor" id="_todo000049"></a>add more abilities  </dd>
+<dd><a class="anchor" id="_todo000039"></a>add more abilities  </dd>
 <dt>Class <a class="el" href="../../d1/d8f/classnpc__kerlonian.html">npc_kerlonian</a>  </dt>
-<dd><a class="anchor" id="_todo000044"></a>make concept similar as "ringo" -escort. Find a way to run the scripted attacks, <em>if</em> player are choosing road.  </dd>
+<dd><a class="anchor" id="_todo000034"></a>make concept similar as "ringo" -escort. Find a way to run the scripted attacks, <em>if</em> player are choosing road.  </dd>
 <dt>Member <a class="el" href="../../d5/d23/structnpc__spitelashes_1_1npc__spitelashes_a_i.html#a087b9cf1af092507471da18ffd0ab375">npc_spitelashes::npc_spitelashesAI::UpdateAI</a>  (uint32 diff) override</dt>
-<dd><a class="anchor" id="_todo000043"></a>add abilities for the different creatures  </dd>
+<dd><a class="anchor" id="_todo000033"></a>add abilities for the different creatures  </dd>
 <dt>Class <a class="el" href="../../da/d68/classnpc__thrall__warchief.html">npc_thrall_warchief</a>  </dt>
-<dd><a class="anchor" id="_todo000046"></a>verify abilities/timers  </dd>
+<dd><a class="anchor" id="_todo000036"></a>verify abilities/timers  </dd>
 <dt>Member <a class="el" href="../../db/d4e/boss__ossirian_8cpp.html#af8d4cf87cdc6c4b3e2a903610294a592">NUM_WEAKNESS</a>  </dt>
-<dd><a class="anchor" id="_todo000038"></a>This number is completly random!  </dd>
+<dd><a class="anchor" id="_todo000028"></a>This number is completly random!  </dd>
 <dt>Member <a class="el" href="../../d8/d83/class_object.html#a746a9cdc3aac47c535b8e015fffab93a">Object::BuildMovementUpdate</a>  (<a class="el" href="../../dd/d44/class_byte_buffer.html">ByteBuffer</a> *data, uint16 flags) const</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000016"></a>Allow players to aquire this updateflag. </p>
-<p class="enddd"><a class="anchor" id="_todo000015"></a>Research the proper formula  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000006"></a>Allow players to aquire this updateflag. </p>
+<p class="enddd"><a class="anchor" id="_todo000005"></a>Research the proper formula  </p>
 </dd>
 <dt>Member <a class="el" href="../../d1/dc2/class_path_generator.html#acb82526eba306633683bcced07258c2a">PathGenerator::BuildPointPath</a>  (float const *startPoint, float const *endPoint)</dt>
-<dd><a class="anchor" id="_todo000026"></a>check the exact cases  </dd>
-<dt>Member <a class="el" href="../../d1/dc2/class_path_generator.html#a9b2aabc098350fbaa706a9f665a90290">PathGenerator::BuildPolyPath</a>  (<a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> const &amp;startPos, <a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> const &amp;endPos)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000024"></a>we can merge it with getPathPolyByPosition() loop </p>
-<p class="enddd"><a class="anchor" id="_todo000025"></a>play with the values here  </p>
+<dd><a class="anchor" id="_todo000016"></a>check the exact cases  </dd>
+<dt>Member <a class="el" href="../../d1/dc2/class_path_generator.html#a9b2aabc098350fbaa706a9f665a90290">PathGenerator::BuildPolyPath</a>  (G3D::Vector3 const &amp;startPos, G3D::Vector3 const &amp;endPos)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000015"></a>play with the values here </p>
+<p class="enddd"><a class="anchor" id="_todo000014"></a>we can merge it with getPathPolyByPosition() loop  </p>
 </dd>
 <dt>Member <a class="el" href="../../d8/d53/class_player.html#a2b1cac0255250eb3b71dec198e9160ba">Player::RestoreSpellMods</a>  (<a class="el" href="../../d8/d0d/class_spell.html">Spell</a> *spell, uint32 ownerAuraId=0, <a class="el" href="../../d2/dde/class_aura.html">Aura</a> *aura=nullptr)</dt>
-<dd><a class="anchor" id="_todo000018"></a>track these changes correctly  </dd>
+<dd><a class="anchor" id="_todo000008"></a>track these changes correctly  </dd>
 <dt>Member <a class="el" href="../../d8/d53/class_player.html#a558ae516e2abd8e8be169518d7209053">Player::SendPreparedQuest</a>  (<a class="el" href="../../d8/d03/class_object_guid.html">ObjectGuid</a> guid)</dt>
-<dd><a class="anchor" id="_todo000019"></a>verify if check for !quest-&gt;IsDaily() is really correct (possibly not)  </dd>
+<dd><a class="anchor" id="_todo000009"></a>verify if check for !quest-&gt;IsDaily() is really correct (possibly not)  </dd>
 <dt>Member <a class="el" href="../../d8/d53/class_player.html#ad1ea6763f9187890c0def15b615935d6">Player::UninviteFromGroup</a>  ()</dt>
-<dd><a class="anchor" id="_todo000017"></a>Shouldn't we also check if there is no other invitees before disbanding the group?  </dd>
-<dt>Member <a class="el" href="../../d8/d55/group___instrumentation__interface.html#gaab002d7cc2c095aafe0f65243ae922e3">PSI_server</a>  </dt>
-<dd><a class="anchor" id="_todo000005"></a>This is currently a global variable, which is handy when compiling instrumented code that is bundled with the server. When dynamic plugin are truly supported, this variable will need to be replaced by a macro, so that each XYZ plugin can have it's own xyz_psi_server variable, obtained from <a class="el" href="../../df/dd1/struct_p_s_i__bootstrap.html#abc01e3871b57a4386f81f0b6d9dce1c2">PSI_bootstrap::get_interface()</a> with the version used at compile time for plugin XYZ.  </dd>
+<dd><a class="anchor" id="_todo000007"></a>Shouldn't we also check if there is no other invitees before disbanding the group?  </dd>
 <dt>Member <a class="el" href="../../dc/da8/boss__viscidus_8cpp.html#a71bfa5b8e1102f5ee7f9ef8d13dc0e41">RoomRadius</a>  </dt>
-<dd><a class="anchor" id="_todo000041"></a>Visci isn't in room middle  </dd>
+<dd><a class="anchor" id="_todo000031"></a>Visci isn't in room middle  </dd>
 <dt>Member <a class="el" href="../../d8/d0d/class_spell.html#a516f3d4404f0ca2010d21d8c64d478ee">Spell::CheckItems</a>  ()</dt>
-<dd><a class="anchor" id="_todo000028"></a>Needs review  </dd>
+<dd><a class="anchor" id="_todo000018"></a>Needs review  </dd>
 <dt>Member <a class="el" href="../../d8/d0d/class_spell.html#ae725849679772b2ba09107720606bea4">Spell::IsAutoActionResetSpell</a>  () const</dt>
-<dd><a class="anchor" id="_todo000029"></a>changed SPELL_INTERRUPT_FLAG_AUTOATTACK -&gt; SPELL_INTERRUPT_FLAG_INTERRUPT to fix compile - is this check correct at all?  </dd>
+<dd><a class="anchor" id="_todo000019"></a>changed SPELL_INTERRUPT_FLAG_AUTOATTACK -&gt; SPELL_INTERRUPT_FLAG_INTERRUPT to fix compile - is this check correct at all?  </dd>
 <dt>Member <a class="el" href="../../d8/d0d/class_spell.html#ae0145f14c4a608000c5b928e9cb4e099">Spell::SelectImplicitCasterDestTargets</a>  (SpellEffIndex effIndex, <a class="el" href="../../d0/dc1/class_spell_implicit_target_info.html">SpellImplicitTargetInfo</a> const &amp;targetType)</dt>
-<dd><a class="anchor" id="_todo000027"></a>fix this check  </dd>
+<dd><a class="anchor" id="_todo000017"></a>fix this check  </dd>
 <dt>Member <a class="el" href="../../d1/d2c/classspell__gen__summon__elemental.html#aeec3688e66a7e9f0207b219e9dcdb265">spell_gen_summon_elemental::AfterRemove</a>  (<a class="el" href="../../da/df1/class_aura_effect.html">AuraEffect</a> const *, AuraEffectHandleModes)</dt>
-<dd><a class="anchor" id="_todo000052"></a>this check is maybe wrong  </dd>
+<dd><a class="anchor" id="_todo000042"></a>this check is maybe wrong  </dd>
 <dt>Member <a class="el" href="../../d4/d33/classspell__gen__vehicle__scaling__aura.html#a40ba021accd581745f07f2586545853c">spell_gen_vehicle_scaling_aura::CalculateAmount</a>  (<a class="el" href="../../da/df1/class_aura_effect.html">AuraEffect</a> const *, int32 &amp;amount, bool &amp;)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000050"></a>Reserach coeffs for different vehicles </p>
-<p class="enddd"><a class="anchor" id="_todo000051"></a>Research possibility of scaling down  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000040"></a>Reserach coeffs for different vehicles </p>
+<p class="enddd"><a class="anchor" id="_todo000041"></a>Research possibility of scaling down  </p>
 </dd>
 <dt>Class <a class="el" href="../../de/d09/classspell__mage__polymorph__cast__visual.html">spell_mage_polymorph_cast_visual</a>  </dt>
-<dd><a class="anchor" id="_todo000053"></a>move out of here and rename - not a mage spell  </dd>
+<dd><a class="anchor" id="_todo000043"></a>move out of here and rename - not a mage spell  </dd>
 <dt>Member <a class="el" href="../../d0/d04/classspell__q12589__shoot__rjr_1_1spell__q12589__shoot__rjr___spell_script.html#a16b86d904dd54ff4337fab4d0c69f189">spell_q12589_shoot_rjr::spell_q12589_shoot_rjr_SpellScript::HandleDummy</a>  (SpellEffIndex)</dt>
-<dd><a class="anchor" id="_todo000047"></a>Make crunchy perform emote eat when he reaches the bird  </dd>
+<dd><a class="anchor" id="_todo000037"></a>Make crunchy perform emote eat when he reaches the bird  </dd>
 <dt>Member <a class="el" href="../../db/dfe/boss__ayamiss_8cpp.html#ace88c526a8cd1ff7f88008872c925ea9">SwarmerPos</a>  </dt>
-<dd><a class="anchor" id="_todo000037"></a>These below are probably incorrect, taken from SD2  </dd>
+<dd><a class="anchor" id="_todo000027"></a>These below are probably incorrect, taken from SD2  </dd>
 <dt>Member <a class="el" href="../../da/d1d/zone__durotar_8cpp.html#ad65e95bd98edfed3fed682911d8737a3">trollmodel</a>  []</dt>
-<dd><a class="anchor" id="_todo000045"></a>generalize these models with race from dbc  </dd>
+<dd><a class="anchor" id="_todo000035"></a>generalize these models with race from dbc  </dd>
 <dt>Member <a class="el" href="../../da/db7/class_unit.html#a549e721b14f15635bd6572505b366e78">Unit::SetFacingToObject</a>  (<a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> *object)</dt>
-<dd><a class="anchor" id="_todo000020"></a>figure out under what conditions creature will move towards object instead of facing it where it currently is.  </dd>
+<dd><a class="anchor" id="_todo000010"></a>figure out under what conditions creature will move towards object instead of facing it where it currently is.  </dd>
 <dt>Member <a class="el" href="../../d7/d67/class_v_m_a_p_1_1_tile_assembler.html#adabcb9cefdd3fcab94c5471948dbe0b0">VMAP::TileAssembler::convertWorld2</a>  ()</dt>
-<dd><a class="anchor" id="_todo000011"></a>remove extractor hack and uncomment below line:  </dd>
+<dd><a class="anchor" id="_todo000001"></a>remove extractor hack and uncomment below line:  </dd>
 <dt>Member <a class="el" href="../../d3/d21/class_world.html#a86bd347002157452ae075f73bb145ee8">World::getAllowMovement</a>  () const</dt>
-<dd><a class="anchor" id="_todo000031"></a>Actions on m_allowMovement still to be implemented Is movement allowed?  </dd>
+<dd><a class="anchor" id="_todo000021"></a>Actions on m_allowMovement still to be implemented Is movement allowed?  </dd>
 <dt>Member <a class="el" href="../../d3/d21/class_world.html#a234ec28232da46c075f805c116224a32">World::LoadConfigSettings</a>  (bool reload=false)</dt>
-<dd><a class="anchor" id="_todo000030"></a>Add MonsterSight in worldserver.conf or put it as define  </dd>
+<dd><a class="anchor" id="_todo000020"></a>Add MonsterSight in worldserver.conf or put it as define  </dd>
 <dt>Member <a class="el" href="../../d1/d47/class_world_session.html#abb51ac5b8c3910c53d21fb22f7b95557">WorldSession::HandleCharCreateOpcode</a>  (<a class="el" href="../../d6/d1a/class_world_packet.html">WorldPacket</a> &amp;recvPacket)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000022"></a>what to if account already has characters of both races? </p>
-<p class="enddd"><a class="anchor" id="_todo000023"></a>check if cinematic already shown? (already logged in?; cinematic field) </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000013"></a>check if cinematic already shown? (already logged in?; cinematic field) </p>
+<p class="enddd"><a class="anchor" id="_todo000012"></a>what to if account already has characters of both races? </p>
 </dd>
 </dl>
 </div></div><!-- contents -->

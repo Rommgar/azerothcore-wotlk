@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['querycallback_157810',['QueryCallback',['../d7/dc5/struct_query_callback_1_1_query_callback_data.html#a3bf0675bb0e337d06f1e7ef31d7622fe',1,'QueryCallback::QueryCallbackData']]]
+  ['randommovementgenerator_126567',['RandomMovementGenerator',['../dc/dca/class_movable_map_object.html#a260ebfc53c9406bc0356c553822d8ab2',1,'MovableMapObject']]],
+  ['resultset_126568',['ResultSet',['../dc/d67/class_field.html#a409719f61e9439051d21243690a5e416',1,'Field']]]
 ];

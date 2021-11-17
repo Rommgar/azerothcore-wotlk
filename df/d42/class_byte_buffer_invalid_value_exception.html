@@ -86,14 +86,14 @@ Inheritance diagram for ByteBufferInvalidValueException:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6ee22161167faf11555c6e6b15422cd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d42/class_byte_buffer_invalid_value_exception.html#a6ee22161167faf11555c6e6b15422cd8">ByteBufferInvalidValueException</a> (char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *<a class="el" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *<a class="el" href="../../d7/d71/classvalue.html">value</a>)</td></tr>
+<tr class="memitem:a6ee22161167faf11555c6e6b15422cd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d42/class_byte_buffer_invalid_value_exception.html#a6ee22161167faf11555c6e6b15422cd8">ByteBufferInvalidValueException</a> (char const *type, char const *value)</td></tr>
 <tr class="separator:a6ee22161167faf11555c6e6b15422cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add44c27a2245d78578e36b93629cfeb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d42/class_byte_buffer_invalid_value_exception.html#add44c27a2245d78578e36b93629cfeb1">~ByteBufferInvalidValueException</a> () noexcept=default</td></tr>
 <tr class="separator:add44c27a2245d78578e36b93629cfeb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_byte_buffer_exception"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_byte_buffer_exception')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/d70/class_byte_buffer_exception.html">ByteBufferException</a></td></tr>
 <tr class="memitem:a699fef5bf1d1274c17c8b368aa9119a0 inherit pub_methods_class_byte_buffer_exception"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d70/class_byte_buffer_exception.html#a699fef5bf1d1274c17c8b368aa9119a0">~ByteBufferException</a> () noexcept=default</td></tr>
 <tr class="separator:a699fef5bf1d1274c17c8b368aa9119a0 inherit pub_methods_class_byte_buffer_exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46606888bc9e734411a2d3f817c6833a inherit pub_methods_class_byte_buffer_exception"><td class="memItemLeft" align="right" valign="top">char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d70/class_byte_buffer_exception.html#a46606888bc9e734411a2d3f817c6833a">what</a> () <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> noexcept override</td></tr>
+<tr class="memitem:a46606888bc9e734411a2d3f817c6833a inherit pub_methods_class_byte_buffer_exception"><td class="memItemLeft" align="right" valign="top">char const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d70/class_byte_buffer_exception.html#a46606888bc9e734411a2d3f817c6833a">what</a> () const noexcept override</td></tr>
 <tr class="separator:a46606888bc9e734411a2d3f817c6833a inherit pub_methods_class_byte_buffer_exception"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -115,13 +115,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">ByteBufferInvalidValueException::ByteBufferInvalidValueException </td>
           <td>(</td>
-          <td class="paramtype">char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">char <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> *&#160;</td>
+          <td class="paramtype">char const *&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -134,11 +134,9 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6c/_byte_buffer_8cpp_source.html#l00052">52</a> of file <a class="el" href="../../d4/d6c/_byte_buffer_8cpp_source.html">ByteBuffer.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../d3/d70/class_byte_buffer_exception.html#ab47dd5ca9696653a5774240787b23dc1">message</a>().assign(<a class="code" href="../../d1/d7d/namespace_acore.html#a20cdbbf36d71c2c01f75fd0e706a7b10">Acore::StringFormat</a>(<span class="stringliteral">&quot;Invalid %s value (%s) found in ByteBuffer&quot;</span>, <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, <a class="code" href="../../d7/d71/classvalue.html">value</a>));</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../d3/d70/class_byte_buffer_exception.html#ab47dd5ca9696653a5774240787b23dc1">message</a>().assign(<a class="code" href="../../d1/d7d/namespace_acore.html#a20cdbbf36d71c2c01f75fd0e706a7b10">Acore::StringFormat</a>(<span class="stringliteral">&quot;Invalid %s value (%s) found in ByteBuffer&quot;</span>, type, value));</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 <div class="ttc" id="aclass_byte_buffer_exception_html_ab47dd5ca9696653a5774240787b23dc1"><div class="ttname"><a href="../../d3/d70/class_byte_buffer_exception.html#ab47dd5ca9696653a5774240787b23dc1">ByteBufferException::message</a></div><div class="ttdeci">std::string &amp; message() noexcept</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d6c/_byte_buffer_8h_source.html#l00039">ByteBuffer.h:39</a></div></div>
-<div class="ttc" id="aclassvalue_html"><div class="ttname"><a href="../../d7/d71/classvalue.html">value</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01120">core.h:1120</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01048">core.h:1048</a></div></div>
 <div class="ttc" id="anamespace_acore_html_a20cdbbf36d71c2c01f75fd0e706a7b10"><div class="ttname"><a href="../../d1/d7d/namespace_acore.html#a20cdbbf36d71c2c01f75fd0e706a7b10">Acore::StringFormat</a></div><div class="ttdeci">std::string StringFormat(Format &amp;&amp;fmt, Args &amp;&amp;... args)</div><div class="ttdoc">Default AC string format function.</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/ded/_string_format_8h_source.html#l00018">StringFormat.h:18</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/d6c/_byte_buffer_8h_source.html#l00039">ByteBufferException::message()</a>, and <a class="el" href="../../d9/ded/_string_format_8h_source.html#l00018">Acore::StringFormat()</a>.</p>

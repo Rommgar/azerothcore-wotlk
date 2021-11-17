@@ -77,7 +77,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afe38618ab1de028db0657601f1e51d21"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6c/class_v_m_a_p_1_1_my_collision_detection.html#afe38618ab1de028db0657601f1e51d21">collisionLocationForMovingPointFixedAABox</a> (<a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> &amp;origin, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> &amp;dir, <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d8/dfa/class_g3_d_1_1_a_a_box.html">G3D::AABox</a> &amp;box, <a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> &amp;location, <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;Inside)</td></tr>
+<tr class="memitem:afe38618ab1de028db0657601f1e51d21"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6c/class_v_m_a_p_1_1_my_collision_detection.html#afe38618ab1de028db0657601f1e51d21">collisionLocationForMovingPointFixedAABox</a> (const G3D::Vector3 &amp;origin, const G3D::Vector3 &amp;dir, const G3D::AABox &amp;box, G3D::Vector3 &amp;location, bool &amp;Inside)</td></tr>
 <tr class="separator:afe38618ab1de028db0657601f1e51d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -94,33 +94,33 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> VMAP::MyCollisionDetection::collisionLocationForMovingPointFixedAABox </td>
+          <td class="memname">static bool VMAP::MyCollisionDetection::collisionLocationForMovingPointFixedAABox </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> &amp;&#160;</td>
+          <td class="paramtype">const G3D::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>origin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> &amp;&#160;</td>
+          <td class="paramtype">const G3D::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>dir</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <a class="el" href="../../d8/dfa/class_g3_d_1_1_a_a_box.html">G3D::AABox</a> &amp;&#160;</td>
+          <td class="paramtype">const G3D::AABox &amp;&#160;</td>
           <td class="paramname"><em>box</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> &amp;&#160;</td>
+          <td class="paramtype">G3D::Vector3 &amp;&#160;</td>
           <td class="paramname"><em>location</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d9/df6/my__global_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> &amp;&#160;</td>
+          <td class="paramtype">bool &amp;&#160;</td>
           <td class="paramname"><em>Inside</em>&#160;</td>
         </tr>
         <tr>
@@ -142,9 +142,9 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define IR(x)   (reinterpret_cast&lt;G3D::uint32 const&amp;&gt;(x))</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            Inside = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a>&amp; MinB = box.<a class="code" href="../../d8/dfa/class_g3_d_1_1_a_a_box.html#aaaa2dc1627050c763f09d2942eeb6695">low</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">const</span> <a class="code" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a>&amp; MaxB = box.<a class="code" href="../../d8/dfa/class_g3_d_1_1_a_a_box.html#aa9bab227cb6fbdb0ff5b6673b6de54d4">high</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a> MaxT(-1.0f, -1.0f, -1.0f);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keyword">const</span> G3D::Vector3&amp; MinB = box.low();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keyword">const</span> G3D::Vector3&amp; MaxB = box.high();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            G3D::Vector3 MaxT(-1.0f, -1.0f, -1.0f);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="comment">// Find candidate planes.</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; ++i)</div>
@@ -223,11 +223,8 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#undef IR</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        }</div>
 <div class="ttc" id="a_v_map_tools_8h_html_aa54c7fcd0c551f1db5fc34a2f6b11e74"><div class="ttname"><a href="../../d6/dfb/_v_map_tools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a></div><div class="ttdeci">#define IR(x)</div></div>
-<div class="ttc" id="aclass_g3_d_1_1_a_a_box_html_aa9bab227cb6fbdb0ff5b6673b6de54d4"><div class="ttname"><a href="../../d8/dfa/class_g3_d_1_1_a_a_box.html#aa9bab227cb6fbdb0ff5b6673b6de54d4">G3D::AABox::high</a></div><div class="ttdeci">const Point3 &amp; high() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbe/_a_a_box_8h_source.html#l00141">AABox.h:141</a></div></div>
-<div class="ttc" id="aclass_g3_d_1_1_a_a_box_html_aaaa2dc1627050c763f09d2942eeb6695"><div class="ttname"><a href="../../d8/dfa/class_g3_d_1_1_a_a_box.html#aaaa2dc1627050c763f09d2942eeb6695">G3D::AABox::low</a></div><div class="ttdeci">const Point3 &amp; low() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dbe/_a_a_box_8h_source.html#l00136">AABox.h:136</a></div></div>
-<div class="ttc" id="aclass_g3_d_1_1_vector3_html"><div class="ttname"><a href="../../d2/d50/class_g3_d_1_1_vector3.html">G3D::Vector3</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d71/_vector3_8h_source.html#l00058">Vector3.h:58</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/dbe/_a_a_box_8h_source.html#l00141">G3D::AABox::high()</a>, <a class="el" href="../../d6/dfb/_v_map_tools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>, and <a class="el" href="../../d0/dbe/_a_a_box_8h_source.html#l00136">G3D::AABox::low()</a>.</p>
+<p class="reference">References <a class="el" href="../../d6/dfb/_v_map_tools_8h.html#aa54c7fcd0c551f1db5fc34a2f6b11e74">IR</a>.</p>
 
 </div>
 </div>

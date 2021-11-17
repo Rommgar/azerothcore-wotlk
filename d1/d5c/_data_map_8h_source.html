@@ -106,7 +106,7 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    template&lt;class T, typename std::enable_if&lt;std::is_default_constructible&lt;T&gt;::value, <span class="keywordtype">int</span>&gt;<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">::type</a> = 0&gt;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    template&lt;class T, typename std::enable_if&lt;std::is_default_constructible&lt;T&gt;::value, <span class="keywordtype">int</span>&gt;::type = 0&gt;</div>
 <div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../dc/dfc/class_data_map.html#ad6ecc439d396346ab471c7165b963970">   50</a></span>&#160;    T * <a class="code" href="../../dc/dfc/class_data_map.html#ad6ecc439d396346ab471c7165b963970">GetDefault</a>(std::string <span class="keyword">const</span>&amp; k)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        static_assert(std::is_base_of&lt;Base, T&gt;::value, <span class="stringliteral">&quot;T must derive from Base&quot;</span>);</div>
@@ -136,7 +136,6 @@ $(function() {
 <div class="ttc" id="aclass_data_map_html_a3a559027ba0a64e4af2f02218ce1c910"><div class="ttname"><a href="../../dc/dfc/class_data_map.html#a3a559027ba0a64e4af2f02218ce1c910">DataMap::Container</a></div><div class="ttdeci">std::unordered_map&lt; std::string, std::unique_ptr&lt; Base &gt; &gt; Container</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5c/_data_map_8h_source.html#l00073">DataMap.h:73</a></div></div>
 <div class="ttc" id="aclass_data_map_html_a93bf2535b14236df9703e485ef816b36"><div class="ttname"><a href="../../dc/dfc/class_data_map.html#a93bf2535b14236df9703e485ef816b36">DataMap::Set</a></div><div class="ttdeci">void Set(std::string const &amp;k, Base *v)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5c/_data_map_8h_source.html#l00065">DataMap.h:65</a></div></div>
 <div class="ttc" id="aclass_data_map_html_ad6ecc439d396346ab471c7165b963970"><div class="ttname"><a href="../../dc/dfc/class_data_map.html#ad6ecc439d396346ab471c7165b963970">DataMap::GetDefault</a></div><div class="ttdeci">T * GetDefault(std::string const &amp;k)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d5c/_data_map_8h_source.html#l00050">DataMap.h:50</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01048">core.h:1048</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

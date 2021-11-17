@@ -93,15 +93,15 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;thread&gt;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;std::vector&lt;std::mutex*&gt; cryptoLocks;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> lockingCallback(<span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> <a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>, <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="comment">/*file*/</span>, <span class="keywordtype">int</span> <span class="comment">/*line*/</span>)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> lockingCallback(<span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> type, <span class="keywordtype">char</span> <span class="keyword">const</span>* <span class="comment">/*file*/</span>, <span class="keywordtype">int</span> <span class="comment">/*line*/</span>)</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (mode &amp; CRYPTO_LOCK)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        cryptoLocks[<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>]-&gt;lock();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        cryptoLocks[type]-&gt;lock();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        cryptoLocks[<a class="code" href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a>]-&gt;unlock();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        cryptoLocks[type]-&gt;unlock();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> threadIdCallback(CRYPTO_THREADID* <span class="keywordtype">id</span>)</div>
@@ -133,7 +133,6 @@ $(function() {
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="a_open_s_s_l_crypto_8h_html"><div class="ttname"><a href="../../d3/d3f/_open_s_s_l_crypto_8h.html">OpenSSLCrypto.h</a></div></div>
-<div class="ttc" id="afmt_2include_2fmt_2core_8h_html_a7aead736a07eaf25623ad7bfa1f0ee2d"><div class="ttname"><a href="../../d5/d71/fmt_2include_2fmt_2core_8h.html#a7aead736a07eaf25623ad7bfa1f0ee2d">type</a></div><div class="ttdeci">type</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d71/fmt_2include_2fmt_2core_8h_source.html#l01048">core.h:1048</a></div></div>
 <div class="ttc" id="anamespace_open_s_s_l_crypto_html_ae2c343f2efc8fa69b50e1bd35bf410fd"><div class="ttname"><a href="../../d9/dd0/namespace_open_s_s_l_crypto.html#ae2c343f2efc8fa69b50e1bd35bf410fd">OpenSSLCrypto::threadsSetup</a></div><div class="ttdeci">void threadsSetup()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d3f/_open_s_s_l_crypto_8h_source.html#l00037">OpenSSLCrypto.h:37</a></div></div>
 <div class="ttc" id="anamespace_open_s_s_l_crypto_html_af868d9171650614810772c5675c47fd3"><div class="ttname"><a href="../../d9/dd0/namespace_open_s_s_l_crypto.html#af868d9171650614810772c5675c47fd3">OpenSSLCrypto::threadsCleanup</a></div><div class="ttdeci">void threadsCleanup()</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d3f/_open_s_s_l_crypto_8h_source.html#l00038">OpenSSLCrypto.h:38</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

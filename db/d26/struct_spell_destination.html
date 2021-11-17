@@ -78,13 +78,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa91f31101de3139b2e2d2976dac94686"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa27cefe3e93fedd557174a3cc8f49fe1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#aa27cefe3e93fedd557174a3cc8f49fe1">SpellDestination</a> (float x, float y, float z, float orientation=0.0f, <a class="el" href="../../db/d35/_define_8h.html#a22f78cc9780bf32aff91ae17c3101c8d">uint32</a> mapId=<a class="el" href="../../df/d30/_object_8h.html#af69a1d112a89b89894dafd5da53e7490">MAPID_INVALID</a>)</td></tr>
 <tr class="separator:aa27cefe3e93fedd557174a3cc8f49fe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12f65757f20436b02b7aa00bb1682c8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#a12f65757f20436b02b7aa00bb1682c8e">SpellDestination</a> (<a class="el" href="../../d1/d26/struct_position.html">Position</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../db/d36/base64_8c.html#a5e75484d7880fa39b31f27c3d7058936">pos</a>)</td></tr>
+<tr class="memitem:a12f65757f20436b02b7aa00bb1682c8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#a12f65757f20436b02b7aa00bb1682c8e">SpellDestination</a> (<a class="el" href="../../d1/d26/struct_position.html">Position</a> const &amp;pos)</td></tr>
 <tr class="separator:a12f65757f20436b02b7aa00bb1682c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b8949fa80249aee8bebc56620ec746c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#a7b8949fa80249aee8bebc56620ec746c">SpellDestination</a> (<a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;wObj)</td></tr>
+<tr class="memitem:a7b8949fa80249aee8bebc56620ec746c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#a7b8949fa80249aee8bebc56620ec746c">SpellDestination</a> (<a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> const &amp;wObj)</td></tr>
 <tr class="separator:a7b8949fa80249aee8bebc56620ec746c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab565861d5013130639013e3c4d22d712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#ab565861d5013130639013e3c4d22d712">Relocate</a> (<a class="el" href="../../d1/d26/struct_position.html">Position</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;<a class="el" href="../../db/d36/base64_8c.html#a5e75484d7880fa39b31f27c3d7058936">pos</a>)</td></tr>
+<tr class="memitem:ab565861d5013130639013e3c4d22d712"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#ab565861d5013130639013e3c4d22d712">Relocate</a> (<a class="el" href="../../d1/d26/struct_position.html">Position</a> const &amp;pos)</td></tr>
 <tr class="separator:ab565861d5013130639013e3c4d22d712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf1d731787bfed47b593d8cb4943f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#a0bf1d731787bfed47b593d8cb4943f2a">RelocateOffset</a> (<a class="el" href="../../d1/d26/struct_position.html">Position</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;offset)</td></tr>
+<tr class="memitem:a0bf1d731787bfed47b593d8cb4943f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/struct_spell_destination.html#a0bf1d731787bfed47b593d8cb4943f2a">RelocateOffset</a> (<a class="el" href="../../d1/d26/struct_position.html">Position</a> const &amp;offset)</td></tr>
 <tr class="separator:a0bf1d731787bfed47b593d8cb4943f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -174,16 +174,13 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d8/d41/_spell_8cpp_source.html">Spell.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(<a class="code" href="../../df/de2/namespace_g3_d.html#a55ae91213b07da3a9e14fcd5068d497f">x</a>, <a class="code" href="../../df/de2/namespace_g3_d.html#a8942ba929b21cfdf30bd22fe36baaefa">y</a>, <a class="code" href="../../df/de2/namespace_g3_d.html#a05e047033db3919db794d0f77e38797f">z</a>, orientation);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(x, y, z, orientation);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d6/d64/class_world_location.html#a88161a79f13aa3ab267096cfa8e5d0ed">m_mapId</a> = mapId;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a52f0f9f741985bb4d78289145fe66ba0">_transportOffset</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(0, 0, 0, 0);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="ttc" id="aclass_world_location_html_a88161a79f13aa3ab267096cfa8e5d0ed"><div class="ttname"><a href="../../d6/d64/class_world_location.html#a88161a79f13aa3ab267096cfa8e5d0ed">WorldLocation::m_mapId</a></div><div class="ttdeci">uint32 m_mapId</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d30/_object_8h_source.html#l00529">Object.h:529</a></div></div>
-<div class="ttc" id="anamespace_g3_d_html_a05e047033db3919db794d0f77e38797f"><div class="ttname"><a href="../../df/de2/namespace_g3_d.html#a05e047033db3919db794d0f77e38797f">G3D::z</a></div><div class="ttdeci">G3D::int16 z</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d5d/_vector3int16_8h_source.html#l00046">Vector3int16.h:46</a></div></div>
-<div class="ttc" id="anamespace_g3_d_html_a55ae91213b07da3a9e14fcd5068d497f"><div class="ttname"><a href="../../df/de2/namespace_g3_d.html#a55ae91213b07da3a9e14fcd5068d497f">G3D::x</a></div><div class="ttdeci">G3D::int16 x</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d14/_vector2int16_8h_source.html#l00037">Vector2int16.h:37</a></div></div>
-<div class="ttc" id="anamespace_g3_d_html_a8942ba929b21cfdf30bd22fe36baaefa"><div class="ttname"><a href="../../df/de2/namespace_g3_d.html#a8942ba929b21cfdf30bd22fe36baaefa">G3D::y</a></div><div class="ttdeci">G3D::int16 y</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d14/_vector2int16_8h_source.html#l00038">Vector2int16.h:38</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00103">_position</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00105">_transportOffset</a>, <a class="el" href="../../df/d30/_object_8h_source.html#l00529">WorldLocation::m_mapId</a>, <a class="el" href="../../df/d30/_object_8h_source.html#l00295">Position::Relocate()</a>, <a class="el" href="../../d8/d14/_vector2int16_8h_source.html#l00037">G3D::x</a>, <a class="el" href="../../d8/d14/_vector2int16_8h_source.html#l00038">G3D::y</a>, and <a class="el" href="../../db/d5d/_vector3int16_8h_source.html#l00046">G3D::z</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00103">_position</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00105">_transportOffset</a>, <a class="el" href="../../df/d30/_object_8h_source.html#l00529">WorldLocation::m_mapId</a>, and <a class="el" href="../../df/d30/_object_8h_source.html#l00295">Position::Relocate()</a>.</p>
 
 </div>
 </div>
@@ -196,7 +193,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">SpellDestination::SpellDestination </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d26/struct_position.html">Position</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d26/struct_position.html">Position</a> const &amp;&#160;</td>
           <td class="paramname"><em>pos</em></td><td>)</td>
           <td></td>
         </tr>
@@ -205,12 +202,11 @@ Public Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../d8/d41/_spell_8cpp_source.html">Spell.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(<a class="code" href="../../db/d36/base64_8c.html#a5e75484d7880fa39b31f27c3d7058936">pos</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(pos);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a52f0f9f741985bb4d78289145fe66ba0">_transportOffset</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(0, 0, 0, 0);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;}</div>
-<div class="ttc" id="abase64_8c_html_a5e75484d7880fa39b31f27c3d7058936"><div class="ttname"><a href="../../db/d36/base64_8c.html#a5e75484d7880fa39b31f27c3d7058936">pos</a></div><div class="ttdeci">static uint pos(unsigned char c)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d36/base64_8c_source.html#l00104">base64.c:104</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00103">_position</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00105">_transportOffset</a>, <a class="el" href="../../db/d36/base64_8c_source.html#l00104">pos()</a>, and <a class="el" href="../../df/d30/_object_8h_source.html#l00295">Position::Relocate()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00103">_position</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00105">_transportOffset</a>, and <a class="el" href="../../df/d30/_object_8h_source.html#l00295">Position::Relocate()</a>.</p>
 
 </div>
 </div>
@@ -223,7 +219,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">SpellDestination::SpellDestination </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/df7/class_world_object.html">WorldObject</a> const &amp;&#160;</td>
           <td class="paramname"><em>wObj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -252,7 +248,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SpellDestination::Relocate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d26/struct_position.html">Position</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d26/struct_position.html">Position</a> const &amp;&#160;</td>
           <td class="paramname"><em>pos</em></td><td>)</td>
           <td></td>
         </tr>
@@ -264,16 +260,16 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="../../db/d26/struct_spell_destination.html#ad3456cf591eb32a5dd390ffbb7b27387">_transportGUID</a>)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="../../d1/d26/struct_position.html">Position</a> offset;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#a8ee8107a73650fef4b958f2df1ebb53a">GetPositionOffsetTo</a>(<a class="code" href="../../db/d36/base64_8c.html#a5e75484d7880fa39b31f27c3d7058936">pos</a>, offset);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#a8ee8107a73650fef4b958f2df1ebb53a">GetPositionOffsetTo</a>(pos, offset);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="../../db/d26/struct_spell_destination.html#a52f0f9f741985bb4d78289145fe66ba0">_transportOffset</a>.<a class="code" href="../../d1/d26/struct_position.html#a1ee5670db2621e59adf12c225e726cd7">RelocateOffset</a>(offset);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(<a class="code" href="../../db/d36/base64_8c.html#a5e75484d7880fa39b31f27c3d7058936">pos</a>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="../../db/d26/struct_spell_destination.html#a6c4587b85e295d86f3479e4feeb662e5">_position</a>.<a class="code" href="../../d1/d26/struct_position.html#afdbf0a257fcd7a48066fd92c4eacae3b">Relocate</a>(pos);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="astruct_position_html"><div class="ttname"><a href="../../d1/d26/struct_position.html">Position</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d30/_object_8h_source.html#l00247">Object.h:248</a></div></div>
 <div class="ttc" id="astruct_position_html_a1ee5670db2621e59adf12c225e726cd7"><div class="ttname"><a href="../../d1/d26/struct_position.html#a1ee5670db2621e59adf12c225e726cd7">Position::RelocateOffset</a></div><div class="ttdeci">void RelocateOffset(const Position &amp;offset)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ded/_object_8cpp_source.html#l01518">Object.cpp:1518</a></div></div>
 <div class="ttc" id="astruct_position_html_a8ee8107a73650fef4b958f2df1ebb53a"><div class="ttname"><a href="../../d1/d26/struct_position.html#a8ee8107a73650fef4b958f2df1ebb53a">Position::GetPositionOffsetTo</a></div><div class="ttdeci">void GetPositionOffsetTo(const Position &amp;endPos, Position &amp;retOffset) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/ded/_object_8cpp_source.html#l01526">Object.cpp:1526</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00103">_position</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00104">_transportGUID</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00105">_transportOffset</a>, <a class="el" href="../../d8/ded/_object_8cpp_source.html#l01526">Position::GetPositionOffsetTo()</a>, <a class="el" href="../../db/d36/base64_8c_source.html#l00104">pos()</a>, <a class="el" href="../../df/d30/_object_8h_source.html#l00295">Position::Relocate()</a>, and <a class="el" href="../../d8/ded/_object_8cpp_source.html#l01518">Position::RelocateOffset()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00103">_position</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00104">_transportGUID</a>, <a class="el" href="../../d5/dfa/_spell_8h_source.html#l00105">_transportOffset</a>, <a class="el" href="../../d8/ded/_object_8cpp_source.html#l01526">Position::GetPositionOffsetTo()</a>, <a class="el" href="../../df/d30/_object_8h_source.html#l00295">Position::Relocate()</a>, and <a class="el" href="../../d8/ded/_object_8cpp_source.html#l01518">Position::RelocateOffset()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d1/de4/spell__generic_8cpp_source.html#l01000">spell_gen_random_target32::ModDest()</a>, <a class="el" href="../../db/dfb/spell__quest_8cpp_source.html#l02169">spell_q12308_escape_from_silverbrook_summon_worgen::ModDest()</a>, <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l00438">SpellCastTargets::ModDst()</a>, <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l00387">SpellCastTargets::ModSrc()</a>, <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l01344">Spell::SelectImplicitCasterDestTargets()</a>, <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l01511">Spell::SelectImplicitDestDestTargets()</a>, <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l01479">Spell::SelectImplicitTargetDestTargets()</a>, <a class="el" href="../../d8/d41/_spell_8cpp_source.html#l01660">Spell::SelectImplicitTrajTargets()</a>, <a class="el" href="../../de/d97/boss__mother__shahraz_8cpp_source.html#l00279">spell_mother_shahraz_fatal_attraction::spell_mother_shahraz_fatal_attraction_SpellScript::SetDest()</a>, <a class="el" href="../../d6/d75/zone__terokkar__forest_8cpp_source.html#l00308">spell_q10898_skywing::spell_q10898_skywing_SpellScript::SetDest()</a>, <a class="el" href="../../db/d6e/spell__item_8cpp_source.html#l01008">spell_item_dragon_kite_summon_lightning_bunny::SetDest()</a>, and <a class="el" href="../../db/d6e/spell__item_8cpp_source.html#l03448">spell_item_recall::SetDest()</a>.</p>
 
@@ -288,7 +284,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">void SpellDestination::RelocateOffset </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d26/struct_position.html">Position</a> <a class="el" href="../../de/d95/zconf_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d1/d26/struct_position.html">Position</a> const &amp;&#160;</td>
           <td class="paramname"><em>offset</em></td><td>)</td>
           <td></td>
         </tr>
