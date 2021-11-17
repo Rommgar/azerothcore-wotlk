@@ -16,7 +16,7 @@ jobs:
           doxyfile-path: 'conf/dist/Doxyfile'
           working-directory: '.'
           enable-latex: true
-          additional-pakages: texlive-pictures
+          additional-packages: texlive-pictures
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
